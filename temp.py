@@ -15,11 +15,15 @@ print (interest)
 total = amount * interest
 print(total)
 
+
+"""
 def compoundInterest(years, rate, amount):
     return (years ** rate) * amount
+"""
 
 """
 Roth Vs Ira
+"""
 """
 amount = 12
 
@@ -42,5 +46,5 @@ print("Ira " + str(iraAmount))
 print("Roth " + str(rothAmount))
 print("Penalty " + str(tenPercentPenalty))
 print("Double Taxes " + str(doubleTaxes))
-
+"""
 
