@@ -66,16 +66,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mocking\HouseKeeperServiceTests.cs" />
+    <Compile Include="Mocking\BookingHelperTests.cs" />
+    <Compile Include="Mocking\EmployeeControllerTests.cs" />
+    <Compile Include="Mocking\InstallerHelperTests.cs" />
+    <Compile Include="Mocking\ProductTests.cs" />
+    <Compile Include="Mocking\OrderServiceTests.cs" />
     <Compile Include="Mocking\VideoServiceTests.cs" />
-    <Compile Include="ReservationTests.cs" />
+    <Compile Include="Fundimentals\ReservationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MathTests.cs" />
-    <Compile Include="HtmlFormatterTests.cs" />
-    <Compile Include="CustomerControllerTests.cs" />
-    <Compile Include="ErrorLoggerTests.cs" />
-    <Compile Include="FizzBuzzTests.cs" />
-    <Compile Include="DemeritPointsCalculatorTests.cs" />
-    <Compile Include="StackTests.cs" />
+    <Compile Include="Fundimentals\MathTests.cs" />
+    <Compile Include="Fundimentals\HtmlFormatterTests.cs" />
+    <Compile Include="Fundimentals\CustomerControllerTests.cs" />
+    <Compile Include="Fundimentals\ErrorLoggerTests.cs" />
+    <Compile Include="Fundimentals\FizzBuzzTests.cs" />
+    <Compile Include="Fundimentals\DemeritPointsCalculatorTests.cs" />
+    <Compile Include="Fundimentals\StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
