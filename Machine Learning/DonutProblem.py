@@ -33,14 +33,14 @@ plt.scatter(x[:,0], x[:,1], c=t)
 plt.show()
 
 ones = np.array([[1]* N]).T
-r = np.zeros((n,1))
-for i in xrange(N):
+r = np.zeros((N,1))
+for i in range(N):
     r[i] = np.sqrt(x[i,:].dot(x[i,:]))
 
 xb = np.concatenate((ones, r, x), axis = 1)
 w = np.random.rand(D+2)
 
-z = Xb.dot(w)
+z = xb.dot(w)
 
 def sigmoid(z):
     return 1/(1+np.exp(-z))
@@ -50,7 +50,7 @@ y = sigmoid(z)
 #cross entropy error
 def cross_entropy(t,y):
     e = 0
-    for i in xrange(N):
+    for i in range(N):
         if t[i] == 1:
             e -= np.log(y[i])
         else:
@@ -59,5 +59,17 @@ def cross_entropy(t,y):
 
 learningRate = 0.0001
 error = []
-for i in xrange(5000):
+for i in range(5000):
     e = cross_entropy(t,y)
+    error.append(e)
+    if i % 100 == 0:
+        print(e) 
+
+    w += learningRate * (np.dot((t - y).T, xb) - 0.01 * w)
+    y = sigmoid(xb.dot(w))
+
+plt.plot(error)
+plt.title("Cross-entropy")
+
+print ("Final w:", w)
+print ("Final classification rate:", 1 - np.abs(t - np.round(y)).sum() / N)
