@@ -1,0 +1,17 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.Tests.deps.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.Tests.runtimeconfig.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.Tests.runtimeconfig.dev.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.Tests.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.Tests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csproj.CoreCompileInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.AssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.pdb
+c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.dll
+c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.pdb
+c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csproj.CopyComplete
