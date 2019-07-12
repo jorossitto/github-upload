@@ -5,11 +5,13 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AEC6EB74-4406-47BF-9B92-0BFFDFBA4BA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeBook", "src\GradeBook\GradeBook.csproj", "{5E0A987E-2B5C-4BA5-A73A-BB0A3BA096F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook", "src\GradeBook\GradeBook.csproj", "{5E0A987E-2B5C-4BA5-A73A-BB0A3BA096F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{77951D19-0FD9-44B4-ADE8-ED2A74945E86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeBook.Tests", "test\GradeBook.Tests\GradeBook.Tests.csproj", "{D18F1404-1342-4456-A51B-65CCC050B0DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook.Tests", "test\GradeBook.Tests\GradeBook.Tests.csproj", "{D18F1404-1342-4456-A51B-65CCC050B0DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "NUnitTests\NUnitTests.csproj", "{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5E0A987E-2B5C-4BA5-A73A-BB0A3BA096F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,9 +47,28 @@ Global
 		{D18F1404-1342-4456-A51B-65CCC050B0DD}.Release|x64.Build.0 = Release|Any CPU
 		{D18F1404-1342-4456-A51B-65CCC050B0DD}.Release|x86.ActiveCfg = Release|Any CPU
 		{D18F1404-1342-4456-A51B-65CCC050B0DD}.Release|x86.Build.0 = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Debug|x86.Build.0 = Debug|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|x64.Build.0 = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5E0A987E-2B5C-4BA5-A73A-BB0A3BA096F8} = {AEC6EB74-4406-47BF-9B92-0BFFDFBA4BA4}
 		{D18F1404-1342-4456-A51B-65CCC050B0DD} = {77951D19-0FD9-44B4-ADE8-ED2A74945E86}
+		{C2B17D5F-7CB0-41DB-93EE-AD4FA7C796EC} = {77951D19-0FD9-44B4-ADE8-ED2A74945E86}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8856E055-D287-4DCB-A5E8-8E11D677B9FD}
 	EndGlobalSection
 EndGlobal

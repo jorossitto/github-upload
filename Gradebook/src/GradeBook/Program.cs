@@ -1,4 +1,6 @@
 ﻿using System;
+using TestNinja.Fundamentals;
+using Fundamentals;
 using System.Collections.Generic;
 
 namespace GradeBook
@@ -7,6 +9,33 @@ namespace GradeBook
     class Program
     {
         static void Main(string[] args)
+        {
+            string filePath = @"C:\Users\risottj\Documents\UnitTesting\Gradebook\Pop by Largest Final.csv";
+            CsvReader reader = new CsvReader(filePath);
+            Country[] countries = reader.ReadFirstNCountries(10);
+
+            foreach(Country country in countries)
+            {
+                Console.WriteLine($"{country.Population}: {country.Name}");
+            }
+        }
+
+        private static void PrintChosenDay(string[] args)
+        {
+            DateHelper date = new DateHelper();
+            date.DaysOfWeek(args);
+        }
+
+        private static void PrintFirst3Days()
+        {
+            DateHelper date = new DateHelper();
+            //date.DaysOfWeek(args);
+            string[] daysofweek = date.GetDaysOfWeek();
+            PrintHelper printhelper = new PrintHelper();
+            printhelper.PrintAllOf(daysofweek, 3);
+        }
+
+        private static void SetupBook()
         {
             IBook book = new DiskBook("Scotts Grade Book");
             book.GradeAdded += OnGradeAdded;
