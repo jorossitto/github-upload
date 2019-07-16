@@ -1,4 +1,7 @@
-﻿namespace Fundamentals
+﻿using System;
+using System.Collections.Generic;
+
+namespace Fundamentals
 {
     class Country
     {
@@ -14,6 +17,5 @@
             Region = region;
             Population = population;
         }
-
     }
 }

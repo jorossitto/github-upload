@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Fundamentals
+namespace Test.Fundamentals
 {
     public class Math
     {

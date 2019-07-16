@@ -8,31 +8,21 @@ namespace GradeBook
 
     class Program
     {
+        static PrintHelper printHelper = new PrintHelper();
+        static DateHelper date = new DateHelper();
+        static string filepath = @"C:\Users\risottj\Documents\UnitTesting\Gradebook\Pop by Largest Final.csv";
+        static CsvReader reader = new CsvReader(filepath);
+
         static void Main(string[] args)
         {
-            string filePath = @"C:\Users\risottj\Documents\UnitTesting\Gradebook\Pop by Largest Final.csv";
-            CsvReader reader = new CsvReader(filePath);
-            Country[] countries = reader.ReadFirstNCountries(10);
-
-            foreach(Country country in countries)
-            {
-                Console.WriteLine($"{country.Population}: {country.Name}");
-            }
+            //printHelper.PrintAllCountries(filepath);
+            printHelper.PrintCountries(filepath);
         }
 
-        private static void PrintChosenDay(string[] args)
+        private static void PrintXDays(int x)
         {
-            DateHelper date = new DateHelper();
-            date.DaysOfWeek(args);
-        }
-
-        private static void PrintFirst3Days()
-        {
-            DateHelper date = new DateHelper();
-            //date.DaysOfWeek(args);
             string[] daysofweek = date.GetDaysOfWeek();
-            PrintHelper printhelper = new PrintHelper();
-            printhelper.PrintAllOf(daysofweek, 3);
+            printHelper.PrintAllOf(daysofweek, x);
         }
 
         private static void SetupBook()

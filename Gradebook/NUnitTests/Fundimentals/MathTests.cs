@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using System.Linq;
-using Fundamentals;
+using Test.Fundamentals;
 
 namespace TestNinja.UnitTests
 {
