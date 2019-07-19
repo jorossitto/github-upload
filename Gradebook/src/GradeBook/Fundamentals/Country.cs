@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace Fundamentals
 {
-    class Country
+    public class Country
     {
         public string Name { get; }
         public string Code { get; }

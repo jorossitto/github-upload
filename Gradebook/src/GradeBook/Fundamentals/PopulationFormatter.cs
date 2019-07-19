@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Test.Fundamentals;
 
 namespace Fundamentals
 {
+    /// <summary>
+    /// PopulationFormatter needs Math
+    /// </summary>
     class PopulationFormatter
     {
         public static string FormatPopulation(int population)
@@ -20,28 +23,16 @@ namespace Fundamentals
         {
             //work out what rounding accuracy we need if we are to round to 
             //4 significant figures
-            int accuracy = Math.Max((int)(GetHighestPowerOfTen(population) / 10_000l), 1);
+          
+            int accuracy = Math.Max((int)(Math.GetHighestPowerOfTen(population) / 10_000l), 1);
 
             //now do the rounding
-            return RoundToNearest(population, accuracy);
+            return Math.RoundToNearest(population, accuracy);
         }
 
-        public static int RoundToNearest(int exact, int accuracy)
-        {
-            int adjusted = exact + accuracy / 2;
-            return adjusted - adjusted % accuracy;
-        }
 
-        public static long GetHighestPowerOfTen(int x)
-        {
-            long result = 1;
-            while (x > 0)
-            {
-                x /= 10;
-                result *= 10;
-            }
-            return result;
-        }
+
+
 
 
     }
