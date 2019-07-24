@@ -5,9 +5,9 @@ Spyder Editor
 This is a temporary script file.
 """
 
-rate = 1.03
-term = 5
-amount = 29.45
+rate = 1.04
+term = 6
+amount = 33.36
 
 interest = rate ** term
 
