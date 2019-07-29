@@ -7,7 +7,7 @@ This is a temporary script file.
 
 rate = 1.04
 term = 6
-amount = 33.36
+amount = 36.83
 
 interest = rate ** term
 
