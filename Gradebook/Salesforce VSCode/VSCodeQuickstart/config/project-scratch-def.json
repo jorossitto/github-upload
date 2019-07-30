@@ -1,0 +1,10 @@
+{
+  "orgName": "Learning VS Code",
+  "edition": "Developer",
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}
