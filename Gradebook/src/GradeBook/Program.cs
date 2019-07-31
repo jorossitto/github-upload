@@ -15,11 +15,30 @@ namespace GradeBook
 
         static void Main(string[] args)
         {
-            PlayerCharacter player = new PlayerCharacter();
-            player.Name = "Sarah";
-            player.DaysSinceLastLogin = 42;
-            PlayerDisplayer.Write(player);
+            //PlayerCharacter[] players = new PlayerCharacter[3]
+            //{
+            //    new PlayerCharacter {Name = "Sarah"},
+            //    new PlayerCharacter(),
+            //    null
+            //};
+
+            PlayerCharacter[] players = null;
+
+            string p1 = players?[0]?.Name;
+            string p2 = players?[1]?.Name;
+            string p3 = players?[2]?.Name;
+
             Console.ReadLine();
+            PlayerCharacter player = null;
+            int days = player?.DaysSinceLastLogin ?? -1;
+
+
+            //int days = player.DaysSinceLastLogin.Value;
+            Console.WriteLine(days);
+            //player.Name = "Sarah";
+            //player.DaysSinceLastLogin = 42;
+            //PlayerDisplayer.Write(player);
+
         }
 
         private static void RunGradeBookProgram()
