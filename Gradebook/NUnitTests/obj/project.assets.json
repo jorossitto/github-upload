@@ -628,7 +628,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/3.10.1": {
+      "NUnit/3.12.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "2.0.0"
@@ -643,7 +643,7 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/3.10.0": {
+      "NUnit3TestAdapter/3.13.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
@@ -1598,6 +1598,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
+      "ACM.BL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ACM.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACM.BL.dll": {}
         }
       },
       "GradeBook/1.0.0": {
@@ -2567,10 +2576,10 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "NUnit/3.10.1": {
-      "sha512": "E3ii6+VLdeIxTQ5gPjk/7g/xl+aCifbfcIkiGayZCuos+22FEdtKGrxMe6SzoXCQCcL7gdqhfNIFTaZ1+dS18g==",
+    "NUnit/3.12.0": {
+      "sha512": "3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
       "type": "package",
-      "path": "nunit/3.10.1",
+      "path": "nunit/3.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2578,10 +2587,6 @@
         "LICENSE.txt",
         "NOTICES.txt",
         "build/NUnit.props",
-        "lib/net20/NUnit.System.Linq.dll",
-        "lib/net20/nunit.framework.dll",
-        "lib/net20/nunit.framework.pdb",
-        "lib/net20/nunit.framework.xml",
         "lib/net35/nunit.framework.dll",
         "lib/net35/nunit.framework.pdb",
         "lib/net35/nunit.framework.xml",
@@ -2591,36 +2596,34 @@
         "lib/net45/nunit.framework.dll",
         "lib/net45/nunit.framework.pdb",
         "lib/net45/nunit.framework.xml",
-        "lib/netstandard1.6/nunit.framework.dll",
-        "lib/netstandard1.6/nunit.framework.pdb",
-        "lib/netstandard1.6/nunit.framework.xml",
+        "lib/netstandard1.4/nunit.framework.dll",
+        "lib/netstandard1.4/nunit.framework.pdb",
+        "lib/netstandard1.4/nunit.framework.xml",
         "lib/netstandard2.0/nunit.framework.dll",
         "lib/netstandard2.0/nunit.framework.pdb",
         "lib/netstandard2.0/nunit.framework.xml",
-        "nunit.3.10.1.nupkg.sha512",
+        "nunit.3.12.0.nupkg.sha512",
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/3.10.0": {
-      "sha512": "hC4QeR/iC8yJcI9eyAfAFWBaDP7lh4CnXqIMLq26CLLGQsLqy44uJwBVmo/0o9aTKVwPm/M1lPYqYcfOJMDqyg==",
+    "NUnit3TestAdapter/3.13.0": {
+      "sha512": "9OlA81APTyR/tNkapK2a2dlz4jFra7/Bm1eYT1P1lIq2cJv4OYtWD5uHj3XsO1dz3btiwbIFrWBtZNr/ebRhSw==",
       "type": "package",
-      "path": "nunit3testadapter/3.10.0",
+      "path": "nunit3testadapter/3.13.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
-        "build/net35/Mono.Cecil.dll",
         "build/net35/NUnit3.TestAdapter.dll",
         "build/net35/NUnit3.TestAdapter.pdb",
         "build/net35/NUnit3TestAdapter.props",
         "build/net35/nunit.engine.api.dll",
         "build/net35/nunit.engine.dll",
-        "build/netcoreapp1.0/Mono.Cecil.dll",
         "build/netcoreapp1.0/NUnit3.TestAdapter.dll",
         "build/netcoreapp1.0/NUnit3.TestAdapter.pdb",
         "build/netcoreapp1.0/NUnit3TestAdapter.props",
         "build/netcoreapp1.0/nunit.engine.netstandard.dll",
-        "nunit3testadapter.3.10.0.nupkg.sha512",
+        "nunit3testadapter.3.13.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
       ]
     },
@@ -5652,6 +5655,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "path": "../ACM.BL/ACM.BL.csproj",
+      "msbuildProject": "../ACM.BL/ACM.BL.csproj"
+    },
     "GradeBook/1.0.0": {
       "type": "project",
       "path": "../src/GradeBook/GradeBook.csproj",
@@ -5660,11 +5668,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ACM.BL >= 1.0.0",
       "GradeBook >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "NUnit3TestAdapter >= 3.10.0",
-      "nunit >= 3.10.1"
+      "NUnit3TestAdapter >= 3.13.0",
+      "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
@@ -5700,6 +5709,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+            },
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj"
             }
@@ -5726,11 +5738,11 @@
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[3.10.0, )"
+            "version": "[3.13.0, )"
           },
           "nunit": {
             "target": "Package",
-            "version": "[3.10.1, )"
+            "version": "[3.12.0, )"
           }
         },
         "imports": [

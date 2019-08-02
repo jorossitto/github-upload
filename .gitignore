@@ -2,3 +2,7 @@
 ~$price mapv20 (1) (version 1).xlsb.xlsx
 *.lock
 ~$pes of Tests.docx
+*.dll
+*.pdb
+*.ide-wal
+*.ide

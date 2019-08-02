@@ -36,7 +36,7 @@ namespace TestNinja.UnitTests
         public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expectedResult)
         {
             //Act
-            var result = _math.Max(a, b);
+            var result = Math.Max(a, b);
 
             //Assert
             Assert.That(result, Is.EqualTo(expectedResult));

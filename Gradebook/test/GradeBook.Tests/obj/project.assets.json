@@ -1623,6 +1623,15 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "ACM.BL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ACM.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACM.BL.dll": {}
+        }
+      },
       "GradeBook/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -5742,6 +5751,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "path": "../../ACM.BL/ACM.BL.csproj",
+      "msbuildProject": "../../ACM.BL/ACM.BL.csproj"
+    },
     "GradeBook/1.0.0": {
       "type": "project",
       "path": "../../src/GradeBook/GradeBook.csproj",
@@ -5750,6 +5764,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ACM.BL >= 1.0.0",
       "GradeBook >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -5790,6 +5805,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+            },
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj"
             }
