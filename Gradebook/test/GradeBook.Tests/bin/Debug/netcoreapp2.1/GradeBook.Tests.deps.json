@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "GradeBook.Tests/1.0.0": {
         "dependencies": {
+          "ACM.BL": "1.0.0",
           "GradeBook": "1.0.0",
           "Microsoft.NET.Test.Sdk": "15.9.0",
           "xunit": "2.4.0",
@@ -1020,6 +1021,11 @@
           "Microsoft.NET.Test.Sdk": "15.9.0"
         }
       },
+      "ACM.BL/1.0.0": {
+        "runtime": {
+          "ACM.BL.dll": {}
+        }
+      },
       "GradeBook/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.2.0",
@@ -1569,6 +1575,11 @@
       "sha512": "sha512-3eq5cGXbEJkqW9nwLuXwtxy9B5gMA8i7HW4rN63AhAvy5UvEcQbZnve23wx/oPrkyg/4CbfNhxkBezS0b1oUdQ==",
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "GradeBook/1.0.0": {
       "type": "project",

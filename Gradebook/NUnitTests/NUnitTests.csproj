@@ -13,11 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ACM.BL\ACM.BL.csproj" />
     <ProjectReference Include="..\src\GradeBook\GradeBook.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ACM\" />
   </ItemGroup>
 
 </Project>

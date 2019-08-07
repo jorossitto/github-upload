@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "NUnitTests/1.0.0": {
         "dependencies": {
+          "ACM.BL": "1.0.0",
           "GradeBook": "1.0.0",
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "NUnit3TestAdapter": "3.13.0",
@@ -1003,6 +1004,11 @@
           }
         }
       },
+      "ACM.BL/1.0.0": {
+        "runtime": {
+          "ACM.BL.dll": {}
+        }
+      },
       "GradeBook/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.2.0",
@@ -1517,6 +1523,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "GradeBook/1.0.0": {
       "type": "project",

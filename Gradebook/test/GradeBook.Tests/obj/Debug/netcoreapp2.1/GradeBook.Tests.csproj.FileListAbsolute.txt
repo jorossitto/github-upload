@@ -15,3 +15,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\
 c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.dll
 c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.pdb
 c:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csproj.CopyComplete
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\ACM.BL.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\ACM.BL.pdb
