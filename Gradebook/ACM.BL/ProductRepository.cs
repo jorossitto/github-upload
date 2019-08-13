@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class ProductRepository
+    public class ProductRepository : EntityBase
     {
         public Product Retrieve(int productId)
         {
