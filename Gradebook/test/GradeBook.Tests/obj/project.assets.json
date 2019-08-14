@@ -1625,11 +1625,23 @@
       },
       "ACM.BL/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ACM.BL.dll": {}
         },
         "runtime": {
           "bin/placeholder/ACM.BL.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
         }
       },
       "GradeBook/1.0.0": {
@@ -5755,6 +5767,11 @@
       "type": "project",
       "path": "../../ACM.BL/ACM.BL.csproj",
       "msbuildProject": "../../ACM.BL/ACM.BL.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.csproj",
+      "msbuildProject": "../../Common/Common.csproj"
     },
     "GradeBook/1.0.0": {
       "type": "project",

@@ -16,12 +16,7 @@ namespace ACM.Tests
         public void RetrieveTest()
         {
             var productRepository = new ProductRepository();
-            var expected = new Product(2)
-            {
-                CurrentPrice = 15.96M,
-                ProductDescription = "Assorted",
-                ProductName = "Sunflowers"
-            };
+            Product expected = Product.DefaultTestProduct();
 
             var actual = productRepository.Retrieve(2);
 
@@ -29,5 +24,39 @@ namespace ACM.Tests
             Assert.AreEqual(expected.ProductDescription, actual.ProductDescription);
             Assert.AreEqual(expected.ProductName, actual.ProductName);
         }
+
+        [Test]
+        public void SaveTestValid()
+        {
+            var productRepository = new ProductRepository();
+            var updatedProduct = new Product(2)
+            {
+                CurrentPrice = 18M,
+                ProductDescription = "Assorted",
+                ProductName = "Sunflowers",
+                HasChanges = true
+            };
+
+            var actual = productRepository.Save(updatedProduct);
+
+            Assert.AreEqual(true, actual);
+        }
+        [Test]
+        public void SaveTestMissingPrice()
+        {
+            var productRepository = new ProductRepository();
+            var updatedProduct = new Product(2)
+            {
+                CurrentPrice = null,
+                ProductDescription = "Assorted",
+                ProductName = "Sunflowers",
+                HasChanges = true
+            };
+
+            var actual = productRepository.Save(updatedProduct);
+
+            Assert.AreEqual(false, actual);
+        }
     }
+
 }

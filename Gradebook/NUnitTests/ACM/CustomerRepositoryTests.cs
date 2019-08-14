@@ -12,16 +12,12 @@ namespace ACM.Tests
     [TestFixture]
     public class CustomerRepositoryTests
     {
+
         [Test]
         public void RetrieveValid()
         {
             var customerRepository = new CustomerRepository();
-            var expected = new Customer(1)
-            {
-                EmailAddress = "fbaggins@hobbiton.me",
-                FirstName = "Frodo",
-                LastName = "Baggins"
-            };
+            var expected = Customer.CreateDefaultCustomer();
             var actual = customerRepository.Retrieve(1);
 
             Assert.AreEqual(expected.CustomerId, actual.CustomerId);
