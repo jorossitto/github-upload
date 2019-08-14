@@ -1591,6 +1591,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "ACM.BL": "1.0.0",
           "EntityFramework": "6.2.0",
           "Microsoft.NETCore.App": "2.1.0",
           "Moq": "4.12.0",

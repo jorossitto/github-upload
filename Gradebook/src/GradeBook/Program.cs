@@ -2,6 +2,7 @@
 using TestNinja.Fundamentals;
 using Fundamentals;
 using System.Collections.Generic;
+using ACM.BL;
 
 namespace GradeBook
 {
@@ -15,7 +16,7 @@ namespace GradeBook
 
         static void Main(string[] args)
         {
-            CreatePlayerCharacters();
+            StockAnalyzer.ReadStockData();
 
         }
 

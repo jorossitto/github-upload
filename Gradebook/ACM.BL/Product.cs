@@ -1,9 +1,5 @@
-﻿using Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Common;
 
 namespace ACM.BL
 {
@@ -34,6 +30,16 @@ namespace ACM.BL
             {
                 _productName = value;
             }
+        }
+
+        public float ListPrice { get; set; }
+
+        public float GetPrice(ICustomer customer)
+        {
+            if (customer.IsGold)
+                return ListPrice * 0.7f;
+
+            return ListPrice;
         }
 
         public string Log() => $"Product: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";

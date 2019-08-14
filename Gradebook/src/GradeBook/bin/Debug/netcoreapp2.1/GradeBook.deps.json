@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "GradeBook/1.0.0": {
         "dependencies": {
+          "ACM.BL": "1.0.0",
           "EntityFramework": "6.2.0",
           "Moq": "4.12.0",
           "Newtonsoft.Json": "12.0.2"
@@ -389,6 +390,19 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "ACM.BL/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "runtime": {
+          "ACM.BL.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {}
+        }
       }
     }
   },
@@ -691,6 +705,16 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

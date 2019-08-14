@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer : EntityBase, ILoggable
+    public class Customer : EntityBase, ILoggable, ICustomer
     {
         public Customer(): this(0) //chain calls constructors with the 0 customerId
         {
@@ -26,6 +26,7 @@ namespace ACM.BL
         public string EmailAddress { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
+        public bool IsGold { get; set; }
         public string FullName
         {
             get

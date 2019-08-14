@@ -839,6 +839,27 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "ACM.BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ACM.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACM.BL.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -3605,10 +3626,21 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "ACM.BL/1.0.0": {
+      "type": "project",
+      "path": "../../ACM.BL/ACM.BL.csproj",
+      "msbuildProject": "../../ACM.BL/ACM.BL.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.csproj",
+      "msbuildProject": "../../Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ACM.BL >= 1.0.0",
       "EntityFramework >= 6.2.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Moq >= 4.12.0",
@@ -3647,7 +3679,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

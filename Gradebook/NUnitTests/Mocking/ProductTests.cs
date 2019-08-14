@@ -1,7 +1,7 @@
 ﻿using System;
+using ACM.BL;
 using Moq;
 using NUnit.Framework;
-using TestNinja.Mocking;
 
 namespace TestNinja.UnitTests.Mocking
 {

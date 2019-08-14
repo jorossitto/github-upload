@@ -990,6 +990,7 @@
       },
       "GradeBook/1.0.0": {
         "dependencies": {
+          "ACM.BL": "1.0.0",
           "EntityFramework": "6.2.0",
           "Moq": "4.12.0",
           "Newtonsoft.Json": "12.0.2"
