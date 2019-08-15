@@ -9,15 +9,47 @@ namespace GradeBook
 
     class Program
     {
-        static DateHelper date = new DateHelper();
         static string filepath = @"C:\Users\risottj\Documents\UnitTesting\Gradebook\Pop by Largest Final.csv";
         static CountryMaker countryMaker = new CountryMaker(filepath);
         static PrintHelper printHelper = new PrintHelper();
 
         static void Main(string[] args)
         {
-            StockAnalyzer.ReadStockData();
+            mainChoice();
+        }
 
+        static void mainChoice()
+        {
+            string branch;
+
+            Console.WriteLine("Type 1 to Create a player char; 2 to Run the Grade Program, 3 to run Tick Tack Toe, " +
+                "4 to run StockAnalysis");
+            branch = Console.ReadLine();
+
+            if (branch == "1")
+            {
+                CreatePlayerCharacters();
+            }
+            else if (branch == "2")
+            {
+                RunGradeBookProgram();
+            }
+            else if (branch == "3")
+            {
+                RunTickTackToeProgram();
+            }
+            else if (branch == "4")
+            {
+                StockAnalyzer.mainMethod();
+            }
+            else if (branch == "5")
+            {
+                DateHelper.mainMethod();
+            }
+            else if (branch == "6")
+            {
+                PolygonProgram.Main();
+            }
         }
 
         private static void CreatePlayerCharacters()
@@ -62,10 +94,8 @@ namespace GradeBook
 
         private static void RunPrintXDaysProgram(int x)
         {
-            string[] daysofweek = date.GetDaysOfWeek();
+            string[] daysofweek = DateHelper.GetDaysOfWeek();
             printHelper.PrintAllOf(daysofweek, x);
         }
-
-
     }
 }

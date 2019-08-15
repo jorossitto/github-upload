@@ -7,3 +7,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\ACM.BL.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.SqlServer.xml

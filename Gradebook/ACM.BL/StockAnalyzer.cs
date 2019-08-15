@@ -10,7 +10,25 @@ namespace ACM.BL
 {
     public static class StockAnalyzer
     {
-        public static void ReadStockData()
+        public static void mainMethod()
+        {
+            string branch;
+            Console.WriteLine("Enter 1 to Read Stock Data, 2 to ConvertLocaltoSidney");
+
+            branch = Console.ReadLine();
+            if (branch == "1")
+            {
+                ReadStockData();
+            }
+            else if (branch == "2")
+            {
+                //ConvertLocalToSidney();
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void ReadStockData()
         {
             var lines = File.ReadAllLines(@"StockData.csv");
             foreach (var line in lines.Skip(1))
@@ -30,10 +48,6 @@ namespace ACM.BL
                 Console.WriteLine(tradeDate.ToLongDateString());
                 
             }
-
-            Console.ReadLine();
         }
-
-
     }
 }
