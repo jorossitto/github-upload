@@ -31,7 +31,8 @@ namespace TestNinja.Fundamentals
         public static void mainMethod()
         {
             string branch;
-            Console.WriteLine("Enter 1 to Read Stock Data, 2 to ConvertLocaltoSidney");
+            Console.WriteLine("Enter 1 to Read Stock Data, 2 to ConvertLocaltoSidney, 3 to GetAllTimezones," +
+                "4 to do DateTimeParsing, 5 to Add Time, 6 to Work With Calanders, 7 to Convert to Unix  ");
 
             branch = Console.ReadLine();
             if (branch == "1")
@@ -57,6 +58,10 @@ namespace TestNinja.Fundamentals
             else if (branch == "6")
             {
                 WorkingWithCalanders();
+            }
+            else if (branch == "7")
+            {
+                ConvertToUnix();
             }
 
             Console.ReadLine();
@@ -187,6 +192,23 @@ namespace TestNinja.Fundamentals
         public static bool IsBetween(this DateTimeOffset source, DateTimeOffset start, DateTimeOffset end)
         {
             return source > start && source < end;
+        }
+
+        public static void ConvertToUnix()
+        {
+            var timestamp = 1562335678;
+
+            var unixDateStart = new DateTime(1970, 01, 01, 00, 00, 00, DateTimeKind.Utc);
+
+            var result = DateTimeOffset.FromUnixTimeSeconds(timestamp);
+
+            Console.WriteLine(result);
+
+            var result2 = unixDateStart.AddSeconds(timestamp);
+
+            Console.WriteLine(new DateTimeOffset(result2).ToUnixTimeSeconds());
+
+            Console.WriteLine(result2);
         }
 
     }

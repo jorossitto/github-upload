@@ -1,0 +1,10 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\MyXFApp.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\App.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\Views\AboutPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\Views\ItemDetailPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\Views\ItemsPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\Views\MainPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\Views\NewItemPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\MyXFApp.csproj.CoreCompileInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\MyXFApp.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard1.3\MyXFApp.AssemblyInfo.cs

@@ -48,29 +48,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Polygon\AbstractRegularPolygon.cs" />
-    <Compile Include="Polygon\PolygonProgram.cs" />
-    <Compile Include="Polygon\Triangle.cs" />
-    <Compile Include="Polygon\Square.cs" />
-    <Compile Include="Polygon\ConcreteRegularPolygon.cs" />
+    <Compile Include="Entities\Person\Employee\Employee.cs" />
+    <Compile Include="Entities\Person\Employee\EmployeeController.cs" />
+    <Compile Include="Entities\Person\Employee\EmployeeStorage.cs" />
+    <Compile Include="Entities\Person\Employee\IEmployeeStorage.cs" />
+    <Compile Include="Entities\Person\Person.cs" />
+    <Compile Include="Sessions\Movies.cs" />
+    <Compile Include="Polygons\AbstractRegularPolygon.cs" />
+    <Compile Include="Polygons\IRegularPolygon.cs" />
+    <Compile Include="Polygons\PolygonProgram.cs" />
+    <Compile Include="Polygons\Octagon.cs" />
+    <Compile Include="Polygons\Triangle.cs" />
+    <Compile Include="Polygons\Square.cs" />
+    <Compile Include="Polygons\ConcreteRegularPolygon.cs" />
     <Compile Include="Sessions\Session.cs" />
-    <Compile Include="Speakers\ISpeakerRepository.cs" />
-    <Compile Include="Speakers\FakeSpeakerRepository.cs" />
+    <Compile Include="Entities\Person\Speakers\ISpeakerRepository.cs" />
+    <Compile Include="Entities\Person\Speakers\FakeSpeakerRepository.cs" />
     <Compile Include="Sessions\SessionBuilderContext.cs" />
-    <Compile Include="Speakers\Speaker.cs" />
-    <Compile Include="Speakers\SpeakerRepository.cs" />
+    <Compile Include="Entities\Person\Speakers\Speaker.cs" />
+    <Compile Include="Entities\Person\Speakers\SpeakerRepository.cs" />
+    <Compile Include="Entities\Person\PersonRepository.cs" />
+    <Compile Include="UsingLinq.cs" />
     <Compile Include="StockAnalyzer.cs" />
     <Compile Include="Entities\EntityBase.cs" />
     <Compile Include="Address\AddressRepository.cs" />
-    <Compile Include="Entities\Customers\ICustomer.cs" />
+    <Compile Include="Entities\Person\Customers\ICustomer.cs" />
     <Compile Include="Entities\Order\OrderRepository.cs" />
     <Compile Include="Entities\Products\ProductRepository.cs" />
-    <Compile Include="Entities\Customers\CustomerRepository.cs" />
+    <Compile Include="Entities\Person\Customers\CustomerRepository.cs" />
     <Compile Include="Entities\Order\OrderItem.cs" />
     <Compile Include="Entities\Order\Order.cs" />
     <Compile Include="Address\Address.cs" />
     <Compile Include="Entities\Products\Product.cs" />
-    <Compile Include="Entities\Customers\Customer.cs" />
+    <Compile Include="Entities\Person\Customers\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +93,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

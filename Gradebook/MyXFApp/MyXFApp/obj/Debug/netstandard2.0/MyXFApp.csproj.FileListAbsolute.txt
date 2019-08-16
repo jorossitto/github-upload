@@ -1,0 +1,16 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\bin\Debug\netstandard2.0\MyXFApp.deps.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\bin\Debug\netstandard2.0\MyXFApp.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\bin\Debug\netstandard2.0\MyXFApp.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.csproj.CoreCompileInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.AssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyXFApp\MyXFApp\obj\Debug\netstandard2.0\MyXFApp.pdb

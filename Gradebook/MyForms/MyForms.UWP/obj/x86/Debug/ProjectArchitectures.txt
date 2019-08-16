@@ -1,0 +1,1 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.UWP\MyForms.UWP.csproj;x86

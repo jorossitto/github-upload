@@ -3,6 +3,7 @@ using TestNinja.Fundamentals;
 using Fundamentals;
 using System.Collections.Generic;
 using ACM.BL;
+using ACM.BL.Entities;
 
 namespace GradeBook
 {
@@ -49,6 +50,23 @@ namespace GradeBook
             else if (branch == "6")
             {
                 PolygonProgram.Main();
+            }
+            else if (branch == "7")
+            {
+                UsingLinq.mainMethod();
+            }
+            else if (branch == "8")
+            {
+                Person.Main();
+            }
+
+            else if (branch == "9")
+            {
+                Employee.Main();
+            }
+            else if (branch == "a")
+            {
+                Movie.Main();
             }
         }
 

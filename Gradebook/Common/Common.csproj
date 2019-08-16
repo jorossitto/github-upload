@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="ILoggable.cs" />
     <Compile Include="LoggingService.cs" />
-    <Compile Include="StringHandler.cs" />
+    <Compile Include="PrintHelper.cs" />
+    <Compile Include="StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

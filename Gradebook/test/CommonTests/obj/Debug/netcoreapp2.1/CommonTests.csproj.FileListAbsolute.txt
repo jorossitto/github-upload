@@ -20,3 +20,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.dll.config

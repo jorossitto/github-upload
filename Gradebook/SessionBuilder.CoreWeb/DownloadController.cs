@@ -26,16 +26,16 @@ namespace SessionBuilder.CoreWeb
             var speaker = speakerRepository.Get(id);
             var csv = "Title,Speaker,Length,ScheduledAt" + Environment.NewLine;
 
+            var offset = TimeSpan.FromHours(-11);
+
+            foreach(var session in speaker.Sessions)
+            {
+                csv += $"{session.Title}, {speaker.Name}, {session.Length}, " +
+                    $"{session.ScheduledAt.ToOffset(offset).ToString("o")}{Environment.NewLine}";
+            }
+
             return File(Encoding.UTF8.GetBytes(csv), "text/csv", $"sessions for {speaker.Name}.csv");
 
         }
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
     }
 }

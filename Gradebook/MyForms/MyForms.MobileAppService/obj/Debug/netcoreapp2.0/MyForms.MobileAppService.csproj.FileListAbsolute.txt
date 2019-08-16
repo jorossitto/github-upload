@@ -1,0 +1,11 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\bin\Debug\netcoreapp2.0\MyForms.MobileAppService.deps.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\bin\Debug\netcoreapp2.0\MyForms.MobileAppService.runtimeconfig.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\bin\Debug\netcoreapp2.0\MyForms.MobileAppService.runtimeconfig.dev.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\bin\Debug\netcoreapp2.0\MyForms.MobileAppService.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\bin\Debug\netcoreapp2.0\MyForms.MobileAppService.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.csproj.CoreCompileInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.AssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MyForms\MyForms.MobileAppService\obj\Debug\netcoreapp2.0\MyForms.MobileAppService.pdb
