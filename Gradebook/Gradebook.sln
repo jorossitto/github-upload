@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AEC6EB74-4406-47BF-9B92-0BFFDFBA4BA4}"
+	ProjectSection(SolutionItems) = preProject
+		..\fuel.csv = ..\fuel.csv
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook", "src\GradeBook\GradeBook.csproj", "{5E0A987E-2B5C-4BA5-A73A-BB0A3BA096F8}"
 EndProject

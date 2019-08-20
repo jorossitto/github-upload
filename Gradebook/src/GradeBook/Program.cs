@@ -68,6 +68,10 @@ namespace GradeBook
             {
                 Movie.Main();
             }
+            else if (branch == "b")
+            {
+                Car.Main();
+            }
         }
 
         private static void CreatePlayerCharacters()

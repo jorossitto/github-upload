@@ -53,6 +53,7 @@
     <Compile Include="Entities\Person\Employee\EmployeeStorage.cs" />
     <Compile Include="Entities\Person\Employee\IEmployeeStorage.cs" />
     <Compile Include="Entities\Person\Person.cs" />
+    <Compile Include="Entities\Products\Car.cs" />
     <Compile Include="Sessions\Movies.cs" />
     <Compile Include="Polygons\AbstractRegularPolygon.cs" />
     <Compile Include="Polygons\IRegularPolygon.cs" />

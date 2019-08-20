@@ -34,6 +34,15 @@ namespace ACM.BL
             Console.ReadLine();
         }
 
+        public static IEnumerable<double> Random()
+        {
+            var random = new Random();
+            while(true)
+            {
+                yield return random.NextDouble();
+            }
+        }
+
         private static void ShowLargeFilesWithoutLinq(string path)
         {
             DirectoryInfo directory = new DirectoryInfo(path);

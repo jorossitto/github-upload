@@ -78,6 +78,23 @@ namespace ACM.BL
                 {
                     Console.WriteLine(enumerator.Current.Title);
                 }
+                PrintHelper.LineBreak();
+                query = from movie in movies
+                        where movie.Year > 200
+                        orderby movie.Rating descending
+                        select movie;
+
+                foreach (var movie in query)
+                {
+                    Console.WriteLine(movie.Title);
+                }
+                PrintHelper.LineBreak();
+                var numbers = UsingLinq.Random().Where(n => n > .5).Take(10);
+                foreach(var number in numbers)
+                {
+                    Console.WriteLine(number);
+                }
+                PrintHelper.LineBreak();
             }
             catch(Exception ex)
             {

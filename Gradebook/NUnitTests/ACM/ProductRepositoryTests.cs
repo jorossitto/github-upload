@@ -22,7 +22,7 @@ namespace ACM.Tests
 
             Assert.AreEqual(expected.CurrentPrice, actual.CurrentPrice);
             Assert.AreEqual(expected.ProductDescription, actual.ProductDescription);
-            Assert.AreEqual(expected.ProductName, actual.ProductName);
+            Assert.AreEqual(expected.Name, actual.Name);
         }
 
         [Test]
@@ -33,7 +33,7 @@ namespace ACM.Tests
             {
                 CurrentPrice = 18M,
                 ProductDescription = "Assorted",
-                ProductName = "Sunflowers",
+                Name = "Sunflowers",
                 HasChanges = true
             };
 
@@ -49,7 +49,7 @@ namespace ACM.Tests
             {
                 CurrentPrice = null,
                 ProductDescription = "Assorted",
-                ProductName = "Sunflowers",
+                Name = "Sunflowers",
                 HasChanges = true
             };
 

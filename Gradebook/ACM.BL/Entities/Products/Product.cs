@@ -19,16 +19,16 @@ namespace ACM.BL
         public string ProductDescription { get; set; }
         public int ProductId { get; private set; }
 
-        private string _productName;
-        public string ProductName
+        private string _name;
+        public string Name
         {
             get
             {
-                return _productName.InsertSpaces();
+                return _name;//.InsertSpaces();
             }
             set
             {
-                _productName = value;
+                _name = value;
             }
         }
 
@@ -42,14 +42,14 @@ namespace ACM.BL
             return ListPrice;
         }
 
-        public string Log() => $"Product: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
-        public override string ToString() => ProductName;
+        public string Log() => $"Product: {Name} Detail: {ProductDescription} Status: {EntityState.ToString()}";
+        public override string ToString() => Name;
 
         public override bool Validate()
         {
             var isValid = true;
 
-            if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(Name)) isValid = false;
             if (CurrentPrice == null) isValid = false;
 
             return isValid;
@@ -59,7 +59,7 @@ namespace ACM.BL
         {
             return new Product(2)
             {
-                ProductName = "Sunflowers",
+                Name = "Sunflowers",
                 ProductDescription = "Assorted",
                 CurrentPrice = 15.96M
             };
