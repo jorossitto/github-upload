@@ -4,6 +4,8 @@ using Fundamentals;
 using System.Collections.Generic;
 using ACM.BL;
 using ACM.BL.Entities;
+using Common;
+using System.Windows;
 
 namespace GradeBook
 {
@@ -16,7 +18,9 @@ namespace GradeBook
 
         static void Main(string[] args)
         {
-            mainChoice();
+            //mainChoice();
+            //var window = new PedometerWin();
+            //window.PedometerWin();
         }
 
         static void mainChoice()

@@ -27,9 +27,19 @@ namespace ACM.BL
             return customer;
         }
 
+        public void Add(Customer customer)
+        {
+
+        }
+
         public bool Save()
         {
             return true;
+        }
+
+        internal void Update()
+        {
+            throw new NotImplementedException();
         }
     }
 }

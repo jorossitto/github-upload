@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Fundamentals
+namespace Common
 {
     public class PrintHelper
     {

@@ -15,3 +15,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\System.Windows.Forms.VisualStudio.15.0.dll
