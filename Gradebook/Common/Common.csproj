@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmailLibrary.cs" />
-    <Compile Include="ILoggable.cs" />
-    <Compile Include="LoggingService.cs" />
+    <Compile Include="Logging\ILoggable.cs" />
+    <Compile Include="Logging\LoggingService.cs" />
+    <Compile Include="Math\MathExtentions.cs" />
+    <Compile Include="Math\Statistics.cs" />
     <Compile Include="PrintHelper.cs" />
     <Compile Include="StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common;
 
 namespace ACM.BL
 {
@@ -19,8 +20,8 @@ namespace ACM.BL
 
         private void CalculateBTN_Click(object sender, EventArgs e)
         {
-            var customer = new Customer();
-            var result = customer.CalculatePercentOfGoalSteps(this.StepGoalTxt.Text,
+            //var customer = new Customer();
+            var result = MathExtentions.CalculatePercentOfGoalSteps(this.StepGoalTxt.Text,
                                                                 this.TotalStepsTxt.Text);
 
             ResultLabel.Text = $"You reached {result}% of your goal!";

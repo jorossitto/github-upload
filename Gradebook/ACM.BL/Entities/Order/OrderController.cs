@@ -36,11 +36,13 @@ namespace ACM.BL
 
             if (emailReceipt)
             {
-                customer.ValidateEmail();
-                customerRepository.Update();
+                var result = customer.ValidateEmail();
+                if(result.Success == true)
+                {
+                    customerRepository.Update();
+                    emailLibrary.SendEmail(customer.EmailAddress, "Here is your reciept");
+                }
 
-                
-                emailLibrary.SendEmail(customer.EmailAddress, "Here is your reciept");
             }
         }
         public override bool Validate()

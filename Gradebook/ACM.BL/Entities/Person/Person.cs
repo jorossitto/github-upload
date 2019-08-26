@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 
 namespace ACM.BL
@@ -95,6 +96,41 @@ namespace ACM.BL
 
             return people;
         }
+        public OperationResult ValidateEmail()
+        {
+            var operationResult = new OperationResult();
 
+            if (string.IsNullOrWhiteSpace(this.EmailAddress))
+            {
+                operationResult.Success = false;
+                operationResult.AddMessage("Email address is null");
+                
+            }
+
+            if(operationResult.Success == true)
+            {
+                var isValidFormat = true;
+                //Code here validates the format using Regular Expressions
+                if (!isValidFormat)
+                {
+                    operationResult.Success = false;
+                    operationResult.AddMessage("Email address not in a valid format");
+                    
+                }
+
+                var isRealDomain = true;
+                //Code here confirms whether domain exists
+                if (!isRealDomain)
+                {
+                    operationResult.Success = false;
+                    operationResult.AddMessage("Email address does not include a valid domain");
+                    
+                }
+            }
+
+            return operationResult;
+
+
+        }
     }
 }
