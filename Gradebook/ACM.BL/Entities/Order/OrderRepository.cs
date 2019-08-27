@@ -26,7 +26,7 @@ namespace ACM.BL
 
         internal void Add(Order order)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

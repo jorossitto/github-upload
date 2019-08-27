@@ -8,9 +8,23 @@ namespace Common
 {
     public class EmailLibrary
     {
-        public void SendEmail(string emailAddress, string v)
+        /// <summary>
+        /// If a valid email address is provided, send the message
+        /// </summary>
+        /// <param name="emailAddress"></param>
+        /// <param name="message"></param>
+        public void SendEmail(string emailAddress, string message)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //send an email
+            }
+            catch (InvalidOperationException exception)
+            {
+
+                //log
+                throw;
+            }
         }
     }
 }

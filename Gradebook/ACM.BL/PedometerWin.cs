@@ -20,11 +20,22 @@ namespace ACM.BL
 
         private void CalculateBTN_Click(object sender, EventArgs e)
         {
-            //var customer = new Customer();
-            var result = MathExtentions.CalculatePercentOfGoalSteps(this.StepGoalTxt.Text,
-                                                                this.TotalStepsTxt.Text);
+            var customer = new Customer();
+            try
+            {
+                var result = 
+                    MathExtentions.CalculatePercentOfGoalSteps(this.StepGoalTxt.Text,this.TotalStepsTxt.Text);
+                ResultLabel.Text = $"You reached {result}% of your goal!";
+            }
+            catch (ArgumentException exception)
+            {
+                MessageBox.Show("Your entry was not valid: " + exception.Message);
+                ResultLabel.Text = string.Empty;
+            }
 
-            ResultLabel.Text = $"You reached {result}% of your goal!";
+
+
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

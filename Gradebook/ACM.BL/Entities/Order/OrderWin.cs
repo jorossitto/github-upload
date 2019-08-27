@@ -25,6 +25,12 @@ namespace ACM.BL
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                button.Text = "Processing ...";
+            }
+            
             PlaceOrder();
         }
 
@@ -36,14 +42,22 @@ namespace ACM.BL
             var order = new Order();
             //Todo: Populate Order Instance from on screen forms - Not Yet Implemented
 
+            var payment = new Payment(); //Todo populate from ui
+
             var allowSplitOrders = true; //Todo Pull from ui
 
             var emailReceipt = true; //Todo pull from ui
 
-            var payment = new Payment(); //Todo populate from ui
-
             var orderController = new OrderController();
-            orderController.PlaceOrder(customer, order, payment, allowSplitOrders, emailReceipt);
+            try
+            {
+                orderController.PlaceOrder(customer, order, payment, allowSplitOrders, emailReceipt);
+            }
+            catch(ArgumentNullException exception)
+            {
+                
+            }
+            
         }
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="Entities\Payment\Payment.cs" />
     <Compile Include="Entities\Payment\PaymentRepository.cs" />
     <Compile Include="Entities\Inventory\Inventory.cs" />
+    <Compile Include="Entities\Payment\PaymentTypeOption.cs" />
     <Compile Include="Entities\Person\Employee\Employee.cs" />
     <Compile Include="Entities\Person\Employee\EmployeeController.cs" />
     <Compile Include="Entities\Person\Employee\EmployeeStorage.cs" />

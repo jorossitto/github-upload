@@ -11,9 +11,10 @@ namespace ACM.BL
         public CustomerRepository()
         {
             addressRepository = new AddressRepository();
+            addressRepository.RetrieveByCustomerId(1);
         }
 
-        private AddressRepository addressRepository { get; set; }
+        public AddressRepository addressRepository { get; private set; }
         public Customer Retrieve(int customerId)
         {
             Customer customer =  new Customer(customerId);
@@ -39,7 +40,7 @@ namespace ACM.BL
 
         internal void Update()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

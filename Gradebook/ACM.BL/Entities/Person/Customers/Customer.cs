@@ -43,9 +43,13 @@ namespace ACM.BL
             };
         }
 
-        internal void ValidateEmail()
+        public static CustomerRepository CreateDefaultCustomerRepository()
         {
-            throw new NotImplementedException();
+            return new CustomerRepository()
+            {
+            };
         }
+
+
     }
 }

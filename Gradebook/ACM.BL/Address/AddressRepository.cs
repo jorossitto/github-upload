@@ -8,7 +8,7 @@ namespace ACM.BL
 {
     public class AddressRepository
     {
-        public Address Retrieve(int addressId)
+        public static Address Retrieve(int addressId)
         {
             Address address = new Address(addressId);
             if (addressId == 1)

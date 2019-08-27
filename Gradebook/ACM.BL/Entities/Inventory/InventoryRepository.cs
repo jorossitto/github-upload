@@ -17,7 +17,7 @@ namespace ACM.BL
 
         internal void OrderItems(Order order, bool allowSplitOrders)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
