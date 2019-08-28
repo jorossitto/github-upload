@@ -12,6 +12,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramewor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.OrderWin.resources
-C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.PedometerWin.resources
-C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.GenerateResource.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Newtonsoft.Json.xml

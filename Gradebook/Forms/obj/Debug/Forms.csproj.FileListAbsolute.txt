@@ -15,3 +15,10 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.Co
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.MainWindow.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.OrderWin.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PedometerWin.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PeopleViewer.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.RepositoryViewer.resources

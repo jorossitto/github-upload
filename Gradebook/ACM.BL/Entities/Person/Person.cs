@@ -76,7 +76,7 @@ namespace ACM.BL
             //}
         }
 
-        private static IEnumerable<Person> CreateTestPeopleArray()
+        public static IEnumerable<Person> CreateTestPeopleArray()
         {
             IEnumerable<Person> people = new Person[]
             {

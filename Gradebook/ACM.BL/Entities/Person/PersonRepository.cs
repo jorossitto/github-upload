@@ -9,14 +9,21 @@ namespace ACM.BL
 {
     public class PersonRepository
     {
-        Person[] tempPerson = new Person[1];
-        public Person[] GetPeople()
+        public PersonRepository()
         {
-            return tempPerson;
+        }
+
+        //Person[] tempPerson = new Person[1];
+
+        public IEnumerable<Person> GetPeople()
+        {
+            var people = Person.CreateTestPeopleArray();
+            return people;
         }
         public Person GetPerson(int id)
         {
-            return tempPerson[0];
+            var people = Person.CreateTestPeopleArray().ToArray();
+            return people[id];
         }
 
     }

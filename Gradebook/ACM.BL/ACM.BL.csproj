@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -61,19 +64,9 @@
     <Compile Include="Entities\Person\Employee\EmployeeStorage.cs" />
     <Compile Include="Entities\Person\Employee\IEmployeeStorage.cs" />
     <Compile Include="Entities\Person\Person.cs" />
+    <Compile Include="Entities\Person\IPersonRepository.cs" />
     <Compile Include="Entities\Products\Car.cs" />
-    <Compile Include="Entities\Order\OrderWin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Entities\Order\OrderWin.Designer.cs">
-      <DependentUpon>OrderWin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PedometerWin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PedometerWin.Designer.cs">
-      <DependentUpon>PedometerWin.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Repositories\CsvRepository.cs" />
     <Compile Include="Sessions\Movies.cs" />
     <Compile Include="Polygons\AbstractRegularPolygon.cs" />
     <Compile Include="Polygons\IRegularPolygon.cs" />
@@ -89,6 +82,8 @@
     <Compile Include="Entities\Person\Speakers\Speaker.cs" />
     <Compile Include="Entities\Person\Speakers\SpeakerRepository.cs" />
     <Compile Include="Entities\Person\PersonRepository.cs" />
+    <Compile Include="Repositories\ServiceRepository.cs" />
+    <Compile Include="Worker.cs" />
     <Compile Include="UsingLinq.cs" />
     <Compile Include="StockAnalyzer.cs" />
     <Compile Include="Entities\EntityBase.cs" />
@@ -113,14 +108,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Entities\Order\OrderWin.resx">
-      <DependentUpon>OrderWin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PedometerWin.resx">
-      <DependentUpon>PedometerWin.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
