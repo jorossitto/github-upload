@@ -83,6 +83,8 @@
     <Compile Include="Entities\Person\Speakers\SpeakerRepository.cs" />
     <Compile Include="Entities\Person\PersonRepository.cs" />
     <Compile Include="Repositories\ServiceRepository.cs" />
+    <Compile Include="ProcessData.cs" />
+    <Compile Include="WorkPerformedEventArgs.cs" />
     <Compile Include="Worker.cs" />
     <Compile Include="UsingLinq.cs" />
     <Compile Include="StockAnalyzer.cs" />

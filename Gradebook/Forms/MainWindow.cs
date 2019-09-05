@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ACM.BL
 {
+
+
     public partial class MainWindow : Form
     {
-        WorkPerformedHandler del1 = new WorkPerformedHandler(WorkPerformed1);
-        WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerformed2);
-        WorkPerformedHandler del3 = new WorkPerformedHandler(WorkPerformed3);
-
-
-
         public MainWindow()
         {
             InitializeComponent();
 
-            del1(5, WorkType.Golf);
-            del2(10, WorkType.GenerateReports);
-
-            del1 += del2 + del3;
-            
-            
         }
 
         private void PeopleMenuBtn_Click(object sender, EventArgs e)
@@ -43,29 +33,34 @@ namespace ACM.BL
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Clicked Me");
-            int finalhours  = del1(10, WorkType.GenerateReports);
-            Console.WriteLine(finalhours);
-        }
-        static void DoWork(WorkPerformedHandler del)
-        {
-            del(5, WorkType.GoToMeetings);   
-        }
-        static int WorkPerformed1(int hours, WorkType workType)
-        {
-            Console.WriteLine($"WorkPerformed1 called: {hours}, {workType}");
-            return hours + 1;
-        }
-        static int WorkPerformed2(int hours, WorkType workType)
-        {
-            Console.WriteLine($"WorkPerformed2 called: {hours}, {workType}");
-            return hours + 2;
+            AssignWork();
+
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate multiplyDel = (x, y) => x * y;
+            var data = new ProcessData();
+            data.Process(2, 3, addDel);
+
+            Action<int, int> myAction = (x, y) => Console.WriteLine(x+y);
+            data.ProcessAction(2, 3, myAction);
+
         }
 
-        static int WorkPerformed3(int hours, WorkType workType)
+        private void AssignWork()
         {
-            Console.WriteLine($"WorkPerformed3 called: {hours}, {workType}");
-            return hours + 3;
+            var worker = new Worker();
+            worker.WorkPerformed += Worker_WorkPerformed;
+            worker.WorkCompleted += Worker_WorkCompleted;
+            worker.DoWork(8, WorkType.GenerateReports);
+        }
+
+        private void Worker_WorkPerformed(object sender, WorkPerfromedEventArgs e)
+        {
+            Console.WriteLine("Hours Worked: " + e.Hours + " " + e.WorkType);
+        }
+
+        private void Worker_WorkCompleted(object sender, EventArgs e)
+        {
+            Console.WriteLine("Worker is done");
         }
     }
 }

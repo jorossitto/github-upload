@@ -15,17 +15,17 @@ namespace ACM.BL
         GenerateReports
     }
 
-    public delegate int WorkPerformedHandler(int hours, WorkType workType);
 
     public class Worker
     {
-        public event WorkPerformedHandler WorkPerformed;
+        public event EventHandler<WorkPerfromedEventArgs> WorkPerformed;
         public event EventHandler WorkCompleted;
 
         public void DoWork(int hours, WorkType workType)
         {
             for(int i = 0; i < hours; i ++)
             {
+                System.Threading.Thread.Sleep(1000);
                 OnWorkPerformed(i + 1, workType);
                 
             }
@@ -37,7 +37,7 @@ namespace ACM.BL
         protected virtual void OnWorkPerformed(int hours, WorkType workType)
         {
             //WorkPerformed?.Invoke(hours, workType);
-            (WorkPerformed as WorkPerformedHandler)?.Invoke(hours, workType);
+            WorkPerformed?.Invoke(this, new WorkPerfromedEventArgs(hours, workType));
         }
 
         protected virtual void OnWorkCompleted()
