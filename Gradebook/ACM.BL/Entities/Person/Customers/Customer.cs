@@ -10,7 +10,6 @@ namespace ACM.BL
     public class Customer : Person, ILoggable, ICustomer
     {
         public List<Address> AddressList { get; set; }
-        public int CustomerId { get; private set; }
         public int CustomerType { get; set; }
 
         public bool IsGold { get; set; }
@@ -22,13 +21,13 @@ namespace ACM.BL
 
         public Customer(int customerId)
         {
-            CustomerId = customerId;
+            Id = customerId;
             AddressList = new List<Address>();
         }
 
 
 
-        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
+        public string Log() => $"{Id}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
         
 
 

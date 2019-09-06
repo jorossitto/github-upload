@@ -22,3 +22,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.OrderWin
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PedometerWin.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PeopleViewer.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.RepositoryViewer.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.JobsForm.resources

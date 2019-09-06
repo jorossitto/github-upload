@@ -12,17 +12,17 @@ namespace ACM.BL
 {
     public class CsvRepository : IPersonRepository
     {
-        string path;
-        public CsvRepository()
+        string Path;
+        public CsvRepository(string path = @"StockData.csv")
         {
-            var filename = @"StockData.csv";
+            var Path = path;
         }
         public IEnumerable<Person> GetPeople()
         {
             var people = new List<Person>();
-            if(File.Exists(path))
+            if(File.Exists(Path))
             {
-                using (var reader = new StreamReader(path))
+                using (var reader = new StreamReader(Path))
                 {
                     string line;
                     while((line = reader.ReadLine()) != null)

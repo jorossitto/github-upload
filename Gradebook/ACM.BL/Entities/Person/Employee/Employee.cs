@@ -7,6 +7,8 @@ namespace ACM.BL.Entities
 { 
     public class Employee : Person
     {
+        public IEnumerable<Job> _JobList { get; set; }
+
         public new static void Main()
         {
             string branch;
@@ -87,6 +89,29 @@ namespace ACM.BL.Entities
 
             return employee;
         }
+
+        /// <summary>
+        /// Makes (amount) of default customers
+        /// </summary>
+        /// <param name="amount"></param>
+        /// <returns></returns>
+        public static IEnumerable<Employee> MakeDefaultCustomers(int amount)
+        {
+            List<Employee> employees = new List<Employee>();
+
+            for (int i = 0; i < amount; i++)
+            {
+                Employee employee = new Employee();
+                employee.EmailAddress = i + "@testEmail.com";
+                employee.FirstName = "FirstName" + i;
+                employee.LastName = "LastName" + i;
+                employee._JobList = Job.MakeDefaultJobs(i);
+                employees.Add(employee);
+            }
+            return employees;
+        }
+
+
     }
 
 }

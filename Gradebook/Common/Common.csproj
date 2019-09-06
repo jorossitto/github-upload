@@ -48,7 +48,8 @@
     <Compile Include="Math\MathExtentions.cs" />
     <Compile Include="Math\Statistics.cs" />
     <Compile Include="PrintHelper.cs" />
-    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Extentions\DateTimeExtensions.cs" />
+    <Compile Include="Extentions\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

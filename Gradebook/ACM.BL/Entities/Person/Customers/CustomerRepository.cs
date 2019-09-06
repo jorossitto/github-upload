@@ -27,6 +27,26 @@ namespace ACM.BL
             }
             return customer;
         }
+        /// <summary>
+        /// Makes (amount) of default customers
+        /// </summary>
+        /// <param name="amount"></param>
+        /// <returns></returns>
+        public IEnumerable<Customer> MakeDefaultCustomers(int amount)
+        {
+           List<Customer> customers = new List<Customer>();
+
+            for (int i = 0; i < amount; i++)
+            {
+                Customer customer = new Customer(i);
+                customer.EmailAddress = i + "@testEmail.com";
+                customer.FirstName = "FirstName" + i;
+                customer.LastName = "LastName" + i;
+                customer.AddressList = addressRepository.RetrieveByCustomerId(i).ToList();
+                customers.Add(customer);
+            }
+            return customers;
+        }
 
         public void Add(Customer customer)
         {

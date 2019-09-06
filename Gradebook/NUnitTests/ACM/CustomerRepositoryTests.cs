@@ -20,7 +20,7 @@ namespace ACM.Tests
             var expected = Customer.CreateDefaultCustomer();
             var actual = customerRepository.Retrieve(1);
 
-            Assert.AreEqual(expected.CustomerId, actual.CustomerId);
+            Assert.AreEqual(expected.Id, actual.Id);
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);
             Assert.AreEqual(expected.FirstName, actual.FirstName);
             Assert.AreEqual(expected.LastName, actual.LastName);
@@ -61,7 +61,7 @@ namespace ACM.Tests
             };
 
             var actual = customerRepository.Retrieve(1);
-            Assert.AreEqual(expected.CustomerId, actual.CustomerId);
+            Assert.AreEqual(expected.Id, actual.Id);
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);
             Assert.AreEqual(expected.FirstName, actual.FirstName);
             Assert.AreEqual(expected.LastName, actual.LastName);

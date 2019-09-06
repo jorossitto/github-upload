@@ -5,7 +5,7 @@ namespace ACM.BL
     public interface ICustomer
     {
          List<Address> AddressList { get; set; }
-         int CustomerId { get; }
+         int Id { get; }
          int CustomerType { get; set; }
          string EmailAddress { get; set; }
          string LastName { get; set; }
