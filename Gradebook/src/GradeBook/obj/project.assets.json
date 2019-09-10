@@ -225,7 +225,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Moq/4.12.0": {
+      "Moq/4.13.0": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.4.0",
@@ -1261,10 +1261,10 @@
         "version.txt"
       ]
     },
-    "Moq/4.12.0": {
-      "sha512": "ZppsWLXxVNhOKQIBUejZ2VVmo345WB0YJ6AMA1VuMNplZLTD8mtTxH2bAzQ38aowXpaqPiYt+nhkGroIFFxX9A==",
+    "Moq/4.13.0": {
+      "sha512": "htNcWChBOSLynXM3b4ZZecwbF4Li/sAxpVwmPO96hhP3vssjKHJyMm6KUNKjXcGs1FIZD5gOrBk62s9q8K7AuQ==",
       "type": "package",
-      "path": "moq/4.12.0",
+      "path": "moq/4.13.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1272,7 +1272,7 @@
         "lib/net45/Moq.xml",
         "lib/netstandard2.0/Moq.dll",
         "lib/netstandard2.0/Moq.xml",
-        "moq.4.12.0.nupkg.sha512",
+        "moq.4.13.0.nupkg.sha512",
         "moq.nuspec"
       ]
     },
@@ -3643,7 +3643,7 @@
       "ACM.BL >= 1.0.0",
       "EntityFramework >= 6.2.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Moq >= 4.12.0",
+      "Moq >= 4.13.0",
       "Newtonsoft.Json >= 12.0.2"
     ]
   },
@@ -3706,7 +3706,7 @@
           },
           "Moq": {
             "target": "Package",
-            "version": "[4.12.0, )"
+            "version": "[4.13.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

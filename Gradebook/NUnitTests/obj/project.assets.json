@@ -557,7 +557,7 @@
           }
         }
       },
-      "Moq/4.12.0": {
+      "Moq/4.13.0": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.4.0",
@@ -609,7 +609,7 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/3.14.0": {
+      "NUnit3TestAdapter/3.15.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
@@ -1594,7 +1594,7 @@
           "ACM.BL": "1.0.0",
           "EntityFramework": "6.2.0",
           "Microsoft.NETCore.App": "2.1.0",
-          "Moq": "4.12.0",
+          "Moq": "4.13.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
@@ -2357,10 +2357,10 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moq/4.12.0": {
-      "sha512": "ZppsWLXxVNhOKQIBUejZ2VVmo345WB0YJ6AMA1VuMNplZLTD8mtTxH2bAzQ38aowXpaqPiYt+nhkGroIFFxX9A==",
+    "Moq/4.13.0": {
+      "sha512": "htNcWChBOSLynXM3b4ZZecwbF4Li/sAxpVwmPO96hhP3vssjKHJyMm6KUNKjXcGs1FIZD5gOrBk62s9q8K7AuQ==",
       "type": "package",
-      "path": "moq/4.12.0",
+      "path": "moq/4.13.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2368,7 +2368,7 @@
         "lib/net45/Moq.xml",
         "lib/netstandard2.0/Moq.dll",
         "lib/netstandard2.0/Moq.xml",
-        "moq.4.12.0.nupkg.sha512",
+        "moq.4.13.0.nupkg.sha512",
         "moq.nuspec"
       ]
     },
@@ -2560,10 +2560,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/3.14.0": {
-      "sha512": "rtwdIVQOvEcDd+EYNG7dStlQEXfevzLBonLYD3mGMuBubBXx+fLYeAkhocKmTxPtZVnLUjuCOPoP3pUHBMUw8A==",
+    "NUnit3TestAdapter/3.15.1": {
+      "sha512": "gqy0llGjhJYq9ebFvtbmBcF/MY8z5kcTIxYs+eXwp2d4Ntha8pSPxUzryvBm7H46VbWI6FS5/XNbxwiQpe88vQ==",
       "type": "package",
-      "path": "nunit3testadapter/3.14.0",
+      "path": "nunit3testadapter/3.15.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2583,7 +2583,7 @@
         "build/netcoreapp2.0/NUnit3TestAdapter.props",
         "build/netcoreapp2.0/nunit.engine.api.dll",
         "build/netcoreapp2.0/nunit.engine.dll",
-        "nunit3testadapter.3.14.0.nupkg.sha512",
+        "nunit3testadapter.3.15.1.nupkg.sha512",
         "nunit3testadapter.nuspec"
       ]
     },
@@ -5637,7 +5637,7 @@
       "GradeBook >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "NUnit3TestAdapter >= 3.14.0",
+      "NUnit3TestAdapter >= 3.15.1",
       "nunit >= 3.12.0"
     ]
   },
@@ -5703,7 +5703,7 @@
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[3.14.0, )"
+            "version": "[3.15.1, )"
           },
           "nunit": {
             "target": "Package",

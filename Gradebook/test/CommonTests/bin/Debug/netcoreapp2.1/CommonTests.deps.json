@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a09a7f060fe1221cd9bce006bc441a969695b865"
+    "signature": "4b8ee43136a4ebcf36680c29a060a51e83eb1bbe"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,7 @@
           "Common": "1.0.0",
           "GradeBook": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
-          "NUnit3TestAdapter": "3.14.0",
+          "NUnit3TestAdapter": "3.15.1",
           "NUnit": "3.12.0"
         },
         "runtime": {
@@ -366,15 +366,15 @@
           }
         }
       },
-      "Moq/4.12.0": {
+      "Moq/4.13.0": {
         "dependencies": {
           "Castle.Core": "4.4.0",
           "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/Moq.dll": {
-            "assemblyVersion": "4.12.0.0",
-            "fileVersion": "4.12.0.0"
+            "assemblyVersion": "4.13.0.0",
+            "fileVersion": "4.13.0.0"
           }
         }
       },
@@ -394,7 +394,7 @@
           }
         }
       },
-      "NUnit3TestAdapter/3.14.0": {
+      "NUnit3TestAdapter/3.15.1": {
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
           "System.ComponentModel.EventBasedAsync": "4.3.0",
@@ -992,7 +992,7 @@
         "dependencies": {
           "ACM.BL": "1.0.0",
           "EntityFramework": "6.2.0",
-          "Moq": "4.12.0",
+          "Moq": "4.13.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
@@ -1070,12 +1070,12 @@
       "path": "microsoft.win32.registry/4.3.0",
       "hashPath": "microsoft.win32.registry.4.3.0.nupkg.sha512"
     },
-    "Moq/4.12.0": {
+    "Moq/4.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZppsWLXxVNhOKQIBUejZ2VVmo345WB0YJ6AMA1VuMNplZLTD8mtTxH2bAzQ38aowXpaqPiYt+nhkGroIFFxX9A==",
-      "path": "moq/4.12.0",
-      "hashPath": "moq.4.12.0.nupkg.sha512"
+      "sha512": "sha512-htNcWChBOSLynXM3b4ZZecwbF4Li/sAxpVwmPO96hhP3vssjKHJyMm6KUNKjXcGs1FIZD5gOrBk62s9q8K7AuQ==",
+      "path": "moq/4.13.0",
+      "hashPath": "moq.4.13.0.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.2": {
       "type": "package",
@@ -1091,12 +1091,12 @@
       "path": "nunit/3.12.0",
       "hashPath": "nunit.3.12.0.nupkg.sha512"
     },
-    "NUnit3TestAdapter/3.14.0": {
+    "NUnit3TestAdapter/3.15.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rtwdIVQOvEcDd+EYNG7dStlQEXfevzLBonLYD3mGMuBubBXx+fLYeAkhocKmTxPtZVnLUjuCOPoP3pUHBMUw8A==",
-      "path": "nunit3testadapter/3.14.0",
-      "hashPath": "nunit3testadapter.3.14.0.nupkg.sha512"
+      "sha512": "sha512-gqy0llGjhJYq9ebFvtbmBcF/MY8z5kcTIxYs+eXwp2d4Ntha8pSPxUzryvBm7H46VbWI6FS5/XNbxwiQpe88vQ==",
+      "path": "nunit3testadapter/3.15.1",
+      "hashPath": "nunit3testadapter.3.15.1.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",
