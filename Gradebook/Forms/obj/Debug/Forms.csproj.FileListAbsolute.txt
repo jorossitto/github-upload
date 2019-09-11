@@ -23,3 +23,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.Pedomete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PeopleViewer.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.RepositoryViewer.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.JobsForm.resources
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.exe.config

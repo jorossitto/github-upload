@@ -42,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extentions\InternalClassExtensions.cs" />
+    <Compile Include="InternalClasses.cs" />
+    <Compile Include="Extentions\InstrumentationExtentions.cs" />
+    <Compile Include="Extentions\LegacyExtensions.cs" />
     <Compile Include="Extentions\TypeExtensions.cs" />
     <Compile Include="Extentions\ObjectExtensions.cs" />
+    <Compile Include="Instrumentation.cs" />
     <Compile Include="OperationResult.cs" />
     <Compile Include="EmailLibrary.cs" />
     <Compile Include="Logging\ILoggable.cs" />

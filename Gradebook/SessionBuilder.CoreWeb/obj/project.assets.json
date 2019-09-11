@@ -1154,7 +1154,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.2.0": {
+      "Microsoft.AspNetCore.Razor.Design/2.1.1": {
         "type": "package",
         "build": {
           "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
@@ -5454,10 +5454,10 @@
         "microsoft.aspnetcore.razor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Razor.Design/2.2.0": {
-      "sha512": "VLWK+ZtMMNukY6XjxYHc7mz33vkquoEzQJHm/LCF5REVxIaexLr+UTImljRRJBdUDJluDAQwU+59IX0rFDfURA==",
+    "Microsoft.AspNetCore.Razor.Design/2.1.1": {
+      "sha512": "1XHObHLx6A0/57ZmLG9gfKMO/Z/gQjRXPFWQDMlPZGYwcfgufvSdmI2+RYvR5DGkbba9HIHC35ClNQ2yVNIohw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.2.0",
+      "path": "microsoft.aspnetcore.razor.design/2.1.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5465,8 +5465,10 @@
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
         "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.2.1.1.nupkg.sha512",
         "microsoft.aspnetcore.razor.design.nuspec",
+        "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
+        "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
         "tools/Microsoft.AspNetCore.Razor.Language.dll",
         "tools/Microsoft.CodeAnalysis.CSharp.dll",
         "tools/Microsoft.CodeAnalysis.Razor.dll",
@@ -12231,7 +12233,6 @@
       "ACM.BL >= 1.0.0",
       "GradeBook >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -12292,11 +12293,6 @@
             "version": "[2.1.1, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.Razor.Design": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.2.0, )"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
@@ -12312,16 +12308,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.AspNetCore.App 2.1.1 requires Microsoft.AspNetCore.Razor.Design (>= 2.1.1 && < 2.2.0) but version Microsoft.AspNetCore.Razor.Design 2.2.0 was resolved.",
-      "libraryId": "Microsoft.AspNetCore.Razor.Design",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -57,7 +57,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomClasses\LegacyExtensions.cs" />
     <Compile Include="DataSource\IReferenceDataSourceCollectionExtensions.cs" />
     <Compile Include="DataSource\IReferenceDataSourceExtensions.cs" />
     <Compile Include="DataSource\XmlReferenceDataSource.cs" />

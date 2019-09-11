@@ -2,6 +2,7 @@ using ACM.BL;
 using Moq;
 using NUnit.Framework;
 using System;
+using Common;
 
 namespace CommonTests.CustomClasses
 {
