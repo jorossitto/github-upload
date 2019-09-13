@@ -60,12 +60,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MainWebApp2\MainWebApp2.csproj">
-      <Project>{3CAC6B9A-E08F-4361-AC81-5AA767228B2F}</Project>
-      <Name>MainWebApp2</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

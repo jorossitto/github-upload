@@ -86,7 +86,7 @@
             this.ResultLabel.Size = new System.Drawing.Size(10, 13);
             this.ResultLabel.TabIndex = 5;
             this.ResultLabel.Text = " ";
-            this.ResultLabel.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // PedometerWin
             // 

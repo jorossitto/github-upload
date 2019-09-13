@@ -12,13 +12,13 @@ namespace Fundamentals
     {
         public static void Write(PlayerCharacter player)
         {
-            if(string.IsNullOrWhiteSpace(player.Name))
+            if(string.IsNullOrWhiteSpace(player.FirstName))
             {
                 Console.WriteLine("Player name is null or white space");
             }
             else
             {
-                Console.WriteLine(player.Name);
+                Console.WriteLine(player.FirstName);
             }
 
             int days = player.DaysSinceLastLogin ?? -1;

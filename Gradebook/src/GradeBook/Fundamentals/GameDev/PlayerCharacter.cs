@@ -1,42 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 
 namespace Fundamentals
 {
-    public class PlayerCharacter
+    public class PlayerCharacter : INotifyPropertyChanged
     {
-        private readonly SpecialDefence _specialDefence;
+        private int _health = 100;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName => $"{FirstName}{LastName}";
+        public string Nickname { get; set; }
+        public int Health
+        {
+            get => _health;
+            set
+            {
+                _health = value;
+                OnPropertyChanged();
+            }
+
+        }
+
+
+        public bool? IsNoob { get; set; }
+
+        public List<string> Weapons { get; set; }
+
+        public event EventHandler<EventArgs> PlayerSlept;
+
         public PlayerCharacter(SpecialDefence specialDefence)
         {
+            FirstName = GenerateRandomFirstName();
+            IsNoob = true;
+            CreateStartingWeapons();
             _specialDefence = specialDefence;
         }
-        public string Name { get; set; }
-        public int Health { get; set; } = 100;
+
+        public void Sleep()
+        {
+            int healthIncrease = CalculateHealthIncrease();
+            Health += healthIncrease;
+        }
+
+        private int CalculateHealthIncrease()
+        {
+            return 0;
+            //throw new NotImplementedException();
+        }
+
+        private void CreateStartingWeapons()
+        {
+            //throw new NotImplementedException();
+        }
+
+        private string GenerateRandomFirstName()
+        {
+            return "";
+            //throw new NotImplementedException();
+        }
+
+        private readonly SpecialDefence _specialDefence;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public void Hit(int damage)
         {
-            //int damageReduction = 0;
-            //if(_specialDefence != null)
-            //{
-            //    damageReduction = _specialDefence.CalculateDamageReduction(damage);
-            //}
-
-            //int totalDamageTaken = damage - damageReduction;
             int totalDamageTaken = damage - _specialDefence.CalculateDamageReduction(damage);
             Health -= totalDamageTaken;
-            Console.WriteLine($"{Name}'s health has been reduced by {totalDamageTaken} to {Health}");
+            Console.WriteLine($"{FirstName}'s health has been reduced by {totalDamageTaken} to {Health}");
 
+        }
+        private void OnPropertyChanged()
+        {
+            throw new NotImplementedException();
         }
         public int? DaysSinceLastLogin { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public bool? IsNoob { get; set; }
-
-        //public PlayerCharacter()
-        //{
-        //    DateOfBirth = null; //magic number
-        //    DaysSinceLastLogin = null; //magic number
-        //}
     }
 }

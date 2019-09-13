@@ -85,16 +85,16 @@ namespace GradeBook
         {
             PlayerCharacter sarah = new PlayerCharacter(SpecialDefence.DiamondSkin)
             {
-                Name = "Sarah"
+                FirstName = "Sarah"
             };
             PlayerCharacter amrit = new PlayerCharacter(SpecialDefence.IronBones)
             {
-                Name = "Amrit"
+                FirstName = "Amrit"
             };
 
             PlayerCharacter gentry = new PlayerCharacter(SpecialDefence.Null)
             {
-                Name = "gentry"
+                FirstName = "gentry"
             };
 
             sarah.Hit(10);

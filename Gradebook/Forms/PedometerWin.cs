@@ -32,15 +32,6 @@ namespace ACM.BL
                 MessageBox.Show("Your entry was not valid: " + exception.Message);
                 ResultLabel.Text = string.Empty;
             }
-
-
-
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
