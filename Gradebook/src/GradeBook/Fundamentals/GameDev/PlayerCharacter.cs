@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace Fundamentals
 {
@@ -43,28 +44,63 @@ namespace Fundamentals
         {
             int healthIncrease = CalculateHealthIncrease();
             Health += healthIncrease;
+
+            OnPlayerSlept(EventArgs.Empty);
         }
 
         private int CalculateHealthIncrease()
         {
-            return 0;
-            //throw new NotImplementedException();
+            var rnd = new Random();
+            return rnd.Next(1, 101);
         }
 
-        private void CreateStartingWeapons()
+        protected virtual void OnPlayerSlept(EventArgs e)
         {
-            //throw new NotImplementedException();
+            PlayerSlept?.Invoke(this, e);
+        }
+
+        public void TakeDamage(int damage)
+        {
+            Health = Math.Max(1, Health -= damage);
         }
 
         private string GenerateRandomFirstName()
         {
-            return "";
-            //throw new NotImplementedException();
+            var possibleRandomStartingNames = new[]
+            {
+                "Danieth",
+                "Derick",
+                "Shalnorr",
+                "G'Toth'lop",
+                "Boldrakteethtop"
+            };
+            return possibleRandomStartingNames[new Random().Next(0, possibleRandomStartingNames.Length)];
+        }
+
+
+
+        private void CreateStartingWeapons()
+        {
+            Weapons = new List<string>
+            {
+                "Long Bow",
+                "Short Bow",
+                "Short Sword",
+                //""
+                //"Staff Of Wonder",
+            };
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            
         }
 
         private readonly SpecialDefence _specialDefence;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        
 
         public void Hit(int damage)
         {
@@ -73,10 +109,7 @@ namespace Fundamentals
             Console.WriteLine($"{FirstName}'s health has been reduced by {totalDamageTaken} to {Health}");
 
         }
-        private void OnPropertyChanged()
-        {
-            throw new NotImplementedException();
-        }
+
         public int? DaysSinceLastLogin { get; set; }
         public DateTime? DateOfBirth { get; set; }
     }
