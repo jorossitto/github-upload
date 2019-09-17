@@ -1,11 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\source-code-starter",
-    "\\source-code-starter\\TestNinja",
-    "\\source-code-starter\\TestNinja\\TestNinja.UnitTests",
-    "\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking"
+    "\\Gradebook",
+    "\\Gradebook\\ACM.BL",
+    "\\Gradebook\\ACM.BL\\XamlForms",
+    "\\Gradebook\\Forms",
+    "\\Gradebook\\Forms\\DefaultCode",
+    "\\Gradebook\\MSTest",
+    "\\Gradebook\\src",
+    "\\Gradebook\\src\\GradeBook",
+    "\\Gradebook\\src\\GradeBook\\Fundamentals",
+    "\\Gradebook\\src\\GradeBook\\Fundamentals\\GameDev"
   ],
-  "SelectedNode": "\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking\\HouseKeeperServiceTests.cs",
+  "SelectedNode": "\\Gradebook\\MSTest\\EnemyFactoryShould.cs",
   "PreviewInSolutionExplorer": false
 }
