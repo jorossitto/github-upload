@@ -5,13 +5,16 @@ using System;
 namespace Fundamentals.Test
 {
     [TestClass]
+    [TestCategory("Enemy Creation")]
     public class EnemyFactoryShould
     {
         [TestMethod]
         public void NotAllowNullName()
         {
+            Console.WriteLine("Creating Enemy Factory");
             var systemUnderTest = new EnemyFactory();
 
+            Console.WriteLine("Calling Create Method");
             Assert.ThrowsException<ArgumentNullException>(
                 () => systemUnderTest.Create(null)
                 );

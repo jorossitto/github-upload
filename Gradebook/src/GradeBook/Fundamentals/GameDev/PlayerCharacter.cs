@@ -12,7 +12,7 @@ namespace Fundamentals
         private int _health = 100;
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName => $"{FirstName}{LastName}";
+        public string FullName => $"{FirstName} {LastName}";
         public string Nickname { get; set; }
         public int Health
         {
