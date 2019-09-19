@@ -90,5 +90,10 @@ namespace ACM.BL
             Console.WriteLine("Worker is done");
         }
 
+        private void OrderBtn_Click(object sender, EventArgs e)
+        {
+            var form = new OrderWin();
+            form.Show();
+        }
     }
 }

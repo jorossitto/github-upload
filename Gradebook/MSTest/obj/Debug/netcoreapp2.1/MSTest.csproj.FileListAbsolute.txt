@@ -23,3 +23,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp2.1\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp2.1\MSTest.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp2.1\MSTest.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp2.1\MSTest.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp2.1\Damage.csv

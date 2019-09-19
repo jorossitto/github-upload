@@ -1,0 +1,209 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\MSTest\\MSTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj",
+        "projectName": "ACM.BL",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj",
+        "projectName": "Forms",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+              },
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\MSTest\\MSTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\MSTest\\MSTest.csproj",
+        "projectName": "MSTest",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\MSTest\\MSTest.csproj",
+        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\MSTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+              },
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+              },
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj"
+              },
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

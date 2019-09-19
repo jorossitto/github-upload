@@ -19,4 +19,10 @@
     <ProjectReference Include="..\src\GradeBook\GradeBook.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Damage.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

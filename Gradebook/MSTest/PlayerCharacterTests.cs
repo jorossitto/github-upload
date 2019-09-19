@@ -9,27 +9,36 @@ namespace Fundamentals.Test
     [TestClass]
     public class PlayerCharacterTests
     {
+        PlayerCharacter systemUnderTest;
+        [TestInitialize]
+        public void TestInitaialize()
+        {
+            systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+            systemUnderTest.FirstName = "Sarah";
+            systemUnderTest.LastName = "Smith";
+
+        }
+
         [TestMethod]
-        [TestCategory("Player Defaults")]
+        [PlayerDefaults]
         public void BeInexperiancedWhenNew()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             Assert.IsTrue((bool)systemUnderTest.IsNoob);
         }
 
         [TestMethod]
-        [TestCategory("Player Defaults")]
+        [PlayerDefaults]
         public void NotHaveNickNameByDefault()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             Assert.IsNull(systemUnderTest.Nickname);
         }
 
         [TestMethod]
-        [TestCategory("Player Defaults")]
+        [PlayerDefaults]
         public void StartWithDefaultHealth()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
             Assert.AreEqual(100, systemUnderTest.Health);
         }
 
@@ -49,50 +58,41 @@ namespace Fundamentals.Test
         }
 
         [DataTestMethod]
-        [DynamicData(nameof(Damages))]
+        //[DynamicData(nameof(Damages))]
         //[DataRow(1,99)]
-        //[DataRow(50, 50)]
-        //[DataRow(100, 1)]
-        //[DataRow(0, 100)]
-        //[DataRow(101, 1)]
-        [TestCategory("Player Health")]
+        [CsvDataSource("Damage.csv")]
+        [PlayerHealth]
         public void TakeDamage(int damage, int expectedHealth)
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             systemUnderTest.TakeDamage(damage);
             Assert.AreEqual(expectedHealth, systemUnderTest.Health);
         }
 
         [TestMethod]
-        [TestCategory("Player Health")]
+        [PlayerHealth]
         public void IncreaseHealthAfterSleeping()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
             systemUnderTest.Sleep();
-
-            Assert.IsTrue(systemUnderTest.Health >= 101 && systemUnderTest.Health <= 200);
+            Assert.That.IsInRange(systemUnderTest.Health, 101, 200);
         }
 
         [TestMethod]
         public void CalculateFullName()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
-            systemUnderTest.FirstName = "Sarah";
-            systemUnderTest.LastName = "Smith";
-
             Assert.AreEqual("Sarah Smith", systemUnderTest.FullName);
 
             StringAssert.StartsWith(systemUnderTest.FullName, "Sarah");
             StringAssert.EndsWith(systemUnderTest.FullName, "Smith");
             StringAssert.Contains(systemUnderTest.FullName, "ah Sm");
-            //StringAssert.Matches(systemUnderTest.FullName,
-            //   new Regex("[A-Z]{1}[a-z]  + [A-Z]{1}[a-z]"));
+            StringAssert.Matches(systemUnderTest.FullName,
+               new Regex("[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+"));
         }
 
         [TestMethod]
         public void HaveALongBow()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             CollectionAssert.Contains(systemUnderTest.Weapons, "Long Bow");
             CollectionAssert.DoesNotContain(systemUnderTest.Weapons, "Staff Of Wonder");
         }
@@ -100,7 +100,7 @@ namespace Fundamentals.Test
         [TestMethod]
         public void HaveAllExpectedWeapons()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             var expectedWeapons = new[]
             {
                 "Long Bow",
@@ -114,22 +114,31 @@ namespace Fundamentals.Test
         [TestMethod]
         public void HaveNoDuplicateWeapons()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
+
             CollectionAssert.AllItemsAreUnique(systemUnderTest.Weapons);
         }
 
         [TestMethod]
         public void HaveAtLeastOneSword()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
-            Assert.IsTrue(systemUnderTest.Weapons.Any(weapon => weapon.Contains("Sword")));
+            CollectionAssert.That.AtLeastOneItemSatisfies(systemUnderTest.Weapons,
+                weapon => weapon.Contains("Sword"));
+            //Assert.IsTrue(systemUnderTest.Weapons.Any(weapon => weapon.Contains("Sword")));
         }
 
         [TestMethod]
         public void HaveNoEmptyWeapons()
         {
-            var systemUnderTest = new PlayerCharacter(SpecialDefence.Null);
-            Assert.IsFalse(systemUnderTest.Weapons.Any(weapon => string.IsNullOrWhiteSpace(weapon)));
+            CollectionAssert.That.AllItemsNotNullOrWhitespace(systemUnderTest.Weapons);
+            //Assert.IsFalse(systemUnderTest.Weapons.Any(weapon => string.IsNullOrWhiteSpace(weapon)));
+            CollectionAssert.That.AllItemsSatisfy(systemUnderTest.Weapons,
+                weapon => !string.IsNullOrWhiteSpace(weapon));
+
+            CollectionAssert.That.All(systemUnderTest.Weapons, weapon =>
+            {
+                StringAssert.That.NotNullOrWhiteSpace(weapon);
+                Assert.IsTrue(weapon.Length > 5);
+            });
         }
 
     }

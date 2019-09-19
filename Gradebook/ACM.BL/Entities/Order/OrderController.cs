@@ -1,9 +1,11 @@
 ﻿using Common;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ACM.BL
@@ -72,6 +74,27 @@ namespace ACM.BL
 
             }
             return operationResult;
+        }
+        static object _lockObj = new object();
+        public static void PlaceOrders(ConcurrentQueue<string> orders, Customer customer)
+        {
+            for(int i = 0; i < 5; i++)
+            {
+                Thread.Sleep(1);
+                string orderName = string.Format("{0} wants t-shirt {1}",
+                    customer.FullName, i + 1);
+                lock(_lockObj)
+                {
+                    orders.Enqueue(orderName);
+                }
+                
+            }
+        }
+
+
+        public static void ProcessOrder(string order)
+        {
+
         }
         public override bool Validate()
         {

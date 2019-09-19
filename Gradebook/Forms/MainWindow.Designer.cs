@@ -55,6 +55,7 @@
             this.OrderBtn.TabIndex = 3;
             this.OrderBtn.Text = "Order Menu";
             this.OrderBtn.UseVisualStyleBackColor = true;
+            this.OrderBtn.Click += new System.EventHandler(this.OrderBtn_Click);
             // 
             // PedometerBtn
             // 
