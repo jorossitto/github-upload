@@ -1,8 +1,7 @@
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Common.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Newtonsoft.Json.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Newtonsoft.Json.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CopyComplete
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csprojAssemblyReference.cache

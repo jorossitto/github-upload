@@ -29,12 +29,7 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
-        "frameworks": {
-          "net461": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
       },
       "frameworks": {
         "net461": {}
@@ -91,11 +86,6 @@
               "target": "Package",
               "version": "[2.1.1, )",
               "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
               "target": "Package",
@@ -165,7 +155,7 @@
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.12.0, )"
+              "version": "[4.13.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

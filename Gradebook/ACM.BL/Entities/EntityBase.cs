@@ -24,6 +24,5 @@ namespace ACM.BL
 
         public abstract bool Validate();
 
-
     }
 }

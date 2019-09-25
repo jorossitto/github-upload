@@ -10,6 +10,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\ACM.BL.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\GradeBook.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csprojAssemblyReference.cache
@@ -19,4 +20,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp2.1\GradeBook.Tests.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp2.1\ACM.BL.dll.config

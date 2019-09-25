@@ -25,7 +25,6 @@ namespace ACM.BL
             if (branch == "1")
             {
                 HandleCars();
-
             }
             else if (branch == "2")
             {

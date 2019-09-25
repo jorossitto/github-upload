@@ -1,0 +1,169 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj",
+        "projectName": "ACM.BL",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj",
+        "projectName": "Application.Data",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj",
+        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj",
+        "projectName": "BusinessSample",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj",
+        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}

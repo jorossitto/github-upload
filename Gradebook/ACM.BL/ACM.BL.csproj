@@ -61,6 +61,8 @@
     <Compile Include="DataSource\IReferenceDataSourceExtensions.cs" />
     <Compile Include="DataSource\XmlReferenceDataSource.cs" />
     <Compile Include="DataSource\SqlReferenceDataSource.cs" />
+    <Compile Include="Entities\Places\CuisineType.cs" />
+    <Compile Include="Entities\Places\Restaurant.cs" />
     <Compile Include="Jobs\JobChangedEventArgs.cs" />
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Entities\Inventory\InventoryRepository.cs" />

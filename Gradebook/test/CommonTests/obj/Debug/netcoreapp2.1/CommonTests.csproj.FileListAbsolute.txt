@@ -7,8 +7,13 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\CommonTests.runtimeconfig.dev.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\CommonTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\Common.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\Common.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.AssemblyInfoInputs.cache
@@ -16,8 +21,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
