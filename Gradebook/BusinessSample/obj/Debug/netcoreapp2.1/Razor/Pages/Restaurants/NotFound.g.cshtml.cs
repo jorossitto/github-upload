@@ -56,7 +56,7 @@ using BusinessSample;
             WriteLiteral("\r\n<h2>Your restaurant was not found</h2>\r\n\r\n");
             EndContext();
             BeginContext(95, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ad89270fa004850be173d5cae01ac1b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28f73d38be004ce2b5aca550e0ae3bae", async() => {
                 BeginContext(140, 19, true);
                 WriteLiteral("See All Restaurants");
                 EndContext();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace ACM.BL
         public int AddressId { get; private set; }
         public int AddressType { get; set; }
         public string City { get; set; }
+        [Required, StringLength(255)]
         public string Country { get; set; }
         public string PostalCode { get; set; }
         public string State { get; set; }

@@ -12,6 +12,7 @@ namespace BusinessSample.Pages.Restaurants
 {
     public class EditModel : PageModel
     {
+
         private readonly IRestaurantData restaurantData;
         private readonly IHtmlHelper htmlHelper;
         [BindProperty]
@@ -22,10 +23,18 @@ namespace BusinessSample.Pages.Restaurants
             this.restaurantData = restaurantData;
             this.htmlHelper = htmlHelper;
         }
-        public IActionResult OnGet(int restaurantId)
+        public IActionResult OnGet(int? restaurantId)
         {
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            Restaurant = restaurantData.GetById(restaurantId);
+            if(restaurantId.HasValue)
+            {
+                Restaurant = restaurantData.GetById(restaurantId.Value);
+            }
+            else
+            {
+                Restaurant = new Restaurant();
+                Restaurant.Address.Country = "United States Baby!";
+            }
 
             if(Restaurant == null)
             {
@@ -36,9 +45,13 @@ namespace BusinessSample.Pages.Restaurants
 
         public IActionResult OnPost()
         {
+            if(ModelState.IsValid)
+            {
+                restaurantData.Update(Restaurant);
+                restaurantData.Commit();
+                return RedirectToPage(config.DetailPage, new { restaurantId = Restaurant.ID});
+            }
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            restaurantData.Update(Restaurant);
-            restaurantData.Commit();
             return Page();
         }
     }

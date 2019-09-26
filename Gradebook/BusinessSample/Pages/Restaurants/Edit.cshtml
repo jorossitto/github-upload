@@ -1,4 +1,4 @@
-﻿@page "{restaurantId:int}"
+﻿@page "{restaurantId:int?}"
 @model BusinessSample.Pages.Restaurants.EditModel
 @{
     ViewData["Title"] = "Edit";
@@ -11,18 +11,19 @@
     <div class="form-group">
         <label asp-for="Restaurant.Name"></label>
         <input asp-for="Restaurant.Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Name"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Restaurant.Address.Country"></label>
         <input asp-for="Restaurant.Address.Country" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Address.Country"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Restaurant.Cuisine"></label>
-        <select class="form-control" asp-for="Restaurant.Cuisine" asp-items="Model.Cuisines">
-
-        </select>
+        <select class="form-control" asp-for="Restaurant.Cuisine" asp-items="Model.Cuisines"></select>
+        <span class="text-danger" asp-validation-for="Restaurant.Cuisine"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>

@@ -10,6 +10,7 @@ namespace Application.Data
     public class config
     {
         public const string PageNotFound = "./NotFound";
+        public const string DetailPage = "./Detail";
 
     }
 }
