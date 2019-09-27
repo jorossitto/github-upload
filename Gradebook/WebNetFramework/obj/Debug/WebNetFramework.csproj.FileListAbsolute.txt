@@ -73,3 +73,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache

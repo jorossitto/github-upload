@@ -43,3 +43,11 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Detail.g.cshtml.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\NotFound.g.cshtml.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Edit.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Delete.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\_Summary.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\Components\RestaurantCount\Default.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Create.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Delete.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Details.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Edit.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Index.g.cshtml.cs

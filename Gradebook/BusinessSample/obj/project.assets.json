@@ -4632,7 +4632,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "ACM.BL": "1.0.0"
+          "ACM.BL": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1"
         },
         "compile": {
           "bin/placeholder/Application.Data.dll": {}

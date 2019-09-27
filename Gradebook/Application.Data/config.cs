@@ -11,6 +11,8 @@ namespace Application.Data
     {
         public const string PageNotFound = "./NotFound";
         public const string DetailPage = "./Detail";
-
+        public const string MESSAGE = "Message";
+        public const string BusinessDatabaseConnection = "BusinessDB";
+        public const string ListPage = "./List";
     }
 }

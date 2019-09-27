@@ -1,0 +1,23 @@
+﻿@using ACM.BL
+@model Restaurant
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="panel-body">
+        <span>Location: @Model.Address.Country</span>
+        <span>Cuisine: @Model.Cuisine</span>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantID="@Model.ID">
+            <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>
+        <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantID="@Model.ID">
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-lg" asp-page="./Delete" asp-route-restaurantID="@Model.ID">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+</div>

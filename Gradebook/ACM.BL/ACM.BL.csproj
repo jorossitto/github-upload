@@ -100,9 +100,6 @@
     <Compile Include="CustomClasses\ProcessData.cs" />
     <Compile Include="CustomClasses\Mediator.cs" />
     <Compile Include="DataSource\ReferenceDataItem.cs" />
-    <Compile Include="XamlForms\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Worker\WorkPerformedEventArgs.cs" />
     <Compile Include="Worker\Worker.cs" />
     <Compile Include="CustomClasses\UsingLinq.cs" />
@@ -129,12 +126,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="XamlForms\UserControl1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

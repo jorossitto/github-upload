@@ -12,7 +12,7 @@ namespace BusinessSample.Pages.Restaurants
 {
     public class EditModel : PageModel
     {
-
+        
         private readonly IRestaurantData restaurantData;
         private readonly IHtmlHelper htmlHelper;
         [BindProperty]
@@ -45,14 +45,24 @@ namespace BusinessSample.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            if(ModelState.IsValid)
+            if(!ModelState.IsValid)
+            {
+                Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+                return Page();
+            }
+
+            if(Restaurant.ID > 0)
             {
                 restaurantData.Update(Restaurant);
-                restaurantData.Commit();
-                return RedirectToPage(config.DetailPage, new { restaurantId = Restaurant.ID});
             }
-            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            return Page();
+            else
+            {
+                restaurantData.Add(Restaurant);
+            }
+            
+            restaurantData.Commit();
+            TempData[config.MESSAGE] = "Restaurant saved!"; 
+            return RedirectToPage(config.DetailPage, new { restaurantId = Restaurant.ID });
         }
     }
 }

@@ -45,7 +45,10 @@
         @RenderBody()
         <hr />
         <footer>
+            <vc:restaurant-count></vc:restaurant-count>
+            @RenderSection("footer", required: false)
             <p>&copy; 2019 - BusinessSample</p>
+            <img src="/BusinessSample.png" />
         </footer>
     </div>
 
