@@ -75,12 +75,12 @@ using Application.Data;
             WriteLiteral("?\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(260, 164, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2dd60c2d58e44b3bb67c9007f4ce31b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19276eb2487a441eb4a628d3ce8f02d7", async() => {
                 BeginContext(280, 78, true);
                 WriteLiteral("\r\n        <button type=\"submit\" class=\"btn btn-danger\">Yes!</button>\r\n        ");
                 EndContext();
                 BeginContext(358, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abb835015746438aadae1a53bfe081c0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e5d38daabd54bb49516b6c2fc8d8a16", async() => {
                     BeginContext(401, 6, true);
                     WriteLiteral("Cancel");
                     EndContext();

@@ -51,3 +51,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Details.g.cshtml.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Edit.g.cshtml.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Index.g.cshtml.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\ClientRestaurants.g.cshtml.cs

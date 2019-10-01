@@ -82,7 +82,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.1.13, )",
               "autoReferenced": true
             }
           },
@@ -92,6 +92,11 @@
           "assetTargetFallback": true,
           "warn": true
         }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
       }
     },
     "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
@@ -99,7 +104,12 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net461": {}

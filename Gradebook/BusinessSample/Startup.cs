@@ -32,10 +32,10 @@ namespace BusinessSample
             });
 
             //In Memory Connection for testing only
-            //services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
 
             //SQL Connection
-            services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            //services.AddScoped<IRestaurantData, SqlRestaurantData>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -43,8 +43,6 @@ namespace BusinessSample
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -61,11 +59,30 @@ namespace BusinessSample
                 app.UseHsts();
             }
 
+            app.Use(SayHelloMiddleWare);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
             app.UseCookiePolicy();
 
             app.UseMvc();
+        }
+
+        private RequestDelegate SayHelloMiddleWare(RequestDelegate next)
+        {
+            return async context =>
+            {
+                if(context.Request.Path.StartsWithSegments("/hello"))
+                {
+                    await context.Response.WriteAsync("Hello, World!");
+                }
+                else
+                {
+                    await next(context);
+                }
+            };
+            
         }
     }
 }
