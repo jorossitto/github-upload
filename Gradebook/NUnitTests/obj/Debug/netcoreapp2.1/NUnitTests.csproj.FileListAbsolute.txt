@@ -15,9 +15,12 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\GradeBook.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.AssemblyInfoInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp2.1\NUnitTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp2.1\EntityFramework.xml

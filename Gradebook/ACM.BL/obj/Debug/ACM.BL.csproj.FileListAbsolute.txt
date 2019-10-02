@@ -10,7 +10,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramewor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Newtonsoft.Json.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.pdb

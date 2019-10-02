@@ -15,9 +15,12 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\GradeBook.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.AssemblyInfoInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp2.1\CommonTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp2.1\EntityFramework.xml

@@ -36,9 +36,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTest", "MSTest\MSTest.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNetFramework", "WebNetFramework\WebNetFramework.csproj", "{53517D3D-5454-42B0-88E9-BC4DF7DB52BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessSample", "BusinessSample\BusinessSample.csproj", "{D67C3E76-EC60-4E21-B6E3-1588365FDB98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessSample", "BusinessSample\BusinessSample.csproj", "{D67C3E76-EC60-4E21-B6E3-1588365FDB98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Data", "Application.Data\Application.Data.csproj", "{18103699-0E08-4681-B64D-6A0711A78DD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Data", "Application.Data\Application.Data.csproj", "{18103699-0E08-4681-B64D-6A0711A78DD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -20,7 +20,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.PeopleVi
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.Properties.Resources.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\ACM.BL.RepositoryViewer.resources
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.pdb

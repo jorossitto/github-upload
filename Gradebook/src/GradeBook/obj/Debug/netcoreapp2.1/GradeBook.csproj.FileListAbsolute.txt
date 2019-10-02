@@ -10,7 +10,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.CoreCompileInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfoInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.CopyComplete
