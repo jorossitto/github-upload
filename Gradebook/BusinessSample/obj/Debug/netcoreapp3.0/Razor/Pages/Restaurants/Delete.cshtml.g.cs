@@ -26,9 +26,16 @@ using Application.Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\Pages\_ViewImports.cshtml"
+using BusinessSample.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "{restaurantId}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb8e077024156d37987eaabd9fad6f5dfd649a50", @"/Pages/Restaurants/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"976e08b41c38f5bec13b318abc07f5c7bacb6a9c", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9becfe1329d18168188835c93a927cb4217d8885", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Restaurants_Delete : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "List", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -77,9 +84,9 @@ using Application.Data;
 #line hidden
 #nullable disable
             WriteLiteral("?\r\n    </div>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb8e077024156d37987eaabd9fad6f5dfd649a505137", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb8e077024156d37987eaabd9fad6f5dfd649a505341", async() => {
                 WriteLiteral("\r\n        <button type=\"submit\" class=\"btn btn-danger\">Yes!</button>\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb8e077024156d37987eaabd9fad6f5dfd649a505477", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb8e077024156d37987eaabd9fad6f5dfd649a505681", async() => {
                     WriteLiteral("Cancel");
                 }
                 );

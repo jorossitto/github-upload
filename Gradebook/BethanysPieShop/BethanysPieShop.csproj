@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ACM.BL\ACM.BL.csproj" />
+    <ProjectReference Include="..\Application.Data\Application.Data.csproj" />
+    <ProjectReference Include="..\BusinessLogicCore3\BusinessLogicCore3.csproj" />
+    <ProjectReference Include="..\BusinessSample\BusinessSample.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Forms\Forms.csproj" />
+    <ProjectReference Include="..\MSTest\MSTest.csproj" />
+    <ProjectReference Include="..\NUnitTests\NUnitTests.csproj" />
+    <ProjectReference Include="..\SessionBuilder.CoreWeb\SessionBuilder.CoreWeb.csproj" />
+    <ProjectReference Include="..\src\GradeBook\GradeBook.csproj" />
+    <ProjectReference Include="..\test\CommonTests\CommonTests.csproj" />
+    <ProjectReference Include="..\test\GradeBook.Tests\GradeBook.Tests.csproj" />
+    <ProjectReference Include="..\WebNetFramework\WebNetFramework.csproj" />
+  </ItemGroup>
+
+</Project>
