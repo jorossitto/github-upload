@@ -15,6 +15,9 @@ namespace Application.Data
 
         }
         public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Pie> Pies { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
 
     }
 }

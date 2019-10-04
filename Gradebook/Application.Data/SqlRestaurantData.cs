@@ -37,6 +37,7 @@ namespace Application.Data
         public Restaurant GetById(int id)
         {
             return db.Restaurants.Find(id);
+            //return db.Restaurants.Include(a => a.Address);
         }
 
         public int GetCountOfRestaurants()

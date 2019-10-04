@@ -32,3 +32,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\ne
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.csproj.CopyComplete
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.csprojAssemblyReference.cache

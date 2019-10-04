@@ -66,12 +66,6 @@
     <Compile Include="Models\DataSource\SqlReferenceDataSource.cs" />
     <Compile Include="Models\Entities\Places\CuisineType.cs" />
     <Compile Include="Models\Entities\Places\Restaurant.cs" />
-    <Compile Include="Models\Entities\Products\Categories\Category.cs" />
-    <Compile Include="Models\Entities\Products\Categories\ICategoryRepository.cs" />
-    <Compile Include="Models\Entities\Products\Categories\MockCategoryRepository.cs" />
-    <Compile Include="Models\Entities\Products\ProductType\IPieRepository.cs" />
-    <Compile Include="Models\Entities\Products\ProductType\MockPieRepository.cs" />
-    <Compile Include="Models\Entities\Products\ProductType\Pie.cs" />
     <Compile Include="Models\Jobs\JobChangedEventArgs.cs" />
     <Compile Include="Models\Jobs\Job.cs" />
     <Compile Include="Models\Entities\Inventory\InventoryRepository.cs" />
@@ -86,7 +80,6 @@
     <Compile Include="Models\Entities\Person\Employee\IEmployeeStorage.cs" />
     <Compile Include="Models\Entities\Person\Person.cs" />
     <Compile Include="Models\Entities\Person\IPersonRepository.cs" />
-    <Compile Include="Models\Entities\Products\ProductType\Car.cs" />
     <Compile Include="Models\DataSource\IReferenceDataSource.cs" />
     <Compile Include="Models\DataSource\ApiReferenceDataSource.cs" />
     <Compile Include="Models\Repositories\CsvRepository.cs" />
@@ -117,12 +110,10 @@
     <Compile Include="Models\Entities\Address\AddressRepository.cs" />
     <Compile Include="Models\Entities\Person\Customers\ICustomer.cs" />
     <Compile Include="Models\Entities\Order\OrderRepository.cs" />
-    <Compile Include="Models\Entities\Products\ProductRepository.cs" />
     <Compile Include="Models\Entities\Person\Customers\CustomerRepository.cs" />
     <Compile Include="Models\Entities\Order\OrderItem.cs" />
     <Compile Include="Models\Entities\Order\Order.cs" />
     <Compile Include="Models\Entities\Address\Address.cs" />
-    <Compile Include="Models\Entities\Products\Product.cs" />
     <Compile Include="Models\Entities\Person\Customers\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

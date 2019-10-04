@@ -292,8 +292,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.Manifest.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.AssemblyInfoInputs.cache
@@ -311,3 +309,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cache
