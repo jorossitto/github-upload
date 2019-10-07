@@ -29,7 +29,7 @@ namespace BethanysPieShop
             services.AddDbContext<BusinessDBContext>
                 (
                     options => options.UseSqlServer
-                    (Configuration.GetConnectionString(config.BusinessDatabaseConnection))
+                    (Configuration.GetConnectionString("DefaultConnection"))
                 );
 
             //Mock Repository

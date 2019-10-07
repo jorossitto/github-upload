@@ -10,6 +10,9 @@ namespace Application.Data
 {
     public class BusinessDBContext : DbContext
     {
+        MockCategoryRepository mockCategoryRepository = new MockCategoryRepository();
+        MockPieRepository mockPieRepository = new MockPieRepository();
+
         public BusinessDBContext(DbContextOptions<BusinessDBContext> options) : base(options)
         {
 
@@ -19,5 +22,20 @@ namespace Application.Data
 
         public DbSet<Category> Categories { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            var myPies = mockPieRepository.AllPies;
+
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Fruit pies", Description = "All-Fruit Pies" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Cheese cakes", Description = "Cheesy all the way" });
+            modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 3, CategoryName = "Seasonal Pies", Description = "Get in the mood for a seasonal pie" });
+
+            foreach (var pie in myPies)
+            {
+                modelBuilder.Entity<Pie>().HasData(pie);
+            }
+            
+        }
     }
 }

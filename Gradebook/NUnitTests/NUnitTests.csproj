@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -14,7 +14,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ACM.BL\ACM.BL.csproj" />
+    <ProjectReference Include="..\Application.Data\Application.Data.csproj" />
+    <ProjectReference Include="..\BusinessLogicCore3\BusinessLogicCore3.csproj" />
+    <ProjectReference Include="..\BusinessSample\BusinessSample.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Forms\Forms.csproj" />
     <ProjectReference Include="..\src\GradeBook\GradeBook.csproj" />
+    <ProjectReference Include="..\WebNetFramework\WebNetFramework.csproj" />
   </ItemGroup>
 
 </Project>

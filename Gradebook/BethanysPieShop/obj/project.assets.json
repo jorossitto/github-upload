@@ -2747,9 +2747,10 @@
       },
       "CommonTests/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
+          "Application.Data": "1.0.0",
           "Common": "1.0.0",
           "GradeBook": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.3.0",
@@ -2778,7 +2779,7 @@
       },
       "GradeBook/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
           "EntityFramework": "6.3.0",
@@ -2794,7 +2795,7 @@
       },
       "GradeBook.Tests/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
           "GradeBook": "1.0.0",
@@ -2810,7 +2811,7 @@
       },
       "MSTest/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
           "Common": "1.0.0",
@@ -2829,12 +2830,18 @@
       },
       "NUnitTests/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
+          "Application.Data": "1.0.0",
+          "BusinessLogicCore3": "1.0.0",
+          "BusinessSample": "1.0.0",
+          "Common": "1.0.0",
+          "Forms": "1.0.0",
           "GradeBook": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.3.0",
           "NUnit3TestAdapter": "3.15.1",
+          "WebNetFramework": "1.0.0",
           "nunit": "3.12.0"
         },
         "compile": {
@@ -2842,21 +2849,10 @@
         },
         "runtime": {
           "bin/placeholder/NUnitTests.dll": {}
-        }
-      },
-      "SessionBuilder.CoreWeb/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "ACM.BL": "1.0.0",
-          "GradeBook": "1.0.0"
         },
-        "compile": {
-          "bin/placeholder/SessionBuilder.CoreWeb.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SessionBuilder.CoreWeb.dll": {}
-        }
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "WebNetFramework/1.0.0": {
         "type": "project",
@@ -9142,11 +9138,6 @@
       "path": "../NUnitTests/NUnitTests.csproj",
       "msbuildProject": "../NUnitTests/NUnitTests.csproj"
     },
-    "SessionBuilder.CoreWeb/1.0.0": {
-      "type": "project",
-      "path": "../SessionBuilder.CoreWeb/SessionBuilder.CoreWeb.csproj",
-      "msbuildProject": "../SessionBuilder.CoreWeb/SessionBuilder.CoreWeb.csproj"
-    },
     "WebNetFramework/1.0.0": {
       "type": "project",
       "path": "../WebNetFramework/WebNetFramework.csproj",
@@ -9168,7 +9159,6 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0",
       "NUnitTests >= 1.0.0",
-      "SessionBuilder.CoreWeb >= 1.0.0",
       "WebNetFramework >= 1.0.0"
     ]
   },
@@ -9228,9 +9218,6 @@
             },
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\NUnitTests\\NUnitTests.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\NUnitTests\\NUnitTests.csproj"
-            },
-            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\SessionBuilder.CoreWeb\\SessionBuilder.CoreWeb.csproj": {
-              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\SessionBuilder.CoreWeb\\SessionBuilder.CoreWeb.csproj"
             },
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj"

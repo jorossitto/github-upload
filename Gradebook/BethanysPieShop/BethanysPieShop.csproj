@@ -21,7 +21,6 @@
     <ProjectReference Include="..\Forms\Forms.csproj" />
     <ProjectReference Include="..\MSTest\MSTest.csproj" />
     <ProjectReference Include="..\NUnitTests\NUnitTests.csproj" />
-    <ProjectReference Include="..\SessionBuilder.CoreWeb\SessionBuilder.CoreWeb.csproj" />
     <ProjectReference Include="..\src\GradeBook\GradeBook.csproj" />
     <ProjectReference Include="..\test\CommonTests\CommonTests.csproj" />
     <ProjectReference Include="..\test\GradeBook.Tests\GradeBook.Tests.csproj" />

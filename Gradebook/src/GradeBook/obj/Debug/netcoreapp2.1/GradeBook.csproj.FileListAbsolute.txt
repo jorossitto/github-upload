@@ -1,17 +1,3 @@
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.deps.json
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.runtimeconfig.json
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.runtimeconfig.dev.json
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\GradeBook.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\ACM.BL.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\Common.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\System.Windows.Forms.VisualStudio.15.0.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\ACM.BL.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\ACM.BL.dll.config
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp2.1\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfoInputs.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.AssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.csproj.CopyComplete
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\obj\Debug\netcoreapp2.1\GradeBook.pdb

@@ -2,6 +2,8 @@ using NUnit.Framework;
 using Common;
 using ACM.BL;
 using System.Collections.Generic;
+using Application.Data;
+
 //Todo Merge using TestNinja.Mocking;
 
 namespace CommonTests
