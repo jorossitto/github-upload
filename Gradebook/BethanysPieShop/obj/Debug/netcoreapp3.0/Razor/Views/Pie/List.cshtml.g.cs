@@ -27,7 +27,7 @@ using BusinessSample.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11bb86acd80a7b629c3fa65c83fbe9d306e4481e", @"/Views/Pie/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dea57bfe64c1d9af9d9780d6e849bdc4715c45e7", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e352f62ebe27514932d94c7b23569360fa25bef5", @"/Views/_ViewImports.cshtml")]
     public class Views_Pie_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PiesListViewModel>
     {
         #pragma warning disable 1998

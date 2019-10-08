@@ -157,3 +157,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\Razor\Views\Pie\Details.cshtml.g.cs
