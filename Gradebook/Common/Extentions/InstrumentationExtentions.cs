@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -21,11 +22,13 @@ namespace Common
 
         public static void StartWithPrecision (this Instrumentation instrumentation)
         {
+            Contract.Requires(instrumentation != null);
             _StopWatches[instrumentation.Id] = Stopwatch.StartNew();
         }
 
         public static long GetReallyPreciseElapsedTime(this Instrumentation instrumentation)
         {
+            Contract.Requires(instrumentation != null);
             return _StopWatches[instrumentation.Id].ElapsedMilliseconds;
         }
     }

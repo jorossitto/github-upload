@@ -24,7 +24,7 @@ namespace Fundamentals
             //work out what rounding accuracy we need if we are to round to 
             //4 significant figures
           
-            int accuracy = Math.Max((int)(Math.GetHighestPowerOfTen(population) / 10_000l), 1);
+            int accuracy = Math.Max((int)(Math.GetHighestPowerOfTen(population) / 10_000L), 1);
 
             //now do the rounding
             return Math.RoundToNearest(population, accuracy);

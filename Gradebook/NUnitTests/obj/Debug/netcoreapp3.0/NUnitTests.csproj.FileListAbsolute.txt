@@ -235,3 +235,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Common.dll.config

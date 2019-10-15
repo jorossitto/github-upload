@@ -11,7 +11,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\bin\Debug\ne
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\bin\Debug\netcoreapp3.0\BusinessLogicCore3.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\staticwebassets\BusinessLogicCore3.StaticWebAssets.Manifest.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\staticwebassets\BusinessLogicCore3.StaticWebAssets.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.RazorAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.RazorAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.AssemblyInfoInputs.cache
@@ -32,3 +31,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\ne
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.csproj.CopyComplete
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.MvcApplicationPartsAssemblyInfo.cache

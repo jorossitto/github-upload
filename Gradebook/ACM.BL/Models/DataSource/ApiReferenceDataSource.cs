@@ -12,7 +12,7 @@ namespace ACM.BL
 {
     public abstract class ApiDataSource
     {
-        public string Name = "API";
+        private readonly string Name = "API";
     }
 
     public class ApiReferenceDataSource : ApiDataSource, IReferenceDataSource

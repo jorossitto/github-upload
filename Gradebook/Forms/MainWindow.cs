@@ -45,18 +45,18 @@ namespace ACM.BL
 
         private static void CreateAndDisplayBusinessRules()
         {
-            var data = new ProcessData();
+            //var data = new ProcessData();
 
             BizRulesDelegate addDel = (x, y) => x + y;
             BizRulesDelegate multiplyDel = (x, y) => x * y;
-            data.Process(2, 3, addDel);
+            ProcessData.Process(2, 3, addDel);
 
             Action<int, int> myAction = (x, y) => Console.WriteLine(x + y);
-            data.ProcessAction(2, 3, myAction);
+            ProcessData.ProcessAction(2, 3, myAction);
 
             Func<int, int, int> funcAddDel = (x, y) => x + y;
             Func<int, int, int> funcMultDel = (x, y) => x * y;
-            data.ProcessFunc(2, 3, funcAddDel);
+            ProcessData.ProcessFunc(2, 3, funcAddDel);
         }
 
         private static void CreateAndDisplayCustomers(int amount = 4)

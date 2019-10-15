@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,13 +18,19 @@ namespace Application.Data
         {
 
         }
+
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Pie> Pies { get; set; }
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            Contract.Requires(modelBuilder != null);
+
             base.OnModelCreating(modelBuilder);
             var myPies = mockPieRepository.AllPies;
 

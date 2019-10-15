@@ -15,14 +15,14 @@ namespace ACM.BL
         public CustomerRepository customerRepository { get; private set; }
         public OrderRepository orderRepository { get; private set; }
         public InventoryRepository inventoryRepository { get; private set; }
-        public EmailLibrary emailLibrary { get; private set; }
+        //public EmailLibrary emailLibrary { get; private set; }
 
         public OrderController()
         {
              customerRepository = new CustomerRepository();
              orderRepository = new OrderRepository();
              inventoryRepository = new InventoryRepository();
-             emailLibrary = new EmailLibrary();
+             //emailLibrary = new EmailLibrary();
         }
         /// <summary>
         /// Places a customer order
@@ -42,7 +42,7 @@ namespace ACM.BL
             Debug.Assert(customerRepository != null, "Missing customer repository instance");
             Debug.Assert(orderRepository != null, "Missing order repository instance");
             Debug.Assert(inventoryRepository != null, "Missing inventory repository instance");
-            Debug.Assert(emailLibrary != null, "Missing email library instance");
+            //Debug.Assert(emailLibrary != null, "Missing email library instance");
 
             if (customer == null) throw new ArgumentNullException("Customer instance is null");
             if (order == null) throw new ArgumentNullException("Order instance is null");
@@ -61,7 +61,7 @@ namespace ACM.BL
                 if(result.Success == true)
                 {
                     customerRepository.Update();
-                    emailLibrary.SendEmail(customer.EmailAddress, "Here is your reciept");
+                    EmailLibrary.SendEmail(customer.EmailAddress, "Here is your reciept");
                 }
                 else
                 {

@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public class EmailLibrary
+    public static class EmailLibrary
     {
         /// <summary>
         /// If a valid email address is provided, send the message
         /// </summary>
         /// <param name="emailAddress"></param>
         /// <param name="message"></param>
-        public void SendEmail(string emailAddress, string message)
+        public static void SendEmail(string emailAddress, string message)
         {
             try
             {
                 //send an email
             }
-            catch (InvalidOperationException exception)
+            catch (InvalidOperationException)
             {
 
                 //log

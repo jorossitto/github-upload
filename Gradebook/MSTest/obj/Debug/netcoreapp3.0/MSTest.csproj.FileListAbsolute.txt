@@ -125,3 +125,11 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp3.0\MSTest.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp3.0\MSTest.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\obj\Debug\netcoreapp3.0\MSTest.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Microsoft.Net.Http.Headers.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\MSTest\bin\Debug\netcoreapp3.0\Common.dll.config

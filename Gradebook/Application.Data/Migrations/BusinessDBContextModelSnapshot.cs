@@ -277,6 +277,29 @@ namespace Application.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Application.Data.ShoppingCartItem", b =>
+                {
+                    b.Property<int>("ShoppingCartItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ShoppingCartItemId");
+
+                    b.HasIndex("PieId");
+
+                    b.ToTable("ShoppingCartItems");
+                });
+
             modelBuilder.Entity("ACM.BL.Restaurant", b =>
                 {
                     b.HasOne("ACM.BL.Address", "Address")
@@ -293,6 +316,13 @@ namespace Application.Data.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Application.Data.ShoppingCartItem", b =>
+                {
+                    b.HasOne("Application.Data.Pie", "Pie")
+                        .WithMany()
+                        .HasForeignKey("PieId");
                 });
 #pragma warning restore 612, 618
         }
