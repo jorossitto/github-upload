@@ -19,17 +19,14 @@
     <Import Project="$(NuGetPackageRoot)microsoft.codequality.analyzers\2.9.6\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codequality.analyzers\2.9.6\build\Microsoft.CodeQuality.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\2.9.6\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\2.9.6\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\2.9.6\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\2.9.6\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
-    <Import Project="$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\risottj\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.3</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_NetFramework_Analyzers Condition=" '$(PkgMicrosoft_NetFramework_Analyzers)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.netframework.analyzers\2.9.6</PkgMicrosoft_NetFramework_Analyzers>
     <PkgMicrosoft_NetCore_Analyzers Condition=" '$(PkgMicrosoft_NetCore_Analyzers)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.netcore.analyzers\2.9.6</PkgMicrosoft_NetCore_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.entityframeworkcore.tools\3.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMicrosoft_CodeQuality_Analyzers Condition=" '$(PkgMicrosoft_CodeQuality_Analyzers)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.codequality.analyzers\2.9.6</PkgMicrosoft_CodeQuality_Analyzers>
     <PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer Condition=" '$(PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\2.9.6</PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer>
     <PkgMicrosoft_CodeAnalysis_FxCopAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_FxCopAnalyzers)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\2.9.6</PkgMicrosoft_CodeAnalysis_FxCopAnalyzers>
-    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\risottj\.nuget\packages\entityframework\6.3.0</PkgEntityFramework>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\risottj\.nuget\packages\microsoft.entityframeworkcore.tools\3.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

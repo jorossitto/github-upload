@@ -34,6 +34,7 @@ namespace Common
 
         public static double ToDouble(this string data)
         {
+            //var type = data.GetType();
             double result = double.Parse(data);
             return result;
         }

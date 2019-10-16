@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.CodeAnalysis.FxCopAnalyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -98,6 +102,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [
@@ -111,178 +119,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\BusinessLogicCore3.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\BusinessLogicCore3.csproj",
-        "projectName": "BusinessLogicCore3",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\BusinessLogicCore3.csproj",
-        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.0": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.0": {
-          "dependencies": {
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Extensions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Features": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.9.6, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj",
-        "projectName": "BusinessSample",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj",
-        "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.0": {
-          "dependencies": {
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Extensions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Features": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.9.6, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "OdeToCode.UseNodeModules": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -297,29 +133,6 @@
         "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj",
         "projectName": "Common",
         "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
-      },
-      "frameworks": {
-        "net461": {}
-      }
-    },
-    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj",
-        "projectName": "Forms",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj",
-        "frameworks": {
-          "net461": {
-            "projectReferences": {
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
-              },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
-              }
-            }
-          }
-        }
       },
       "frameworks": {
         "net461": {}
@@ -359,23 +172,8 @@
               "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj": {
                 "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj"
               },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\BusinessLogicCore3.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessLogicCore3\\BusinessLogicCore3.csproj"
-              },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\BusinessSample\\BusinessSample.csproj"
-              },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj"
-              },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Forms\\Forms.csproj"
-              },
               "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj": {
                 "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\src\\GradeBook\\GradeBook.csproj"
-              },
-              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj": {
-                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj"
               }
             }
           }
@@ -401,6 +199,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.CodeAnalysis.FxCopAnalyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -414,6 +216,10 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.15.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             },
             "nunit": {
               "target": "Package",
@@ -431,9 +237,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -501,6 +304,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.CodeAnalysis.FxCopAnalyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -533,17 +340,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj",
-        "projectName": "WebNetFramework",
-        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj"
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

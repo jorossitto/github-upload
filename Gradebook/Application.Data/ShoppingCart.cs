@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Application.Data
 {
-    class ShoppingCart
+    public class ShoppingCart
     {
         private readonly BusinessDBContext dBContext;
 

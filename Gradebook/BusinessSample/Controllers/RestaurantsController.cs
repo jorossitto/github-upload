@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ACM.BL;
 using Application.Data;
 
-namespace BusinessSample.Api
+namespace BusinessSample.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

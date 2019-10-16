@@ -12,6 +12,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\BusinessSample.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\BusinessSample.Views.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\BusinessSample.Views.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -19,10 +20,12 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
@@ -33,6 +36,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\OdeToCode.UseNodeModules.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\System.Composition.AttributedModel.dll
@@ -111,6 +115,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\ACM.BL.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Common.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\EntityFramework.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\staticwebassets\BusinessSample.StaticWebAssets.Manifest.cache
@@ -155,5 +160,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cache

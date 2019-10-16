@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Application.Data;
 
-namespace BusinessSample.Controllers
+namespace BusinessSample.ViewModels
 {
     public class HomeViewModel
     {

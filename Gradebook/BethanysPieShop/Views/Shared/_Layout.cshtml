@@ -25,6 +25,7 @@
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a asp-controller="Pie" asp-action="List">Pies</a></li>
                         <li><a asp-controller="Restaurants" asp-action="List">Restaurants</a></li>
+                        @await Component.InvokeAsync("ShoppingCartSummary")
                     </ul>
                 </div>
             </div>

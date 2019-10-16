@@ -1,11 +1,6 @@
 ﻿using NUnit.Framework;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using Moq;
 using ACM.BL;
-using TestNinja.Fundamentals;
 
 namespace ACM.Tests
 {
