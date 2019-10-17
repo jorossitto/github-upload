@@ -3093,6 +3093,7 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "3.0.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "Microsoft.AspNetCore.Razor": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Newtonsoft.Json": "12.0.2"
@@ -3113,6 +3114,7 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "3.0.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "Microsoft.AspNetCore.Razor": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
           "Newtonsoft.Json": "12.0.2",
           "OdeToCode.UseNodeModules": "3.0.0"
@@ -9813,6 +9815,7 @@
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.AspNetCore.Http.Features >= 3.0.0",
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
+      "Microsoft.AspNetCore.Razor >= 2.2.0",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0",
@@ -9883,6 +9886,10 @@
             "version": "[3.0.0, )"
           },
           "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Razor": {
             "target": "Package",
             "version": "[2.2.0, )"
           },

@@ -30,14 +30,6 @@ C:\Users\risottj\Downloads\building-aspdotnet-core-mvc-web-applications (1)\04\d
 C:\Users\risottj\Downloads\building-aspdotnet-core-mvc-web-applications (1)\04\demos\ASP.NET Core 3.0\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.dll
 C:\Users\risottj\Downloads\building-aspdotnet-core-mvc-web-applications (1)\04\demos\ASP.NET Core 3.0\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.pdb
 C:\Users\risottj\Downloads\building-aspdotnet-core-mvc-web-applications (1)\04\demos\ASP.NET Core 3.0\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csproj.CopyComplete
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.Manifest.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.AssemblyInfoInputs.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BusinessSample.Views.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BusinessSample.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -53,6 +45,9 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.runtimeconfig.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.runtimeconfig.dev.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.Views.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
@@ -161,12 +156,23 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\EntityFramework.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.Manifest.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\staticwebassets\BethanysPieShop.StaticWebAssets.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.TagHelpers.input.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.TagHelpers.output.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorCoreGenerate.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Pie\Details.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Pie\List.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Carousel.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -176,11 +182,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorTargetAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.RazorTargetAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csproj.CopyComplete
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.Views.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BethanysPieShop.Views.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.Views.pdb

@@ -29,6 +29,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Routing.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Routing.Abstractions.dll
