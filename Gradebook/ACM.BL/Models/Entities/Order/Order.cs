@@ -25,10 +25,10 @@ namespace ACM.BL
         public List<OrderItem> OrderItems { get; set; }
         public int ShippingAddressId { get; set; }
 
-        public string Log() => $"{OrderId}: Date: {this.OrderDate.Value.Date} Status: {this.EntityState.ToString()}";
+        public string Log() => $"{OrderId}: Date: {OrderDate.Value.Date} " +
+            $"Status: {EntityState.ToString()}";
 
-        public override string ToString() => 
-            $"{OrderDate.Value.Date} ({OrderId})";
+        public override string ToString() => $"{OrderDate.Value.Date} ({OrderId})";
 
         public override bool Validate()
         {

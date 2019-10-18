@@ -43,7 +43,7 @@ namespace Application.Data
                     s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCartId
                 );
 
-            if(shoppingCartItem == null)
+            if (shoppingCartItem == null)
             {
                 shoppingCartItem = new ShoppingCartItem
                 {
@@ -70,9 +70,9 @@ namespace Application.Data
                 );
             var localAmount = 0;
 
-            if(shoppingCartItem != null)
+            if (shoppingCartItem != null)
             {
-                if(shoppingCartItem.Amount > 1)
+                if (shoppingCartItem.Amount > 1)
                 {
                     shoppingCartItem.Amount--;
                     localAmount = shoppingCartItem.Amount;

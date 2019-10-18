@@ -186,3 +186,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
