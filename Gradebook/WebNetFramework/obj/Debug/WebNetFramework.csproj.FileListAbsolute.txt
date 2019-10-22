@@ -191,4 +191,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Antlr3.Runt
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache

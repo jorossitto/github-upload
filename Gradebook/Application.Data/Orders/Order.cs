@@ -44,7 +44,7 @@ namespace Application.Data
         [StringLength(50)]
         public string City { get; set; }
 
-        [StringLength(10)]
+        [StringLength(20)]
         public string State { get; set; }
 
         [Required(ErrorMessage = "Please enter your country")]

@@ -188,3 +188,17 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\BusinessSample.StaticWebAssets.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\BethanysPieShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs

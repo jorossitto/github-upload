@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-//using ACM.BL;
 using Application.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,7 +29,7 @@ namespace BethanysPieShop
             services.AddDbContext<BusinessDBContext>
                 (
                     options => options.UseSqlServer
-                    (Configuration.GetConnectionString("DefaultConnection"))
+                    (Configuration.GetConnectionString(config.DefaultConnection))
                 );
 
             //Mock Repository
@@ -37,14 +37,19 @@ namespace BethanysPieShop
             //services.AddScoped<IPieRepository, MockPieRepository>();
 
             //Real Repository
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<BusinessDBContext>();
+
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
-
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
+            services.AddScoped<ICampRepository, CampRepository>();
+
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddControllersWithViews();//services.AddMvc(); would also work still
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,12 +65,15 @@ namespace BethanysPieShop
             app.UseSession();//must be before use routing
 
             app.UseRouting();
+            app.UseAuthentication();//Must be after Routing
+            app.UseAuthorization();//Must be after Authentication
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

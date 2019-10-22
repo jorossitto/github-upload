@@ -218,4 +218,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Threadi
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csprojAssemblyReference.cache

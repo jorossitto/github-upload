@@ -161,3 +161,9 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\BusinessSample.StaticWebAssets.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cache
