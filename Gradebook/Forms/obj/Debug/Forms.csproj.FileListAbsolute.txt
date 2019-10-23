@@ -236,3 +236,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.Ge
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb

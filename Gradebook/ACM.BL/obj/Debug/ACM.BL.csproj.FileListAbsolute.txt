@@ -226,3 +226,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csprojA
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\AutoMapper.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\AutoMapper.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb

@@ -218,3 +218,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Threadi
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb

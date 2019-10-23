@@ -97,6 +97,46 @@ namespace Application.Data.Migrations
                     b.ToTable("Restaurants");
                 });
 
+            modelBuilder.Entity("Application.Data.Camp", b =>
+                {
+                    b.Property<int>("CampId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("EventDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Length")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Moniker")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CampId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Camps");
+
+                    b.HasData(
+                        new
+                        {
+                            CampId = 1,
+                            EventDate = new DateTime(2018, 10, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Length = 1,
+                            LocationId = 1,
+                            Moniker = "ATL2018",
+                            Name = "Atlanta Code Camp"
+                        });
+                });
+
             modelBuilder.Entity("Application.Data.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -132,6 +172,54 @@ namespace Application.Data.Migrations
                             CategoryId = 3,
                             CategoryName = "Seasonal Pies",
                             Description = "Get in the mood for a seasonal pie"
+                        });
+                });
+
+            modelBuilder.Entity("Application.Data.Location", b =>
+                {
+                    b.Property<int>("LocationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CityTown")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StateProvince")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VenueName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LocationId");
+
+                    b.ToTable("Location");
+
+                    b.HasData(
+                        new
+                        {
+                            LocationId = 1,
+                            Address1 = "123 Main Street",
+                            CityTown = "Atlanta",
+                            Country = "USA",
+                            PostalCode = "12345",
+                            StateProvince = "GA",
+                            VenueName = "Atlanta Convention Center"
                         });
                 });
 
@@ -187,8 +275,8 @@ namespace Application.Data.Migrations
                         .HasMaxLength(25);
 
                     b.Property<string>("State")
-                        .HasColumnType("nvarchar(10)")
-                        .HasMaxLength(10);
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("ZipCode")
                         .IsRequired()
@@ -530,6 +618,117 @@ namespace Application.Data.Migrations
                     b.ToTable("ShoppingCartItems");
                 });
 
+            modelBuilder.Entity("Application.Data.Speaker", b =>
+                {
+                    b.Property<int>("SpeakerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BlogUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompanyUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GitHub")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Twitter")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SpeakerId");
+
+                    b.ToTable("Speakers");
+
+                    b.HasData(
+                        new
+                        {
+                            SpeakerId = 1,
+                            BlogUrl = "http://wildermuth.com",
+                            Company = "Wilder Minds LLC",
+                            CompanyUrl = "http://wilderminds.com",
+                            FirstName = "Shawn",
+                            GitHub = "shawnwildermuth",
+                            LastName = "Wildermuth",
+                            Twitter = "shawnwildermuth"
+                        },
+                        new
+                        {
+                            SpeakerId = 2,
+                            BlogUrl = "http://shawnandresa.com",
+                            Company = "Wilder Minds LLC",
+                            CompanyUrl = "http://wilderminds.com",
+                            FirstName = "Resa",
+                            GitHub = "resawildermuth",
+                            LastName = "Wildermuth",
+                            Twitter = "resawildermuth"
+                        });
+                });
+
+            modelBuilder.Entity("Application.Data.Talk", b =>
+                {
+                    b.Property<int>("TalkId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Abstract")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CampId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SpeakerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TalkId");
+
+                    b.HasIndex("CampId");
+
+                    b.HasIndex("SpeakerId");
+
+                    b.ToTable("Talks");
+
+                    b.HasData(
+                        new
+                        {
+                            TalkId = 1,
+                            Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
+                            CampId = 1,
+                            Level = 100,
+                            SpeakerId = 1,
+                            Title = "Entity Framework From Scratch"
+                        },
+                        new
+                        {
+                            TalkId = 2,
+                            Abstract = "Thinking of good sample data examples is tiring.",
+                            CampId = 1,
+                            Level = 200,
+                            SpeakerId = 2,
+                            Title = "Writing Sample Data Made Easy"
+                        });
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -673,10 +872,12 @@ namespace Application.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -713,10 +914,12 @@ namespace Application.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -733,6 +936,13 @@ namespace Application.Data.Migrations
                         .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Application.Data.Camp", b =>
+                {
+                    b.HasOne("Application.Data.Location", "Location")
+                        .WithMany()
+                        .HasForeignKey("LocationId");
                 });
 
             modelBuilder.Entity("Application.Data.OrderDetail", b =>
@@ -764,6 +974,17 @@ namespace Application.Data.Migrations
                     b.HasOne("Application.Data.Pie", "Pie")
                         .WithMany()
                         .HasForeignKey("PieId");
+                });
+
+            modelBuilder.Entity("Application.Data.Talk", b =>
+                {
+                    b.HasOne("Application.Data.Camp", "Camp")
+                        .WithMany("Talks")
+                        .HasForeignKey("CampId");
+
+                    b.HasOne("Application.Data.Speaker", "Speaker")
+                        .WithMany()
+                        .HasForeignKey("SpeakerId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
