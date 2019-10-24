@@ -17,10 +17,11 @@ namespace Application.Data
 
         //Talks
         Task<Talk> GetTalkAsync(int talkId, bool includeSpeakers = false);
+        Task<Talk> GetTalkByMonikerAsync(string moniker, int id, bool includeSpeakers = false);
         Task<Talk[]> GetTalksByMonikerAsync(string moniker, bool includeSpeakers = false);
 
         //Speakers
         Task<Speaker[]> GetSpeakersByMonikerAysnc(string moniker);
-        
+        Task<Speaker> GetSpeakerAsync(int speakerId);
     }
 }

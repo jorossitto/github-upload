@@ -10,9 +10,15 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\CommonTests.runtimeconfig.dev.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\CommonTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Castle.Core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\EntityFramework.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
@@ -133,9 +139,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\AutoMapper.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -8,7 +8,12 @@ namespace Application.Data
     {
         public CampProfile()
         {
-            this.CreateMap<Camp, CampModel>();
+            this.CreateMap<Camp, CampModel>().ReverseMap();
+
+            this.CreateMap<Talk, TalkModel>().ReverseMap();
+
+            this.CreateMap<Speaker, SpeakerModel>().ReverseMap();
+
         }
     }
 }

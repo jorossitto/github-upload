@@ -9,9 +9,14 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\GradeBook.Tests.runtimeconfig.dev.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\GradeBook.Tests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\GradeBook.Tests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Castle.Core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\EntityFramework.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
@@ -120,8 +125,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\AutoMapper.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

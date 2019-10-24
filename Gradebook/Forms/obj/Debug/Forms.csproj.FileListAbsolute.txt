@@ -98,6 +98,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\System.Xml.XmlS
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\System.Xml.XPath.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\ACM.BL.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -163,6 +165,9 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\ACM.BL.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Common.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.AspNetCore.Antiforgery.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.AspNetCore.Authentication.Core.xml
@@ -236,8 +241,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.Ge
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\obj\Debug\Forms.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb

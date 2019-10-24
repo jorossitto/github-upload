@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace Application.Data
 {
@@ -19,9 +20,19 @@ namespace Application.Data
             throw new System.NotImplementedException();
         }
 
+        public Task<Camp[]> GetAllCampsByEventDate(DateTime theDate, bool includeTalks)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Camp> GetCampAsync(string moniker, bool includeTalks = false)
         {
             throw new System.NotImplementedException();
+        }
+
+        public Task<Speaker> GetSpeakerAsync(int speakerId)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<Speaker[]> GetSpeakersByMonikerAysnc(string moniker)
@@ -32,6 +43,11 @@ namespace Application.Data
         public Task<Talk> GetTalkAsync(int talkId, bool includeSpeakers = false)
         {
             throw new System.NotImplementedException();
+        }
+
+        public Task<Talk> GetTalkByMonikerAsync(string moniker, int id, bool includeSpeakers = false)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<Talk[]> GetTalksByMonikerAsync(string moniker, bool includeSpeakers = false)

@@ -97,6 +97,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Xml.Xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Xml.XPath.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Authentication.Core.dll
@@ -156,6 +158,9 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Securit
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Security.Principal.Windows.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Text.Encodings.Web.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Antiforgery.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.AspNetCore.Authentication.Core.xml
@@ -218,8 +223,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\System.Threadi
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.pdb

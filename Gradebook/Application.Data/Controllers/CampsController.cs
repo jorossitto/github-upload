@@ -16,11 +16,13 @@ namespace Application.Data.Controllers
     {
         private readonly ICampRepository repository;
         private readonly IMapper mapper;
+        private readonly LinkGenerator linkGenerator;
 
         public CampsController(ICampRepository repository, IMapper mapper, LinkGenerator linkGenerator)
         {
             this.repository = repository;
             this.mapper = mapper;
+            this.linkGenerator = linkGenerator;
         }
 
         [HttpGet]
@@ -33,7 +35,7 @@ namespace Application.Data.Controllers
             }
             catch(Exception)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
             }
 
         }
@@ -49,7 +51,7 @@ namespace Application.Data.Controllers
             }
             catch(Exception)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
             }
         }
 
@@ -66,13 +68,26 @@ namespace Application.Data.Controllers
             }
             catch(Exception)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
             }
         }
         public async Task<ActionResult<CampModel>> Post([FromBody]CampModel model)
         {
             try
             {
+                var existingMoniker = await repository.GetCampAsync(model.Moniker);
+                if(existingMoniker != null)
+                {
+                    return BadRequest("Moniker in Use");
+                }
+
+                var location = linkGenerator.GetPathByAction("Get", "Camps", new { moniker = model.Moniker });
+                
+                if(string.IsNullOrWhiteSpace(location))
+                {
+                    return BadRequest("Could not use current moniker");
+                }
+
                 //Create a new Camp
                 var camp = mapper.Map<Camp>(model);
                 repository.Add(camp);
@@ -84,7 +99,55 @@ namespace Application.Data.Controllers
             }
             catch (Exception)
             {
-                return this.StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
+            }
+
+            return BadRequest();
+        }
+
+        [HttpPut("{moniker}")]
+        public async Task<ActionResult<CampModel>> Put(string moniker, CampModel model)
+        {
+            try
+            {
+                var oldCamp = await repository.GetCampAsync(moniker);
+                if (oldCamp == null) return NotFound($"Could not find camp with moniker of {moniker}");
+
+                mapper.Map(model, oldCamp);
+
+                if(await repository.SaveChangesAsync())
+                {
+                    return mapper.Map<CampModel>(oldCamp);
+                }
+            }
+            catch (Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
+            }
+
+            return BadRequest();
+        }
+
+        [HttpDelete("{moniker}")]
+        public async Task<IActionResult> Delete(string moniker)
+        {
+            try
+            {
+                var oldCamp = await repository.GetCampAsync(moniker);
+                if (oldCamp == null) return NotFound();
+
+                repository.Delete(oldCamp);
+
+                if(await repository.SaveChangesAsync())
+                {
+                    return Ok();
+                }
+            }
+            catch (Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Camps Could not be found");
             }
 
             return BadRequest();
