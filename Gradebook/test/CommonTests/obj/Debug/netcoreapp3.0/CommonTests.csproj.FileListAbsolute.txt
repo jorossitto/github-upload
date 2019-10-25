@@ -139,3 +139,16 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\obj\Debug\netcoreapp3.0\CommonTests.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.Views.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.Views.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.exe
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\xunit.core.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\xunit.assert.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\CommonTests\bin\Debug\netcoreapp3.0\TennisApp.StaticWebAssets.xml

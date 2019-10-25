@@ -48,6 +48,8 @@ namespace Application.Data.Controllers
             try
             {
                 var talk = await repository.GetTalkByMonikerAsync(moniker, id, true);
+                if (talk == null) return NotFound();
+
                 return mapper.Map<TalkModel>(talk);
 
             }
@@ -89,6 +91,66 @@ namespace Application.Data.Controllers
                 else
                 {
                     return BadRequest("Failed to save new Talk");
+                }
+            }
+            catch (Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Failed to get Talks");
+            }
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<TalkModel>> Put(string moniker, int id, TalkModel model)
+        {
+            try
+            {
+                var talk = await repository.GetTalkByMonikerAsync(moniker, id, true);
+                if (talk == null) return NotFound("Couldn't find the talk");
+
+                mapper.Map(model, talk);
+
+                if (model.Speaker != null)
+                {
+                    var speaker = await repository.GetSpeakerAsync(model.Speaker.SpeakerId);
+                    if(speaker != null)
+                    {
+                        talk.Speaker = speaker;
+                    }
+                }
+                
+
+                if(await repository.SaveChangesAsync())
+                {
+                    return mapper.Map<TalkModel>(talk);
+                }
+                else
+                {
+                    return BadRequest("Failed to update Talk in database");
+                }
+            }
+            catch (Exception)
+            {
+
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Failed to get Talks");
+            }
+        }
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete (string moniker, int id)
+        {
+            try
+            {
+                var talk = await repository.GetTalkByMonikerAsync(moniker, id);
+                if (talk == null) return NotFound("Failed to find the talk to delete");
+                repository.Delete(talk);
+
+                if(await repository.SaveChangesAsync())
+                {
+                    return Ok();
+                }
+                else
+                {
+                    return BadRequest("Failed to delete talk");
                 }
             }
             catch (Exception)

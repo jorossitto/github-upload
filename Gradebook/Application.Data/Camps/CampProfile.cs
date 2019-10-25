@@ -10,7 +10,9 @@ namespace Application.Data
         {
             this.CreateMap<Camp, CampModel>().ReverseMap();
 
-            this.CreateMap<Talk, TalkModel>().ReverseMap();
+            this.CreateMap<Talk, TalkModel>().ReverseMap()
+                .ForMember(t => t.Camp, opt => opt.Ignore())
+                .ForMember(t => t.Speaker, opt => opt.Ignore());
 
             this.CreateMap<Speaker, SpeakerModel>().ReverseMap();
 

@@ -196,3 +196,14 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Antlr3.Runt
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.assert.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.core.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.execution.desktop.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.abstractions.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.assert.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.core.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.execution.desktop.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\WebNetFramework.dll.CodeAnalysisLog.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\WebNetFramework.dll.lastcodeanalysissucceeded

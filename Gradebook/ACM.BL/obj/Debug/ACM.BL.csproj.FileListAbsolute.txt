@@ -231,3 +231,14 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csprojA
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.assert.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.core.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.execution.desktop.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.abstractions.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.assert.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.core.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.execution.desktop.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\ACM.BL.dll.CodeAnalysisLog.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\ACM.BL.dll.lastcodeanalysissucceeded

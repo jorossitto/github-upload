@@ -46,12 +46,16 @@ namespace BethanysPieShop
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
 
             services.AddScoped<ICampRepository, CampRepository>();
+            services.AddScoped<IRestaurantData, SqlRestaurantData>();
 
             services.AddAutoMapper(typeof(Startup));
 
+            //services.AddApiVersioning();
+
             services.AddHttpContextAccessor();
             services.AddSession();
-            services.AddControllersWithViews();//services.AddMvc(); would also work still
+            //services.AddMvc(); would also work still
+            services.AddControllersWithViews();
             services.AddRazorPages();
         }
 
