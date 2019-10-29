@@ -272,6 +272,10 @@
               "target": "Package",
               "version": "[2.9.6, )"
             },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Moq": {
               "target": "Package",
               "version": "[4.13.0, )"

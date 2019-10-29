@@ -1,9 +1,0 @@
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\staticwebassets\BusinessLogicCore3.StaticWebAssets.Manifest.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\staticwebassets\BusinessLogicCore3.StaticWebAssets.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.RazorAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.RazorAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.AssemblyInfoInputs.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.AssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessLogicCore3\obj\Debug\netcoreapp3.0\BusinessLogicCore3.pdb

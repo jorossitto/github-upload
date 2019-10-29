@@ -34,9 +34,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\xunit.assert.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\obj\Debug\netcoreapp3.0\TennisApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\obj\Debug\netcoreapp3.0\TennisApp.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\obj\Debug\netcoreapp3.0\TennisApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\TennisApp.StaticWebAssets.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\AutoMapper.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

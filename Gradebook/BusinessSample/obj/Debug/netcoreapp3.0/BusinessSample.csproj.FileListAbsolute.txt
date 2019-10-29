@@ -169,7 +169,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.core.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.assert.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll

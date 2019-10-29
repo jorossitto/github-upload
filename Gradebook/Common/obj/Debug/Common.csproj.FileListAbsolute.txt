@@ -232,6 +232,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\xunit.assert.x
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\xunit.execution.desktop.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.dll.config
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Common.dll.CodeAnalysisLog.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Common.dll.lastcodeanalysissucceeded
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csprojAssemblyReference.cache

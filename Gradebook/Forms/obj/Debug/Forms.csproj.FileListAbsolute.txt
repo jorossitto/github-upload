@@ -249,5 +249,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.abstracti
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.assert.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.execution.desktop.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Forms.exe.CodeAnalysisLog.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Forms.exe.lastcodeanalysissucceeded

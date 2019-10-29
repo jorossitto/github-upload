@@ -19,5 +19,6 @@ namespace Application.Data
         public const string CategoryMenu = "CategoryMenu";
         public const string Scripts = "Scripts";
         public const string DefaultConnection = "DefaultConnection";
+        public const string AppSettingsJson = "appSettings.json"; 
     }
 }

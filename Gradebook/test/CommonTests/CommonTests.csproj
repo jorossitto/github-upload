@@ -31,7 +31,6 @@
     <ProjectReference Include="..\..\Application.Data\Application.Data.csproj" />
     <ProjectReference Include="..\..\Common\Common.csproj" />
     <ProjectReference Include="..\..\src\GradeBook\GradeBook.csproj" />
-    <ProjectReference Include="..\..\TennisApp\TennisApp.csproj" />
   </ItemGroup>
 
 </Project>
