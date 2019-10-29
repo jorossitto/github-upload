@@ -7,3 +7,4 @@
 *.ide-wal
 *.ide
 ~$test Resume.docx
+AspNetCore/
