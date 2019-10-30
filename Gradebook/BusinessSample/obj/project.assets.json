@@ -10310,6 +10310,7 @@
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "Microsoft.AspNetCore.Razor >= 2.2.0",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.6",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "Newtonsoft.Json >= 12.0.2",
       "OdeToCode.UseNodeModules >= 3.0.0",
@@ -10402,6 +10403,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.9.6, )"
+          },
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

@@ -212,6 +212,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"

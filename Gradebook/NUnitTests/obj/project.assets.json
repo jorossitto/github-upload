@@ -9468,6 +9468,7 @@
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "Microsoft.AspNetCore.Razor >= 2.2.0",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.6",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0",
       "Microsoft.NET.Test.Sdk >= 16.3.0",
       "NUnit3TestAdapter >= 3.15.1",
       "Newtonsoft.Json >= 12.0.2",
@@ -9563,6 +9564,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.9.6, )"
+          },
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

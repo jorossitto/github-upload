@@ -8609,6 +8609,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Application.Data >= 1.0.0",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0",
       "xunit >= 2.4.1",
       "xunit.extensibility.core >= 2.4.1"
     ]
@@ -8661,6 +8662,10 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "xunit": {
             "target": "Package",
             "version": "[2.4.1, )"

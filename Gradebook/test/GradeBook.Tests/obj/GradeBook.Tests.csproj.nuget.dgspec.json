@@ -457,6 +457,10 @@
               "target": "Package",
               "version": "[2.9.6, )"
             },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.3.0, )"
