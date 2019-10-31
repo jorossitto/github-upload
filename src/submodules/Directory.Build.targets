@@ -1,2 +1,0 @@
-<!-- Intentionally breaks the inheritance chain so submodules do not inherit build settings from this repo. -->
-<Project />
