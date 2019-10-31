@@ -1,0 +1,1711 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Internal.AspNetCore.Analyzers/5.0.0-alpha1.19517.7": {
+        "type": "package"
+      },
+      "Internal.AspNetCore.BuildTasks/3.0.0-build-20190530.3": {
+        "type": "package",
+        "build": {
+          "build/Internal.AspNetCore.BuildTasks.props": {}
+        }
+      },
+      "MicroBuild.Core/0.3.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/_._": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.CodeCoverage/16.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.DotNet.GenAPI/1.0.0-beta.19517.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Collections.NonGeneric",
+          "System.Diagnostics.TextWriterTraceListener",
+          "System.Diagnostics.TraceSource",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives"
+        ],
+        "build": {
+          "build/Microsoft.DotNet.GenAPI.targets": {}
+        }
+      },
+      "Microsoft.Net.Compilers.Toolset/3.4.0-beta1-19456-03": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Threading.Thread"
+        ],
+        "build": {
+          "build/Microsoft.Net.Compilers.Toolset.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.Razor/5.0.0-alpha1.19517.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.NET.Sdk.Razor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Sdk.Razor.props": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.1.1"
+        },
+        "build": {
+          "build/net40/Microsoft.NET.Test.Sdk.props": {},
+          "build/net40/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0-preview.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0-preview.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0-preview.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Vsts.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.Vsts.Git.props": {},
+          "build/Microsoft.SourceLink.Vsts.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Internal.AspNetCore.Analyzers/5.0.0-alpha1.19517.7": {
+        "type": "package"
+      },
+      "Internal.AspNetCore.BuildTasks/3.0.0-build-20190530.3": {
+        "type": "package",
+        "build": {
+          "build/Internal.AspNetCore.BuildTasks.props": {}
+        }
+      },
+      "MicroBuild.Core/0.3.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/_._": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.CodeCoverage/16.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.DotNet.GenAPI/1.0.0-beta.19517.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Collections.NonGeneric",
+          "System.Diagnostics.TextWriterTraceListener",
+          "System.Diagnostics.TraceSource",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives"
+        ],
+        "build": {
+          "build/Microsoft.DotNet.GenAPI.targets": {}
+        }
+      },
+      "Microsoft.Net.Compilers.Toolset/3.4.0-beta1-19456-03": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Threading.Thread"
+        ],
+        "build": {
+          "build/Microsoft.Net.Compilers.Toolset.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.Razor/5.0.0-alpha1.19517.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.NET.Sdk.Razor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Sdk.Razor.props": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.1.1"
+        },
+        "build": {
+          "build/net40/Microsoft.NET.Test.Sdk.props": {},
+          "build/net40/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0-preview.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0-preview.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0-preview.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Vsts.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.Vsts.Git.props": {},
+          "build/Microsoft.SourceLink.Vsts.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Internal.AspNetCore.Analyzers/5.0.0-alpha1.19517.7": {
+        "type": "package"
+      },
+      "Internal.AspNetCore.BuildTasks/3.0.0-build-20190530.3": {
+        "type": "package",
+        "build": {
+          "build/Internal.AspNetCore.BuildTasks.props": {}
+        }
+      },
+      "MicroBuild.Core/0.3.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/_._": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.CodeCoverage/16.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.DotNet.GenAPI/1.0.0-beta.19517.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Collections.NonGeneric",
+          "System.Diagnostics.TextWriterTraceListener",
+          "System.Diagnostics.TraceSource",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives"
+        ],
+        "build": {
+          "build/Microsoft.DotNet.GenAPI.targets": {}
+        }
+      },
+      "Microsoft.Net.Compilers.Toolset/3.4.0-beta1-19456-03": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Threading.Thread"
+        ],
+        "build": {
+          "build/Microsoft.Net.Compilers.Toolset.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.Razor/5.0.0-alpha1.19517.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.NET.Sdk.Razor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Sdk.Razor.props": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.1.1"
+        },
+        "build": {
+          "build/net40/Microsoft.NET.Test.Sdk.props": {},
+          "build/net40/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0-preview.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0-preview.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0-preview.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Vsts.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.Vsts.Git.props": {},
+          "build/Microsoft.SourceLink.Vsts.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Internal.AspNetCore.Analyzers/5.0.0-alpha1.19517.7": {
+        "type": "package"
+      },
+      "Internal.AspNetCore.BuildTasks/3.0.0-build-20190530.3": {
+        "type": "package",
+        "build": {
+          "build/Internal.AspNetCore.BuildTasks.props": {}
+        }
+      },
+      "MicroBuild.Core/0.3.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/_._": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildCrossTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.CodeCoverage/16.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.DotNet.GenAPI/1.0.0-beta.19517.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Collections.NonGeneric",
+          "System.Diagnostics.TextWriterTraceListener",
+          "System.Diagnostics.TraceSource",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives"
+        ],
+        "build": {
+          "build/Microsoft.DotNet.GenAPI.targets": {}
+        }
+      },
+      "Microsoft.Net.Compilers.Toolset/3.4.0-beta1-19456-03": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Threading.Thread"
+        ],
+        "build": {
+          "build/Microsoft.Net.Compilers.Toolset.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.Razor/5.0.0-alpha1.19517.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.NET.Sdk.Razor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Sdk.Razor.props": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/16.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "16.1.1"
+        },
+        "build": {
+          "build/net40/Microsoft.NET.Test.Sdk.props": {},
+          "build/net40/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.0-preview.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net472": "1.0.0-preview.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0-preview.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.Vsts.Git/1.0.0-beta2-19367-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta2-19367-01",
+          "Microsoft.SourceLink.Common": "1.0.0-beta2-19367-01"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.Vsts.Git.props": {},
+          "build/Microsoft.SourceLink.Vsts.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.props": {},
+          "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Internal.AspNetCore.Analyzers/5.0.0-alpha1.19517.7": {
+      "sha512": "AVi/GmCUmYvO2pjGat18OC+WIcwvhbjWe7Rh9omOg+ASBcYYcuS/JaXk0EJd+N16gL8gto2Jd7ZSXNm+ZTwtyA==",
+      "type": "package",
+      "path": "internal.aspnetcore.analyzers/5.0.0-alpha1.19517.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/netstandard1.3/Internal.AspNetCore.Analyzers.dll",
+        "internal.aspnetcore.analyzers.5.0.0-alpha1.19517.7.nupkg.sha512",
+        "internal.aspnetcore.analyzers.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Internal.AspNetCore.BuildTasks/3.0.0-build-20190530.3": {
+      "sha512": "CU705hF0Pj7+5BWlRoRvcWm+11ATz2is8bEn4l4C70v31oV2mH+UJuPb1PGlqbYgLMhEie2JqvMhIdGYpvjaJg==",
+      "type": "package",
+      "path": "internal.aspnetcore.buildtasks/3.0.0-build-20190530.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "build/Internal.AspNetCore.BuildTasks.props",
+        "internal.aspnetcore.buildtasks.3.0.0-build-20190530.3.nupkg.sha512",
+        "internal.aspnetcore.buildtasks.nuspec",
+        "tools/netstandard2.0/Internal.AspNetCore.BuildTasks.dll"
+      ]
+    },
+    "MicroBuild.Core/0.3.0": {
+      "sha512": "71NxN8xP8+n08w7XuEOpbzuerL45QRodeLfrjs51qCT8LbjARyfPEcSE30YqLjFtFl3km5eH5Oaqnq2p1hQbAw==",
+      "type": "package",
+      "path": "microbuild.core/0.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MicroBuild.Core.props",
+        "build/MicroBuild.Core.targets",
+        "build/MicroBuild.Plugin.props",
+        "buildCrossTargeting/MicroBuild.Core.props",
+        "buildCrossTargeting/MicroBuild.Core.targets",
+        "microbuild.core.0.3.0.nupkg.sha512",
+        "microbuild.core.nuspec"
+      ]
+    },
+    "Microsoft.Build.Tasks.Git/1.0.0-beta2-19367-01": {
+      "sha512": "3kbkb7aUF41YuJnQzoCJRbjb6bgYY3KHlJ9GGJZ30Y5ytdFusLAC5o3/kfE+Vm6slvu4EBgIwMUknL6U+Pu9uA==",
+      "type": "package",
+      "path": "microsoft.build.tasks.git/1.0.0-beta2-19367-01",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Build.Tasks.Git.props",
+        "build/Microsoft.Build.Tasks.Git.targets",
+        "buildCrossTargeting/Microsoft.Build.Tasks.Git.props",
+        "buildCrossTargeting/Microsoft.Build.Tasks.Git.targets",
+        "microsoft.build.tasks.git.1.0.0-beta2-19367-01.nupkg.sha512",
+        "microsoft.build.tasks.git.nuspec",
+        "tools/net461/Microsoft.Build.Tasks.Git.dll",
+        "tools/net461/Microsoft.Build.Tasks.Git.pdb",
+        "tools/net461/System.Collections.Immutable.dll",
+        "tools/net461/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net461/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.dll",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.pdb",
+        "tools/netcoreapp2.0/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/netcoreapp2.0/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll"
+      ]
+    },
+    "Microsoft.CodeCoverage/16.1.1": {
+      "sha512": "PyWoU5QNma20JDmee8s9oT5WuG67ZKYj1q2mNsVKnWM15tjW9aa44nwMEOWsMyrd5+Vhx16VgqcnQ9BozWJCJA==",
+      "type": "package",
+      "path": "microsoft.codecoverage/16.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard1.0/CodeCoverage/covrun32.dll",
+        "build/netstandard1.0/CodeCoverage/msdia140.dll",
+        "build/netstandard1.0/Microsoft.CodeCoverage.props",
+        "build/netstandard1.0/Microsoft.CodeCoverage.targets",
+        "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
+        "build/netstandard1.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "microsoft.codecoverage.16.1.1.nupkg.sha512",
+        "microsoft.codecoverage.nuspec"
+      ]
+    },
+    "Microsoft.DotNet.GenAPI/1.0.0-beta.19517.3": {
+      "sha512": "Y4LJsoS6AKHPhP1xQOsJqFq9dXFY7f/ZCsCtimlI5n/tKUndJXzIqVtfm1+CF8ZYvoLdCA3nBoDabS1gPYQm0w==",
+      "type": "package",
+      "path": "microsoft.dotnet.genapi/1.0.0-beta.19517.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.DotNet.GenAPI.targets",
+        "microsoft.dotnet.genapi.1.0.0-beta.19517.3.nupkg.sha512",
+        "microsoft.dotnet.genapi.nuspec",
+        "tools/net472/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net472/Microsoft.Cci.Extensions.dll",
+        "tools/net472/Microsoft.Cci.dll",
+        "tools/net472/Microsoft.DotNet.GenAPI.exe",
+        "tools/net472/Microsoft.DotNet.GenAPI.exe.config",
+        "tools/net472/System.Composition.AttributedModel.dll",
+        "tools/net472/System.Composition.Convention.dll",
+        "tools/net472/System.Composition.Hosting.dll",
+        "tools/net472/System.Composition.Runtime.dll",
+        "tools/net472/System.Composition.TypedParts.dll",
+        "tools/net472/System.ValueTuple.dll",
+        "tools/netcoreapp2.1/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/netcoreapp2.1/Microsoft.Cci.Extensions.dll",
+        "tools/netcoreapp2.1/Microsoft.Cci.dll",
+        "tools/netcoreapp2.1/Microsoft.DotNet.GenAPI.deps.json",
+        "tools/netcoreapp2.1/Microsoft.DotNet.GenAPI.dll",
+        "tools/netcoreapp2.1/Microsoft.DotNet.GenAPI.runtimeconfig.json",
+        "tools/netcoreapp2.1/System.Composition.AttributedModel.dll",
+        "tools/netcoreapp2.1/System.Composition.Convention.dll",
+        "tools/netcoreapp2.1/System.Composition.Hosting.dll",
+        "tools/netcoreapp2.1/System.Composition.Runtime.dll",
+        "tools/netcoreapp2.1/System.Composition.TypedParts.dll"
+      ]
+    },
+    "Microsoft.Net.Compilers.Toolset/3.4.0-beta1-19456-03": {
+      "sha512": "IwSV7jJS5xqiGJFfAJ3ib1moitHle0THipKim3Qa8H/i2SMUGF/BxeYNt0BE5PPpk3/1ziuiXFCWblz7rt9XEg==",
+      "type": "package",
+      "path": "microsoft.net.compilers.toolset/3.4.0-beta1-19456-03",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "build/Microsoft.Net.Compilers.Toolset.props",
+        "microsoft.net.compilers.toolset.3.4.0-beta1-19456-03.nupkg.sha512",
+        "microsoft.net.compilers.toolset.nuspec",
+        "tasks/net472/Microsoft.Build.Tasks.CodeAnalysis.dll",
+        "tasks/net472/Microsoft.CSharp.Core.targets",
+        "tasks/net472/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "tasks/net472/Microsoft.CodeAnalysis.CSharp.dll",
+        "tasks/net472/Microsoft.CodeAnalysis.Scripting.dll",
+        "tasks/net472/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tasks/net472/Microsoft.CodeAnalysis.dll",
+        "tasks/net472/Microsoft.DiaSymReader.Native.amd64.dll",
+        "tasks/net472/Microsoft.DiaSymReader.Native.x86.dll",
+        "tasks/net472/Microsoft.Managed.Core.targets",
+        "tasks/net472/Microsoft.Managed.EditorConfig.targets",
+        "tasks/net472/Microsoft.VisualBasic.Core.targets",
+        "tasks/net472/System.Buffers.dll",
+        "tasks/net472/System.Collections.Immutable.dll",
+        "tasks/net472/System.Memory.dll",
+        "tasks/net472/System.Numerics.Vectors.dll",
+        "tasks/net472/System.Reflection.Metadata.dll",
+        "tasks/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tasks/net472/System.Text.Encoding.CodePages.dll",
+        "tasks/net472/System.Threading.Tasks.Extensions.dll",
+        "tasks/net472/VBCSCompiler.exe",
+        "tasks/net472/VBCSCompiler.exe.config",
+        "tasks/net472/cs/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/cs/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/csc.exe",
+        "tasks/net472/csc.exe.config",
+        "tasks/net472/csc.rsp",
+        "tasks/net472/csi.exe",
+        "tasks/net472/csi.exe.config",
+        "tasks/net472/csi.rsp",
+        "tasks/net472/de/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/de/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/de/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/es/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/es/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/es/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/fr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/fr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/it/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/it/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/it/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/ja/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/ja/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/ko/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/ko/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/pl/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/pl/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/ru/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/ru/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/tr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/tr/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/vbc.exe",
+        "tasks/net472/vbc.exe.config",
+        "tasks/net472/vbc.rsp",
+        "tasks/net472/zh-Hans/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/net472/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/Microsoft.Build.Tasks.CodeAnalysis.dll",
+        "tasks/netcoreapp2.1/Microsoft.CSharp.Core.targets",
+        "tasks/netcoreapp2.1/Microsoft.Managed.Core.targets",
+        "tasks/netcoreapp2.1/Microsoft.Managed.EditorConfig.targets",
+        "tasks/netcoreapp2.1/Microsoft.VisualBasic.Core.targets",
+        "tasks/netcoreapp2.1/bincore/Microsoft.CodeAnalysis.CSharp.dll",
+        "tasks/netcoreapp2.1/bincore/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tasks/netcoreapp2.1/bincore/Microsoft.CodeAnalysis.dll",
+        "tasks/netcoreapp2.1/bincore/System.Runtime.CompilerServices.Unsafe.dll",
+        "tasks/netcoreapp2.1/bincore/System.Text.Encoding.CodePages.dll",
+        "tasks/netcoreapp2.1/bincore/VBCSCompiler.deps.json",
+        "tasks/netcoreapp2.1/bincore/VBCSCompiler.dll",
+        "tasks/netcoreapp2.1/bincore/VBCSCompiler.runtimeconfig.json",
+        "tasks/netcoreapp2.1/bincore/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/csc.deps.json",
+        "tasks/netcoreapp2.1/bincore/csc.dll",
+        "tasks/netcoreapp2.1/bincore/csc.runtimeconfig.json",
+        "tasks/netcoreapp2.1/bincore/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/de/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/es/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/it/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "tasks/netcoreapp2.1/bincore/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/vbc.deps.json",
+        "tasks/netcoreapp2.1/bincore/vbc.dll",
+        "tasks/netcoreapp2.1/bincore/vbc.runtimeconfig.json",
+        "tasks/netcoreapp2.1/bincore/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/bincore/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tasks/netcoreapp2.1/bincore/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tasks/netcoreapp2.1/bincore/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/cs/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/de/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/es/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/fr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/it/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/ja/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/ko/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/pl/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/pt-BR/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/ru/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/tr/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/zh-Hans/Microsoft.Build.Tasks.CodeAnalysis.resources.dll",
+        "tasks/netcoreapp2.1/zh-Hant/Microsoft.Build.Tasks.CodeAnalysis.resources.dll"
+      ]
+    },
+    "Microsoft.NET.Sdk.Razor/5.0.0-alpha1.19517.12": {
+      "sha512": "Hso6UeQSKJzXyaE1/PGKzuPApUnVSFATwpAaNCqcTwxdCZ0NeOTBxAu9cOD3BAD4E1P8uy7hcoD2OQLH6MblQA==",
+      "type": "package",
+      "path": "microsoft.net.sdk.razor/5.0.0-alpha1.19517.12",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Sdk/Sdk.Razor.StaticAssets.ProjectSystem.props",
+        "Sdk/Sdk.props",
+        "Sdk/Sdk.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.CodeGeneration.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.Compilation.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.Component.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.Configuration.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.DesignTime.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.StaticWebAssets.targets",
+        "build/netstandard2.0/Microsoft.NET.Sdk.Razor.props",
+        "build/netstandard2.0/Rules/RazorComponentWithTargetPath.xaml",
+        "build/netstandard2.0/Rules/RazorConfiguration.xaml",
+        "build/netstandard2.0/Rules/RazorExtension.xaml",
+        "build/netstandard2.0/Rules/RazorGeneral.xaml",
+        "build/netstandard2.0/Rules/RazorGenerateWithTargetPath.xaml",
+        "build/netstandard2.0/Sdk.Razor.CurrentVersion.props",
+        "build/netstandard2.0/Sdk.Razor.CurrentVersion.targets",
+        "buildMultiTargeting/Microsoft.NET.Sdk.Razor.props",
+        "buildMultiTargeting/Sdk.Razor.CurrentVersion.MultiTargeting.targets",
+        "extensions/mvc-3-0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "lib/netstandard2.0/_._",
+        "microsoft.net.sdk.razor.5.0.0-alpha1.19517.12.nupkg.sha512",
+        "microsoft.net.sdk.razor.nuspec",
+        "packageIcon.png",
+        "tasks/net46/Microsoft.NET.Sdk.Razor.Tasks.dll",
+        "tasks/net46/System.Collections.Immutable.dll",
+        "tasks/net46/System.Reflection.Metadata.dll",
+        "tasks/netcoreapp5.0/Microsoft.NET.Sdk.Razor.Tasks.dll",
+        "tools/netcoreapp5.0/Microsoft.AspNetCore.Razor.Language.dll",
+        "tools/netcoreapp5.0/Microsoft.AspNetCore.Razor.Language.xml",
+        "tools/netcoreapp5.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/netcoreapp5.0/Microsoft.CodeAnalysis.Razor.dll",
+        "tools/netcoreapp5.0/Microsoft.CodeAnalysis.Razor.xml",
+        "tools/netcoreapp5.0/Microsoft.CodeAnalysis.dll",
+        "tools/netcoreapp5.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp5.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/de/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/es/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/it/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/rzc.deps.json",
+        "tools/netcoreapp5.0/rzc.dll",
+        "tools/netcoreapp5.0/rzc.runtimeconfig.json",
+        "tools/netcoreapp5.0/rzc.xml",
+        "tools/netcoreapp5.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netcoreapp5.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netcoreapp5.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+      ]
+    },
+    "Microsoft.NET.Test.Sdk/16.1.1": {
+      "sha512": "HypqmcOK2F/PbXFG02xeCj52Fin/9UF9u9IMH5Ohgn0+iEx7vYjBtXg5SkOf/p84golyLY8cO2S1jchem/1dRQ==",
+      "type": "package",
+      "path": "microsoft.net.test.sdk/16.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/Microsoft.NET.Test.Sdk.props",
+        "build/net40/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.targets",
+        "build/uap10.0/Microsoft.NET.Test.Sdk.props",
+        "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
+        "microsoft.net.test.sdk.16.1.1.nupkg.sha512",
+        "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.0-preview.2": {
+      "sha512": "m+pJPEO7HyXvrOna5Sr3s77ewXonjYWJTNL6drh8xACnMNxnlqUDKx9HfGeSE9wmfY0lQwppaeZpFTPGaH7kZg==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies/1.0.0-preview.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.netframework.referenceassemblies.1.0.0-preview.2.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies.net472/1.0.0-preview.2": {
+      "sha512": "TpjU61MaDdutQqg9G64wz6CSjJreGmxYQCczAC4GebB6ZZQmtE4EMuTKAzUX8xNXyqiu62s49ySkWeG6WvrbkA==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies.net472/1.0.0-preview.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.NETFramework/v4.7.2/Accessibility.dll",
+        "build/.NETFramework/v4.7.2/Accessibility.xml",
+        "build/.NETFramework/v4.7.2/CustomMarshalers.dll",
+        "build/.NETFramework/v4.7.2/CustomMarshalers.xml",
+        "build/.NETFramework/v4.7.2/Facades/Microsoft.Win32.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.AppContext.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.Concurrent.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.NonGeneric.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.Specialized.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Collections.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.Annotations.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.EventBasedAsync.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.TypeConverter.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ComponentModel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Console.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Data.Common.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Contracts.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Debug.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.FileVersionInfo.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Process.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.StackTrace.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.Tools.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Diagnostics.TraceSource.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Drawing.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Dynamic.Runtime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.Calendars.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Globalization.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.Compression.ZipFile.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.DriveInfo.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.Watcher.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.FileSystem.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.IsolatedStorage.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.MemoryMappedFiles.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.Pipes.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.UnmanagedMemoryStream.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.IO.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Expressions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Parallel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.Queryable.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Linq.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Http.Rtc.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.NameResolution.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.NetworkInformation.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Ping.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Requests.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Security.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.Sockets.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebHeaderCollection.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebSockets.Client.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Net.WebSockets.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ObjectModel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.ILGeneration.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.Lightweight.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Emit.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Reflection.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.Reader.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.ResourceManager.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Resources.Writer.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.CompilerServices.VisualC.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Handles.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.InteropServices.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Numerics.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Formatters.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Json.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.Serialization.Xml.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Runtime.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Claims.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Algorithms.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Csp.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Encoding.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Cryptography.X509Certificates.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.Principal.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Security.SecureString.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Duplex.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Http.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.NetTcp.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Primitives.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ServiceModel.Security.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.Encoding.Extensions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.Encoding.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Text.RegularExpressions.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Overlapped.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Tasks.Parallel.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Tasks.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Thread.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.ThreadPool.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.Timer.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Threading.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.ValueTuple.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.ReaderWriter.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XPath.XDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XPath.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XmlDocument.dll",
+        "build/.NETFramework/v4.7.2/Facades/System.Xml.XmlSerializer.dll",
+        "build/.NETFramework/v4.7.2/Facades/netstandard.dll",
+        "build/.NETFramework/v4.7.2/ISymWrapper.dll",
+        "build/.NETFramework/v4.7.2/ISymWrapper.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Activities.Build.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Activities.Build.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Conversion.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Conversion.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Engine.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Engine.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Framework.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Framework.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Tasks.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Tasks.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Utilities.v4.0.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.Utilities.v4.0.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.Build.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.CSharp.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.CSharp.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.JScript.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.JScript.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.Data.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.Data.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.Compatibility.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualBasic.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.STLCLR.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.STLCLR.xml",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.dll",
+        "build/.NETFramework/v4.7.2/Microsoft.VisualC.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/FullTrust.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/Internet.xml",
+        "build/.NETFramework/v4.7.2/PermissionSets/LocalIntranet.xml",
+        "build/.NETFramework/v4.7.2/PresentationBuildTasks.dll",
+        "build/.NETFramework/v4.7.2/PresentationBuildTasks.xml",
+        "build/.NETFramework/v4.7.2/PresentationCore.dll",
+        "build/.NETFramework/v4.7.2/PresentationCore.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero2.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Aero2.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.AeroLite.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.AeroLite.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Classic.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Classic.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Luna.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Luna.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Royale.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.Royale.xml",
+        "build/.NETFramework/v4.7.2/PresentationFramework.dll",
+        "build/.NETFramework/v4.7.2/PresentationFramework.xml",
+        "build/.NETFramework/v4.7.2/ReachFramework.dll",
+        "build/.NETFramework/v4.7.2/ReachFramework.xml",
+        "build/.NETFramework/v4.7.2/RedistList/FrameworkList.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.Core.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.Core.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.DurableInstancing.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.DurableInstancing.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.AddIn.Contract.dll",
+        "build/.NETFramework/v4.7.2/System.AddIn.Contract.xml",
+        "build/.NETFramework/v4.7.2/System.AddIn.dll",
+        "build/.NETFramework/v4.7.2/System.AddIn.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.Registration.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.Registration.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.Composition.xml",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.DataAnnotations.dll",
+        "build/.NETFramework/v4.7.2/System.ComponentModel.DataAnnotations.xml",
+        "build/.NETFramework/v4.7.2/System.Configuration.Install.dll",
+        "build/.NETFramework/v4.7.2/System.Configuration.Install.xml",
+        "build/.NETFramework/v4.7.2/System.Configuration.dll",
+        "build/.NETFramework/v4.7.2/System.Configuration.xml",
+        "build/.NETFramework/v4.7.2/System.Core.dll",
+        "build/.NETFramework/v4.7.2/System.Core.xml",
+        "build/.NETFramework/v4.7.2/System.Data.DataSetExtensions.dll",
+        "build/.NETFramework/v4.7.2/System.Data.DataSetExtensions.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Entity.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Linq.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Data.OracleClient.dll",
+        "build/.NETFramework/v4.7.2/System.Data.OracleClient.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Client.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Client.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Data.Services.dll",
+        "build/.NETFramework/v4.7.2/System.Data.Services.xml",
+        "build/.NETFramework/v4.7.2/System.Data.SqlXml.dll",
+        "build/.NETFramework/v4.7.2/System.Data.SqlXml.xml",
+        "build/.NETFramework/v4.7.2/System.Data.dll",
+        "build/.NETFramework/v4.7.2/System.Data.xml",
+        "build/.NETFramework/v4.7.2/System.Deployment.dll",
+        "build/.NETFramework/v4.7.2/System.Deployment.xml",
+        "build/.NETFramework/v4.7.2/System.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Device.dll",
+        "build/.NETFramework/v4.7.2/System.Device.xml",
+        "build/.NETFramework/v4.7.2/System.Diagnostics.Tracing.dll",
+        "build/.NETFramework/v4.7.2/System.Diagnostics.Tracing.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.AccountManagement.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.AccountManagement.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.Protocols.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.Protocols.xml",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.dll",
+        "build/.NETFramework/v4.7.2/System.DirectoryServices.xml",
+        "build/.NETFramework/v4.7.2/System.Drawing.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Drawing.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Drawing.dll",
+        "build/.NETFramework/v4.7.2/System.Drawing.xml",
+        "build/.NETFramework/v4.7.2/System.Dynamic.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.Thunk.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.Wrapper.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.dll",
+        "build/.NETFramework/v4.7.2/System.EnterpriseServices.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.FileSystem.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.FileSystem.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Compression.xml",
+        "build/.NETFramework/v4.7.2/System.IO.Log.dll",
+        "build/.NETFramework/v4.7.2/System.IO.Log.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Selectors.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Selectors.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Services.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.Services.xml",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.dll",
+        "build/.NETFramework/v4.7.2/System.IdentityModel.xml",
+        "build/.NETFramework/v4.7.2/System.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Management.Instrumentation.dll",
+        "build/.NETFramework/v4.7.2/System.Management.Instrumentation.xml",
+        "build/.NETFramework/v4.7.2/System.Management.dll",
+        "build/.NETFramework/v4.7.2/System.Management.xml",
+        "build/.NETFramework/v4.7.2/System.Messaging.dll",
+        "build/.NETFramework/v4.7.2/System.Messaging.xml",
+        "build/.NETFramework/v4.7.2/System.Net.Http.WebRequest.dll",
+        "build/.NETFramework/v4.7.2/System.Net.Http.WebRequest.xml",
+        "build/.NETFramework/v4.7.2/System.Net.Http.dll",
+        "build/.NETFramework/v4.7.2/System.Net.Http.xml",
+        "build/.NETFramework/v4.7.2/System.Net.dll",
+        "build/.NETFramework/v4.7.2/System.Net.xml",
+        "build/.NETFramework/v4.7.2/System.Numerics.dll",
+        "build/.NETFramework/v4.7.2/System.Numerics.xml",
+        "build/.NETFramework/v4.7.2/System.Printing.dll",
+        "build/.NETFramework/v4.7.2/System.Printing.xml",
+        "build/.NETFramework/v4.7.2/System.Reflection.Context.dll",
+        "build/.NETFramework/v4.7.2/System.Reflection.Context.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Caching.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Caching.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.DurableInstancing.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.DurableInstancing.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Remoting.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Remoting.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.Formatters.Soap.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.Formatters.Soap.xml",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.dll",
+        "build/.NETFramework/v4.7.2/System.Runtime.Serialization.xml",
+        "build/.NETFramework/v4.7.2/System.Security.dll",
+        "build/.NETFramework/v4.7.2/System.Security.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activation.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activation.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Channels.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Channels.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Discovery.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Discovery.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Routing.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Routing.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Web.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.Web.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceModel.xml",
+        "build/.NETFramework/v4.7.2/System.ServiceProcess.dll",
+        "build/.NETFramework/v4.7.2/System.ServiceProcess.xml",
+        "build/.NETFramework/v4.7.2/System.Speech.dll",
+        "build/.NETFramework/v4.7.2/System.Speech.xml",
+        "build/.NETFramework/v4.7.2/System.Threading.Tasks.Dataflow.xml",
+        "build/.NETFramework/v4.7.2/System.Transactions.dll",
+        "build/.NETFramework/v4.7.2/System.Transactions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Abstractions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.ApplicationServices.dll",
+        "build/.NETFramework/v4.7.2/System.Web.ApplicationServices.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DataVisualization.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.dll",
+        "build/.NETFramework/v4.7.2/System.Web.DynamicData.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Entity.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.Design.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Extensions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Mobile.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Mobile.xml",
+        "build/.NETFramework/v4.7.2/System.Web.RegularExpressions.dll",
+        "build/.NETFramework/v4.7.2/System.Web.RegularExpressions.xml",
+        "build/.NETFramework/v4.7.2/System.Web.Routing.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Services.dll",
+        "build/.NETFramework/v4.7.2/System.Web.Services.xml",
+        "build/.NETFramework/v4.7.2/System.Web.dll",
+        "build/.NETFramework/v4.7.2/System.Web.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Controls.Ribbon.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Controls.Ribbon.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.DataVisualization.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Forms.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Input.Manipulations.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Input.Manipulations.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.Presentation.dll",
+        "build/.NETFramework/v4.7.2/System.Windows.Presentation.xml",
+        "build/.NETFramework/v4.7.2/System.Windows.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Activities.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Activities.xml",
+        "build/.NETFramework/v4.7.2/System.Workflow.ComponentModel.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.ComponentModel.xml",
+        "build/.NETFramework/v4.7.2/System.Workflow.Runtime.dll",
+        "build/.NETFramework/v4.7.2/System.Workflow.Runtime.xml",
+        "build/.NETFramework/v4.7.2/System.WorkflowServices.dll",
+        "build/.NETFramework/v4.7.2/System.WorkflowServices.xml",
+        "build/.NETFramework/v4.7.2/System.Xaml.dll",
+        "build/.NETFramework/v4.7.2/System.Xaml.xml",
+        "build/.NETFramework/v4.7.2/System.Xml.Linq.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.Linq.xml",
+        "build/.NETFramework/v4.7.2/System.Xml.Serialization.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.dll",
+        "build/.NETFramework/v4.7.2/System.Xml.xml",
+        "build/.NETFramework/v4.7.2/System.dll",
+        "build/.NETFramework/v4.7.2/System.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationClient.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationClient.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationClientsideProviders.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationClientsideProviders.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationProvider.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationProvider.xml",
+        "build/.NETFramework/v4.7.2/UIAutomationTypes.dll",
+        "build/.NETFramework/v4.7.2/UIAutomationTypes.xml",
+        "build/.NETFramework/v4.7.2/WindowsBase.dll",
+        "build/.NETFramework/v4.7.2/WindowsBase.xml",
+        "build/.NETFramework/v4.7.2/WindowsFormsIntegration.dll",
+        "build/.NETFramework/v4.7.2/WindowsFormsIntegration.xml",
+        "build/.NETFramework/v4.7.2/XamlBuildTask.dll",
+        "build/.NETFramework/v4.7.2/XamlBuildTask.xml",
+        "build/.NETFramework/v4.7.2/mscorlib.dll",
+        "build/.NETFramework/v4.7.2/mscorlib.xml",
+        "build/.NETFramework/v4.7.2/namespaces.xml",
+        "build/.NETFramework/v4.7.2/sysglobl.dll",
+        "build/.NETFramework/v4.7.2/sysglobl.xml",
+        "build/Microsoft.NETFramework.ReferenceAssemblies.net472.targets",
+        "microsoft.netframework.referenceassemblies.net472.1.0.0-preview.2.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.net472.nuspec"
+      ]
+    },
+    "Microsoft.SourceLink.Common/1.0.0-beta2-19367-01": {
+      "sha512": "T6ZEkbRgqcmDoTQDn0ES4FcXiq6uOiqPmbb+hCnKQ/i45W3WjM1+hfNGmsXvTK/e/AqEGiqtXJIi9ZtmbHnzHQ==",
+      "type": "package",
+      "path": "microsoft.sourcelink.common/1.0.0-beta2-19367-01",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/InitializeSourceControlInformation.targets",
+        "build/Microsoft.SourceLink.Common.props",
+        "build/Microsoft.SourceLink.Common.targets",
+        "buildCrossTargeting/Microsoft.SourceLink.Common.props",
+        "buildCrossTargeting/Microsoft.SourceLink.Common.targets",
+        "microsoft.sourcelink.common.1.0.0-beta2-19367-01.nupkg.sha512",
+        "microsoft.sourcelink.common.nuspec",
+        "tools/net461/Microsoft.SourceLink.Common.dll",
+        "tools/net461/Microsoft.SourceLink.Common.pdb",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.Common.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.Common.pdb",
+        "tools/netcoreapp2.0/cs/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/de/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/es/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/fr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/it/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/ja/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/ko/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/pl/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/pt-BR/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/ru/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/tr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
+        "tools/netcoreapp2.0/zh-Hant/Microsoft.SourceLink.Common.resources.dll"
+      ]
+    },
+    "Microsoft.SourceLink.GitHub/1.0.0-beta2-19367-01": {
+      "sha512": "+Zfc8EddeIPTy9w26xrMOqIL5k5fPICfoYGPMhvlCcmENVT0pslIvrOzRaEvv1UgUL1cjbGRO8SXa1HtoVEhPA==",
+      "type": "package",
+      "path": "microsoft.sourcelink.github/1.0.0-beta2-19367-01",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.SourceLink.GitHub.props",
+        "build/Microsoft.SourceLink.GitHub.targets",
+        "buildCrossTargeting/Microsoft.SourceLink.GitHub.props",
+        "buildCrossTargeting/Microsoft.SourceLink.GitHub.targets",
+        "microsoft.sourcelink.github.1.0.0-beta2-19367-01.nupkg.sha512",
+        "microsoft.sourcelink.github.nuspec",
+        "tools/net461/Microsoft.SourceLink.GitHub.dll",
+        "tools/net461/Microsoft.SourceLink.GitHub.pdb",
+        "tools/net461/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net461/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.pdb",
+        "tools/netcoreapp2.0/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/netcoreapp2.0/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll"
+      ]
+    },
+    "Microsoft.SourceLink.Vsts.Git/1.0.0-beta2-19367-01": {
+      "sha512": "vfYRwh2jIQ5XFmqk9BebaGnj3tL9p1hkZ270NMXutiE7jCGH1zMB+3HCPec6DpnC4V3XX1oWlwAXoxNtXB90pQ==",
+      "type": "package",
+      "path": "microsoft.sourcelink.vsts.git/1.0.0-beta2-19367-01",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.SourceLink.Vsts.Git.props",
+        "build/Microsoft.SourceLink.Vsts.Git.targets",
+        "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.props",
+        "buildCrossTargeting/Microsoft.SourceLink.Vsts.Git.targets",
+        "microsoft.sourcelink.vsts.git.1.0.0-beta2-19367-01.nupkg.sha512",
+        "microsoft.sourcelink.vsts.git.nuspec",
+        "tools/net461/Microsoft.SourceLink.Vsts.Git.dll",
+        "tools/net461/Microsoft.SourceLink.Vsts.Git.pdb",
+        "tools/net461/cs/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/de/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/es/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/fr/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/it/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/ja/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/ko/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/pl/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/pt-BR/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/ru/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/tr/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/zh-Hans/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/net461/zh-Hant/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.Vsts.Git.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.Vsts.Git.pdb",
+        "tools/netcoreapp2.0/cs/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/de/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/es/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/fr/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/it/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/ja/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/ko/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/pl/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/pt-BR/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/ru/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/tr/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/zh-Hans/Microsoft.SourceLink.Vsts.Git.resources.dll",
+        "tools/netcoreapp2.0/zh-Hant/Microsoft.SourceLink.Vsts.Git.resources.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Internal.AspNetCore.Analyzers >= 5.0.0-alpha1.19517.7",
+      "Internal.AspNetCore.BuildTasks >= 3.0.0-build-20190530.3",
+      "MicroBuild.Core >= 0.3.0",
+      "Microsoft.DotNet.GenAPI >= 1.0.0-beta.19517.3",
+      "Microsoft.NET.Sdk.Razor >= 5.0.0-alpha1.19517.12",
+      "Microsoft.NET.Test.Sdk >= 16.1.1",
+      "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.0-preview.2",
+      "Microsoft.Net.Compilers.Toolset >= 3.4.0-beta1-19456-03",
+      "Microsoft.SourceLink.GitHub >= 1.0.0-beta2-19367-01",
+      "Microsoft.SourceLink.Vsts.Git >= 1.0.0-beta2-19367-01"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\risottj\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "5.0.0-dev",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj",
+      "projectName": "WebNetFramework",
+      "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\WebNetFramework\\WebNetFramework.csproj",
+      "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\artifacts\\obj\\WebNetFramework\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\risottj\\Documents\\UnitTesting\\NuGet.Config",
+        "C:\\Users\\risottj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-tools/api/v3/index.json": {},
+        "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+        "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-blazor/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
+        "https://pkgs.dev.azure.com/dnceng/public/_packaging/darc-pub-dotnet-corefx-4ac4c036/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "allWarningsAsErrors": true,
+        "noWarn": [
+          "NU5048",
+          "NU5105",
+          "NU5131"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Internal.AspNetCore.Analyzers": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.0-alpha1.19517.7, )"
+          },
+          "Internal.AspNetCore.BuildTasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-build-20190530.3, )"
+          },
+          "MicroBuild.Core": {
+            "include": "None",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.3.0, )"
+          },
+          "Microsoft.DotNet.GenAPI": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-beta.19517.3, )"
+          },
+          "Microsoft.NET.Sdk.Razor": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.0-alpha1.19517.12, )"
+          },
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[16.1.1, )"
+          },
+          "Microsoft.NETFramework.ReferenceAssemblies": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-preview.2, )"
+          },
+          "Microsoft.Net.Compilers.Toolset": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.4.0-beta1-19456-03, )"
+          },
+          "Microsoft.SourceLink.GitHub": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-beta2-19367-01, )"
+          },
+          "Microsoft.SourceLink.Vsts.Git": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-beta2-19367-01, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
