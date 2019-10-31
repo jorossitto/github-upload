@@ -74,3 +74,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\bin\Debug\netcoreapp3.0\EntityFramework.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\obj\Debug\netcoreapp3.0\TennisApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\TennisApp\obj\Debug\netcoreapp3.0\TennisApp.MvcApplicationPartsAssemblyInfo.cache

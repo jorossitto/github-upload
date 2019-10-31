@@ -249,3 +249,11 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.abstracti
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.assert.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\xunit.execution.desktop.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Forms\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml

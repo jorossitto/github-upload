@@ -240,3 +240,11 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.assert.x
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\xunit.execution.desktop.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\obj\Debug\ACM.BL.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\ACM.BL\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml

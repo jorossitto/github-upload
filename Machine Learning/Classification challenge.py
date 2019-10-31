@@ -5,15 +5,36 @@ Created on Thu Oct 31 14:30:02 2019
 @author: Rossitj
 """
 
+
+# Import KNeighborsClassifier from sklearn.neighbors
 from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier(n_neighbors=6)
-knn.fit(iris['data'], iris['target'])
 
-iris['data'].shape
-iris['target'].shape
+# Create arrays for the features and the response variable
+y = df['party'].values
+X = df.drop('party', axis=1).values
 
-prediction = knn.predict(X_new)
-x_new.shape
+# Create a k-NN classifier with 6 neighbors
+knn = KNeighborsClassifier(n_neighbors = 6)
 
+# Fit the classifier to the data
+knn.fit(X,y)
 
-print('Prediction {})
+# Import KNeighborsClassifier from sklearn.neighbors
+from sklearn.neighbors import KNeighborsClassifier 
+
+# Create arrays for the features and the response variable
+y = df['party'].values
+X = df.drop('party', axis=1).values
+
+# Create a k-NN classifier with 6 neighbors: knn
+knn = KNeighborsClassifier(n_neighbors = 6)
+
+# Fit the classifier to the data
+knn.fit(X,y)
+
+# Predict the labels for the training data X
+y_pred = knn.predict(X)
+
+# Predict and print the label for the new data point X_new
+new_prediction = knn.predict(X_new)
+print("Prediction: {}".format(new_prediction))
