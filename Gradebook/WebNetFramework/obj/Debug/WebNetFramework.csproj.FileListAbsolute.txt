@@ -204,7 +204,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.abstr
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.assert.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.execution.desktop.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.Configuration.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.FileProviders.Physical.dll
@@ -213,3 +212,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.E
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.FileProviders.Physical.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache

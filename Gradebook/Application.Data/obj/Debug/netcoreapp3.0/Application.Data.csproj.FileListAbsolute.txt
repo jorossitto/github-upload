@@ -19,3 +19,5 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Domain.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Domain.pdb

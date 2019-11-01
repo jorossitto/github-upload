@@ -45,3 +45,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\xunit.assert.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\src\GradeBook\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll

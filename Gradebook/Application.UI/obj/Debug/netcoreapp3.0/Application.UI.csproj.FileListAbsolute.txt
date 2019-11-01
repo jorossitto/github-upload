@@ -1,0 +1,7 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\bin\Debug\netcoreapp3.0\Application.UI.deps.json
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\bin\Debug\netcoreapp3.0\Application.UI.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\bin\Debug\netcoreapp3.0\Application.UI.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\obj\Debug\netcoreapp3.0\Application.UI.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\obj\Debug\netcoreapp3.0\Application.UI.AssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\obj\Debug\netcoreapp3.0\Application.UI.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.UI\obj\Debug\netcoreapp3.0\Application.UI.pdb

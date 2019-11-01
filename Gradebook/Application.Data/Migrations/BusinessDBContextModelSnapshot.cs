@@ -729,6 +729,98 @@ namespace Application.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Application.Domain.Battle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Battles");
+                });
+
+            modelBuilder.Entity("Application.Domain.Quote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("SamuraiId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SamuraiId");
+
+                    b.ToTable("Quotes");
+                });
+
+            modelBuilder.Entity("Application.Domain.Samurai", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Samurais");
+                });
+
+            modelBuilder.Entity("Application.Domain.SamuraiBattle", b =>
+                {
+                    b.Property<int>("SamuraiId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BattleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("SamuraiId", "BattleId");
+
+                    b.HasIndex("BattleId");
+
+                    b.ToTable("SamuraiBattle");
+                });
+
+            modelBuilder.Entity("Application.Domain.SecretIdentity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("RealName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SamuraiId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SamuraiId")
+                        .IsUnique();
+
+                    b.ToTable("SecretIdentity");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -985,6 +1077,39 @@ namespace Application.Data.Migrations
                     b.HasOne("Application.Data.Speaker", "Speaker")
                         .WithMany()
                         .HasForeignKey("SpeakerId");
+                });
+
+            modelBuilder.Entity("Application.Domain.Quote", b =>
+                {
+                    b.HasOne("Application.Domain.Samurai", "Samurai")
+                        .WithMany("Quotes")
+                        .HasForeignKey("SamuraiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Application.Domain.SamuraiBattle", b =>
+                {
+                    b.HasOne("Application.Domain.Battle", "Battle")
+                        .WithMany("SamuraiBattles")
+                        .HasForeignKey("BattleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Application.Domain.Samurai", "Samurai")
+                        .WithMany("SamuraiBattles")
+                        .HasForeignKey("SamuraiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Application.Domain.SecretIdentity", b =>
+                {
+                    b.HasOne("Application.Domain.Samurai", null)
+                        .WithOne("SecretIdentity")
+                        .HasForeignKey("Application.Domain.SecretIdentity", "SamuraiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

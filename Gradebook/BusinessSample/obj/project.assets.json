@@ -653,13 +653,13 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "[2.9.6]",
-          "Microsoft.CodeQuality.Analyzers": "[2.9.6]",
-          "Microsoft.NetCore.Analyzers": "[2.9.6]",
-          "Microsoft.NetFramework.Analyzers": "[2.9.6]"
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "[2.9.7]",
+          "Microsoft.CodeQuality.Analyzers": "[2.9.7]",
+          "Microsoft.NetCore.Analyzers": "[2.9.7]",
+          "Microsoft.NetFramework.Analyzers": "[2.9.7]"
         },
         "build": {
           "build/Microsoft.CodeAnalysis.FxCopAnalyzers.props": {}
@@ -679,7 +679,7 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.CodeAnalysis.VersionCheckAnalyzer.props": {}
@@ -739,13 +739,13 @@
           }
         }
       },
-      "Microsoft.CodeQuality.Analyzers/2.9.6": {
+      "Microsoft.CodeQuality.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.CodeQuality.Analyzers.props": {}
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.6.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -832,6 +832,22 @@
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.0.0": {
         "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Design/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
+        },
+        "build": {
+          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
       },
       "Microsoft.EntityFrameworkCore.Relational/3.0.0": {
         "type": "package",
@@ -1190,7 +1206,7 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NetCore.Analyzers/2.9.6": {
+      "Microsoft.NetCore.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NetCore.Analyzers.props": {}
@@ -1214,7 +1230,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NetFramework.Analyzers/2.9.6": {
+      "Microsoft.NetFramework.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NetFramework.Analyzers.props": {}
@@ -3294,6 +3310,7 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
+          "Application.Domain": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -3318,6 +3335,15 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Application.Domain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Application.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Domain.dll": {}
+        }
       },
       "Common/1.0.0": {
         "type": "project",
@@ -3985,10 +4011,10 @@
         "microsoft.codeanalysis.csharp.workspaces.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
-      "sha512": "GBZV6P8u3uIXYrlapvbpaaaB5LpF3hk+I2ThIcoVyENr8krNOovFyJhi6FQHgnxd0XLPj9J9Nt35iuqwVe/XJw==",
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.7": {
+      "sha512": "/WbA9NXJmd7LW4ERe1v9YVRlpp0nnEMV5ne0ydnKT3/RMLzTt9AZjghuL6u3eSclyhcSI/mW/B4uPv2cAr4PXg==",
       "type": "package",
-      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.6",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4026,7 +4052,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.codeanalysis.fxcopanalyzers.2.9.6.nupkg.sha512",
+        "microsoft.codeanalysis.fxcopanalyzers.2.9.7.nupkg.sha512",
         "microsoft.codeanalysis.fxcopanalyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4081,10 +4107,10 @@
         "microsoft.codeanalysis.razor.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {
-      "sha512": "Q5rRN0+9TJsfsXaGKnzDjGkUZ4Rd8ZKmpSND1j49jsmLacCspp4ZaJ31nJn76B/W0qrb4GkEBxKtj3U9lo2gqg==",
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.7": {
+      "sha512": "ePzHjOnn2EJCYubovr+lVPfkOx7yXjF9pNzE2TSZgAAC4zE4fNAL2HU/f+AoJWP0oQH1hohkApwfZPS+I82ynQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.6",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4118,7 +4144,7 @@
         "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
         "editorconfig/ReliabilityRulesDefault/.editorconfig",
         "editorconfig/ReliabilityRulesEnabled/.editorconfig",
-        "microsoft.codeanalysis.versioncheckanalyzer.2.9.6.nupkg.sha512",
+        "microsoft.codeanalysis.versioncheckanalyzer.2.9.7.nupkg.sha512",
         "microsoft.codeanalysis.versioncheckanalyzer.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4160,10 +4186,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CodeQuality.Analyzers/2.9.6": {
-      "sha512": "jND04w/FPgfBYKkLLnosmvgHs8NMpMvQ7LQqyiCjMlKOM+MT6edgvTU0vAAowxGuLGceC6pjJm0kUVkG9qT3CQ==",
+    "Microsoft.CodeQuality.Analyzers/2.9.7": {
+      "sha512": "gl+jYeGvFxET/FUL/gNMKMxb3/p3NKUofBpGS+wYna8Jphbm2Tx6DDZaqPcpcNpabZKzPAvezzmtW7EILTbZtA==",
       "type": "package",
-      "path": "microsoft.codequality.analyzers/2.9.6",
+      "path": "microsoft.codequality.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4229,7 +4255,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.codequality.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.codequality.analyzers.2.9.7.nupkg.sha512",
         "microsoft.codequality.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4258,10 +4284,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.6.0": {
+      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4274,6 +4300,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -4283,7 +4310,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.6.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -4420,6 +4447,21 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "microsoft.entityframeworkcore.analyzers.3.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Design/3.0.0": {
+      "sha512": "rOV5eClv+dq09htWNHv56y7TYZVAbLc6O+09ljg2FfSUsvlOJDsWHBLqAUofevZ2QxHTTZlAJLZkZGEBC6gUww==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
+        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.3.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/3.0.0": {
@@ -4853,10 +4895,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NetCore.Analyzers/2.9.6": {
-      "sha512": "YPcQ+gCt66btt9jNHNi4vrRK6AAP7EIO17quwUeHLUw7vhc6q18r2RYVTLKQvOQuOXs1UEYHArENpppwFP4MLA==",
+    "Microsoft.NetCore.Analyzers/2.9.7": {
+      "sha512": "NYQOi5n+36rVuh+Yh6UabkzH5lNaji+OIArnzbY1jUp+u2CL9A7DatJGrh7u/VOZJICVFR3UgVKobm0CLbIcRg==",
       "type": "package",
-      "path": "microsoft.netcore.analyzers/2.9.6",
+      "path": "microsoft.netcore.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4916,7 +4958,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.netcore.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.netcore.analyzers.2.9.7.nupkg.sha512",
         "microsoft.netcore.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4973,10 +5015,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NetFramework.Analyzers/2.9.6": {
-      "sha512": "8VyWe53rtUkgJFAkbCZY5KT2t1tEmRrdK1Z+zbyRlzoKVEHyMs0+WNBeJ8d2YB/NjXaYAlaVG2CGZFnQUrwY6A==",
+    "Microsoft.NetFramework.Analyzers/2.9.7": {
+      "sha512": "sC+Vt/m60axfe0jr8K3iXMXSwNhCp8jMJyn8gRMo9HDg2Nr7PpVGcNxqIt1rRbRiE6Lwqp8lo8AlFekHxvUCOg==",
       "type": "package",
-      "path": "microsoft.netframework.analyzers/2.9.6",
+      "path": "microsoft.netframework.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5028,7 +5070,7 @@
         "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
         "editorconfig/SecurityRulesDefault/.editorconfig",
         "editorconfig/SecurityRulesEnabled/.editorconfig",
-        "microsoft.netframework.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.netframework.analyzers.2.9.7.nupkg.sha512",
         "microsoft.netframework.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -10292,6 +10334,11 @@
       "path": "../Application.Data/Application.Data.csproj",
       "msbuildProject": "../Application.Data/Application.Data.csproj"
     },
+    "Application.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Application.Domain/Application.Domain.csproj",
+      "msbuildProject": "../Application.Domain/Application.Domain.csproj"
+    },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
@@ -10309,7 +10356,8 @@
       "Microsoft.AspNetCore.Identity.UI >= 3.0.0",
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "Microsoft.AspNetCore.Razor >= 2.2.0",
-      "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.6",
+      "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.7",
+      "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "Newtonsoft.Json >= 12.0.2",
@@ -10402,7 +10450,13 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.9.6, )"
+            "version": "[2.9.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "Microsoft.Extensions.Configuration.FileExtensions": {
             "target": "Package",

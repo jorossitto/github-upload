@@ -56,8 +56,11 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\net
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\EntityFramework.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\Application.Domain.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\Application.Domain.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample.UI\obj\Debug\netcoreapp3.0\BusinessSample.UI.MvcApplicationPartsAssemblyInfo.cache

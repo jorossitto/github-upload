@@ -148,3 +148,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\TennisApp.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Application.Data.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\TennisApp.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Application.Domain.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Application.Domain.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\test\GradeBook.Tests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

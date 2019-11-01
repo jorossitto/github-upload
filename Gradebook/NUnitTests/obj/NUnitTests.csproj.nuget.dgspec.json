@@ -54,6 +54,9 @@
             "projectReferences": {
               "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
                 "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+              },
+              "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj": {
+                "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj"
               }
             }
           }
@@ -103,7 +106,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.9.6, )"
+              "version": "[2.9.7, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -156,6 +159,17 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj",
+        "projectName": "Application.Domain",
+        "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     },
     "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Common\\Common.csproj": {
@@ -250,7 +264,13 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.9.6, )"
+              "version": "[2.9.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
@@ -382,7 +402,13 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.9.6, )"
+              "version": "[2.9.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
@@ -390,7 +416,7 @@
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.13.0, )"
+              "version": "[4.13.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

@@ -1,0 +1,7 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\staticwebassets\Globomantics.StaticWebAssets.Manifest.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\staticwebassets\Globomantics.StaticWebAssets.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\Globomantics.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\Globomantics.RazorAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\Globomantics.RazorAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\Globomantics.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Globomantics\obj\Debug\netcoreapp3.0\Globomantics.AssemblyInfo.cs

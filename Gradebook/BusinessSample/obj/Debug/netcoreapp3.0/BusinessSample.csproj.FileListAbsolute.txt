@@ -171,5 +171,8 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcor
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.assert.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Application.Domain.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Application.Domain.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\obj\Debug\netcoreapp3.0\BusinessSample.MvcApplicationPartsAssemblyInfo.cache

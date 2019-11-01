@@ -143,3 +143,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.assert.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Domain.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Domain.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

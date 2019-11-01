@@ -458,25 +458,25 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "[2.9.6]",
-          "Microsoft.CodeQuality.Analyzers": "[2.9.6]",
-          "Microsoft.NetCore.Analyzers": "[2.9.6]",
-          "Microsoft.NetFramework.Analyzers": "[2.9.6]"
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "[2.9.7]",
+          "Microsoft.CodeQuality.Analyzers": "[2.9.7]",
+          "Microsoft.NetCore.Analyzers": "[2.9.7]",
+          "Microsoft.NetFramework.Analyzers": "[2.9.7]"
         },
         "build": {
           "build/Microsoft.CodeAnalysis.FxCopAnalyzers.props": {}
         }
       },
-      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.CodeAnalysis.VersionCheckAnalyzer.props": {}
         }
       },
-      "Microsoft.CodeQuality.Analyzers/2.9.6": {
+      "Microsoft.CodeQuality.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.CodeQuality.Analyzers.props": {}
@@ -943,7 +943,7 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NetCore.Analyzers/2.9.6": {
+      "Microsoft.NetCore.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NetCore.Analyzers.props": {}
@@ -967,7 +967,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NetFramework.Analyzers/2.9.6": {
+      "Microsoft.NetFramework.Analyzers/2.9.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NetFramework.Analyzers.props": {}
@@ -2773,6 +2773,15 @@
           "bin/placeholder/ACM.BL.dll": {}
         }
       },
+      "Application.Domain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Application.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Domain.dll": {}
+        }
+      },
       "Common/1.0.0": {
         "type": "project",
         "compile": {
@@ -3289,10 +3298,10 @@
         "microsoft.aspnetcore.webutilities.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.6": {
-      "sha512": "GBZV6P8u3uIXYrlapvbpaaaB5LpF3hk+I2ThIcoVyENr8krNOovFyJhi6FQHgnxd0XLPj9J9Nt35iuqwVe/XJw==",
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.7": {
+      "sha512": "/WbA9NXJmd7LW4ERe1v9YVRlpp0nnEMV5ne0ydnKT3/RMLzTt9AZjghuL6u3eSclyhcSI/mW/B4uPv2cAr4PXg==",
       "type": "package",
-      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.6",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3330,7 +3339,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.codeanalysis.fxcopanalyzers.2.9.6.nupkg.sha512",
+        "microsoft.codeanalysis.fxcopanalyzers.2.9.7.nupkg.sha512",
         "microsoft.codeanalysis.fxcopanalyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -3372,10 +3381,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.6": {
-      "sha512": "Q5rRN0+9TJsfsXaGKnzDjGkUZ4Rd8ZKmpSND1j49jsmLacCspp4ZaJ31nJn76B/W0qrb4GkEBxKtj3U9lo2gqg==",
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/2.9.7": {
+      "sha512": "ePzHjOnn2EJCYubovr+lVPfkOx7yXjF9pNzE2TSZgAAC4zE4fNAL2HU/f+AoJWP0oQH1hohkApwfZPS+I82ynQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.6",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3409,7 +3418,7 @@
         "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
         "editorconfig/ReliabilityRulesDefault/.editorconfig",
         "editorconfig/ReliabilityRulesEnabled/.editorconfig",
-        "microsoft.codeanalysis.versioncheckanalyzer.2.9.6.nupkg.sha512",
+        "microsoft.codeanalysis.versioncheckanalyzer.2.9.7.nupkg.sha512",
         "microsoft.codeanalysis.versioncheckanalyzer.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -3424,10 +3433,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CodeQuality.Analyzers/2.9.6": {
-      "sha512": "jND04w/FPgfBYKkLLnosmvgHs8NMpMvQ7LQqyiCjMlKOM+MT6edgvTU0vAAowxGuLGceC6pjJm0kUVkG9qT3CQ==",
+    "Microsoft.CodeQuality.Analyzers/2.9.7": {
+      "sha512": "gl+jYeGvFxET/FUL/gNMKMxb3/p3NKUofBpGS+wYna8Jphbm2Tx6DDZaqPcpcNpabZKzPAvezzmtW7EILTbZtA==",
       "type": "package",
-      "path": "microsoft.codequality.analyzers/2.9.6",
+      "path": "microsoft.codequality.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3493,7 +3502,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.codequality.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.codequality.analyzers.2.9.7.nupkg.sha512",
         "microsoft.codequality.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4133,10 +4142,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NetCore.Analyzers/2.9.6": {
-      "sha512": "YPcQ+gCt66btt9jNHNi4vrRK6AAP7EIO17quwUeHLUw7vhc6q18r2RYVTLKQvOQuOXs1UEYHArENpppwFP4MLA==",
+    "Microsoft.NetCore.Analyzers/2.9.7": {
+      "sha512": "NYQOi5n+36rVuh+Yh6UabkzH5lNaji+OIArnzbY1jUp+u2CL9A7DatJGrh7u/VOZJICVFR3UgVKobm0CLbIcRg==",
       "type": "package",
-      "path": "microsoft.netcore.analyzers/2.9.6",
+      "path": "microsoft.netcore.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4196,7 +4205,7 @@
         "editorconfig/SecurityRulesEnabled/.editorconfig",
         "editorconfig/UsageRulesDefault/.editorconfig",
         "editorconfig/UsageRulesEnabled/.editorconfig",
-        "microsoft.netcore.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.netcore.analyzers.2.9.7.nupkg.sha512",
         "microsoft.netcore.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -4253,10 +4262,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NetFramework.Analyzers/2.9.6": {
-      "sha512": "8VyWe53rtUkgJFAkbCZY5KT2t1tEmRrdK1Z+zbyRlzoKVEHyMs0+WNBeJ8d2YB/NjXaYAlaVG2CGZFnQUrwY6A==",
+    "Microsoft.NetFramework.Analyzers/2.9.7": {
+      "sha512": "sC+Vt/m60axfe0jr8K3iXMXSwNhCp8jMJyn8gRMo9HDg2Nr7PpVGcNxqIt1rRbRiE6Lwqp8lo8AlFekHxvUCOg==",
       "type": "package",
-      "path": "microsoft.netframework.analyzers/2.9.6",
+      "path": "microsoft.netframework.analyzers/2.9.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4308,7 +4317,7 @@
         "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
         "editorconfig/SecurityRulesDefault/.editorconfig",
         "editorconfig/SecurityRulesEnabled/.editorconfig",
-        "microsoft.netframework.analyzers.2.9.6.nupkg.sha512",
+        "microsoft.netframework.analyzers.2.9.7.nupkg.sha512",
         "microsoft.netframework.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -9025,6 +9034,11 @@
       "path": "../ACM.BL/ACM.BL.csproj",
       "msbuildProject": "../ACM.BL/ACM.BL.csproj"
     },
+    "Application.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Application.Domain/Application.Domain.csproj",
+      "msbuildProject": "../Application.Domain/Application.Domain.csproj"
+    },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
@@ -9034,6 +9048,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "ACM.BL >= 1.0.0",
+      "Application.Domain >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
@@ -9042,7 +9057,7 @@
       "Microsoft.AspNetCore.Identity.UI >= 3.0.0",
       "Microsoft.AspNetCore.Mvc.ViewFeatures >= 2.2.0",
       "Microsoft.AspNetCore.Razor >= 2.2.0",
-      "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.6",
+      "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.7",
       "Microsoft.EntityFrameworkCore >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
@@ -9087,6 +9102,9 @@
           "projectReferences": {
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
+            },
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj"
             }
           }
         }
@@ -9136,7 +9154,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.9.6, )"
+            "version": "[2.9.7, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
