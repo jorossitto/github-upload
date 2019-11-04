@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class OrderRepository : IOrderRepository
     {

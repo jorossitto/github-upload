@@ -1,9 +1,10 @@
-﻿using Application.Data.ViewModels;
+﻿using AppCore.Data;
+using AppCore.Data.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Application.Data.Controllers
+namespace BethanysPieShop
 {
     public class HomeController : Controller
     {

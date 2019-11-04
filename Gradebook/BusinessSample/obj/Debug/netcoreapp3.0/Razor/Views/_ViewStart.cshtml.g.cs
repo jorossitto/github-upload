@@ -21,20 +21,20 @@ using BusinessSample;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\Views\_ViewImports.cshtml"
-using Application.Data;
+using AppCore.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\risottj\Documents\UnitTesting\Gradebook\BusinessSample\Views\_ViewImports.cshtml"
-using Application.Data.ViewModels;
+using AppCore.Data.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"38a37349b0aed66a925009ab16c9571d95cafa77", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"65ae74b073b956e80e86b37d56cb54ff50586b98", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"69fd16c5dcfa4965de0a55ca24975e24545db19f", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

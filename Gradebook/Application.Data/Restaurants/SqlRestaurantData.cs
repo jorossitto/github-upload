@@ -3,7 +3,7 @@ using ACM.BL;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class SqlRestaurantData : IRestaurantData
     {

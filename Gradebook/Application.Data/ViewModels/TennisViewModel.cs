@@ -1,5 +1,5 @@
 ﻿
-namespace Application.Data.ViewModels
+namespace AppCore.Data.ViewModels
 {
     public class TennisViewModel
     {

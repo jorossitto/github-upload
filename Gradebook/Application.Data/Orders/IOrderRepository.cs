@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public interface IOrderRepository
     {

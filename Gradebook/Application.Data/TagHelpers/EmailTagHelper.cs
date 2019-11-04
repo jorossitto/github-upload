@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Diagnostics.Contracts;
 
-namespace Application.Data.TagHelpers
+namespace AppCore.Data.TagHelpers
 {
     public class EmailTagHelper : TagHelper
     {

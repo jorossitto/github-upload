@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ACM.BL;
-using Application.Data;
+using AppCore.Data;
 
-namespace Application.Data.Controllers
+namespace AppCore.Data.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

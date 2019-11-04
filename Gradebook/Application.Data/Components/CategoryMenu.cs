@@ -1,8 +1,8 @@
-﻿using Application.Data;
+﻿using AppCore.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace Application.Data.Components
+namespace AppCore.Data.Components
 {
     public class CategoryMenu : ViewComponent
     {

@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Diagnostics.Contracts;
 using Microsoft.Extensions.Configuration;
-using Application.Domain;
+using AppCore.Domain;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class BusinessDBContext : IdentityDbContext<IdentityUser>
     {

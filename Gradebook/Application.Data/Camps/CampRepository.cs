@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class CampRepository : ICampRepository
     {

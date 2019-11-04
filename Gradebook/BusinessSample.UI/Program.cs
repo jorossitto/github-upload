@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Application.Data;
-using Application.Domain;
+using AppCore.Data;
+using AppCore.Domain;
 
 namespace BusinessSample.UI
 {

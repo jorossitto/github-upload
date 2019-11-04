@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public static class config
     {
@@ -21,5 +21,7 @@ namespace Application.Data
         public const string DefaultConnection = "DefaultConnection";
         public const string AppSettingsJson = "appSettings.json";
         public const string ExplicitDatabaseConnection = "Server=(localdb)\\mssqllocaldb;Database=BethanysPieShop-1ED06986-5F07-4A1C-85B9-D9F3F477BFF5;Trusted_Connection=True;MultipleActiveResultSets=true";
+        public const string samuraiViewSource = "samuraiViewSource";
+        public const string UnsavedChanges = "There are unsaved changes. Do you want to save them?";
     }
 }

@@ -8632,9 +8632,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Console\\AppCore.Console.csproj",
-      "projectName": "AppCore.Console",
-      "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Console\\AppCore.Console.csproj",
+      "projectUniqueName": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Console\\AppCore.ConsoleUI.csproj",
+      "projectName": "AppCore.ConsoleUI",
+      "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Console\\AppCore.ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\risottj\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Console\\obj\\",
       "projectStyle": "PackageReference",

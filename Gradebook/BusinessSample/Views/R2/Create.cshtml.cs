@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ACM.BL;
-using Application.Data;
+using AppCore.Data;
 
 namespace BusinessSample.Pages.R2
 {
     public class CreateModel : PageModel
     {
-        private readonly Application.Data.BusinessDBContext _context;
+        private readonly BusinessDBContext _context;
 
-        public CreateModel(Application.Data.BusinessDBContext context)
+        public CreateModel(BusinessDBContext context)
         {
             _context = context;
         }

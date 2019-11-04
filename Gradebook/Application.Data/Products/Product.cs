@@ -3,7 +3,7 @@ using Common;
 using ACM.BL;
 
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class Product : EntityBase, ILoggable
     {

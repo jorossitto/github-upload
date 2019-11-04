@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class CampModel
     {

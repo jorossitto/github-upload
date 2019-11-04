@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class Order
     {

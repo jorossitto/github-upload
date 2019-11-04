@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ACM.BL;
-using Application.Data;
+using AppCore.Data;
 
 namespace BusinessSample.Pages.R2
 {
     public class IndexModel : PageModel
     {
-        private readonly Application.Data.BusinessDBContext _context;
+        private readonly BusinessDBContext _context;
 
-        public IndexModel(Application.Data.BusinessDBContext context)
+        public IndexModel(BusinessDBContext context)
         {
             _context = context;
         }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Application.Data.Properties {
+namespace AppCore.Data.Properties {
     using System;
     
     

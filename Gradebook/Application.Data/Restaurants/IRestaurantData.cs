@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public interface IRestaurantData
     {

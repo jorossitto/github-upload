@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class ShoppingCartItem
     {

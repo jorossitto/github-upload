@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class InMemoryRestaurantData : IRestaurantData
     {

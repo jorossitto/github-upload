@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Application.Domain
+namespace AppCore.Domain
 {
     public class SecretIdentity
     {

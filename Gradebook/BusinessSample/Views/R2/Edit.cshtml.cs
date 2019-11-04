@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ACM.BL;
-using Application.Data;
 
 namespace BusinessSample.Pages.R2
 {
     public class EditModel : PageModel
     {
-        private readonly Application.Data.BusinessDBContext _context;
+        private readonly AppCore.Data.BusinessDBContext _context;
 
-        public EditModel(Application.Data.BusinessDBContext context)
+        public EditModel(AppCore.Data.BusinessDBContext context)
         {
             _context = context;
         }

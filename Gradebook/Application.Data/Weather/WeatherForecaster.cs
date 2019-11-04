@@ -1,5 +1,5 @@
 ﻿
-namespace Application.Data
+namespace AppCore.Data
 {
     public class WeatherForecaster : IWeatherForecaster
     {

@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ACM.BL;
-using Application.Data;
+using AppCore.Data;
 
 namespace BusinessSample.Pages.R2
 {
     public class DeleteModel : PageModel
     {
-        private readonly Application.Data.BusinessDBContext _context;
+        private readonly BusinessDBContext _context;
 
-        public DeleteModel(Application.Data.BusinessDBContext context)
+        public DeleteModel(BusinessDBContext context)
         {
             _context = context;
         }

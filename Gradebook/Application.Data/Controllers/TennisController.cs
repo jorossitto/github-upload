@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Application.Data.ViewModels;
+using AppCore.Data.ViewModels;
 
-namespace Application.Data.Controllers
+namespace AppCore.Data.Controllers
 {
     public class TennisController : Controller
     {

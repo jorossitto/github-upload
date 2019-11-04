@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Application.Data.ViewModels
+namespace AppCore.Data.ViewModels
 {
     public class HomeViewModel
     {

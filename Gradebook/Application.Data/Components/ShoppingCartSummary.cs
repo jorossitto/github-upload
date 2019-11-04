@@ -1,7 +1,7 @@
-﻿using Application.Data.ViewModels;
+﻿using AppCore.Data.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Application.Data.Components
+namespace AppCore.Data.Components
 {
     public class ShoppingCartSummary : ViewComponent
     {

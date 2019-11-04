@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Common;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class Car : Product, ILoggable
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ACM.BL;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class ProductRepository 
     {

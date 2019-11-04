@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Application.Data;
+using AppCore.Data;
 
-namespace Application.Data.ViewModels
+namespace AppCore.Data.ViewModels
 {
     public class ShoppingCartViewModel
     {

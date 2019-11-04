@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TennisApp.ViewModels;
-using Application.Data;
+using AppCore.Data;
 
 namespace TennisApp.Controllers
 {

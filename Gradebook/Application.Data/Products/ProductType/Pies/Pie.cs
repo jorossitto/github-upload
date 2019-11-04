@@ -3,7 +3,7 @@ using System.Linq;
 using Common;
 using ACM.BL;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class Pie : Product
     {

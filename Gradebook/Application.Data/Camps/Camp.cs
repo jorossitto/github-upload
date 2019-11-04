@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Application.Data
+namespace AppCore.Data
 {
     public class Camp
     {

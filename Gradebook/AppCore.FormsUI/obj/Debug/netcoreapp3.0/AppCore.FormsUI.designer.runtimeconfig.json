@@ -1,0 +1,24 @@
+{
+  "runtimeOptions": {
+    "tfm": "netcoreapp3.0",
+    "frameworks": [
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "3.0.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "3.0.0"
+      }
+    ],
+    "additionalProbingPaths": [
+      "C:\\Users\\risottj\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\risottj\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "configProperties": {
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

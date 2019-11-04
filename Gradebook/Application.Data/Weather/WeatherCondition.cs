@@ -1,4 +1,4 @@
-﻿namespace Application.Data
+﻿namespace AppCore.Data
 {
     public enum WeatherCondition
     {

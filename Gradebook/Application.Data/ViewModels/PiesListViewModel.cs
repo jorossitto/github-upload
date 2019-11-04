@@ -1,8 +1,8 @@
-﻿using Application.Data;
+﻿using AppCore.Data;
 using System.Collections.Generic;
 
 
-namespace Application.Data.ViewModels
+namespace AppCore.Data.ViewModels
 {
     public class PiesListViewModel
     {
