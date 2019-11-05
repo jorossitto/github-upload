@@ -161,3 +161,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Quotes\Details.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Quotes\Edit.cshtml.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Quotes\Index.cshtml.g.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.csprojAssemblyReference.cache

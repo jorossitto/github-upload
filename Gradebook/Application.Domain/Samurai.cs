@@ -6,7 +6,9 @@ namespace AppCore.Domain
     {
         public Samurai()
         {
+            SecretIdentity = new SecretIdentity();
             Quotes = new List<Quote>();
+            SamuraiBattles = new List<SamuraiBattle>();
         }
 
         public int Id { get; set; }

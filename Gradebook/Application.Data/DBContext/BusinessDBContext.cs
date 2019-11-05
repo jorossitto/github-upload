@@ -72,8 +72,28 @@ namespace AppCore.Data
 
             CreateCampData(modelBuilder);
 
-            modelBuilder.Entity<SamuraiBattle>().HasKey(s => new { s.SamuraiId, s.BattleId });
+            CreateSamuraiBattleData(modelBuilder);
 
+            CreateSamuraiData(modelBuilder);
+
+            CreateBattleData(modelBuilder);
+
+        }
+
+        private static void CreateSamuraiData(ModelBuilder modelBuilder)
+        {
+
+        }
+
+        private static void CreateSamuraiBattleData(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SamuraiBattle>().HasKey(s => new { s.SamuraiId, s.BattleId });
+        }
+
+        private static void CreateBattleData(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Battle>().Property(b => b.StartDate).HasColumnType("Date");
+            modelBuilder.Entity<Battle>().Property(b => b.EndDate).HasColumnType("Date");
         }
 
         private static void CreateCatagoryData(ModelBuilder modelBuilder)
@@ -345,6 +365,7 @@ namespace AppCore.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             Contract.Requires(optionsBuilder != null);
+
             if(_config == null)
             {
                 optionsBuilder.UseLoggerFactory(GetLoggerFactory())

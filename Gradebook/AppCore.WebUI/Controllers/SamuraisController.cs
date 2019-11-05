@@ -75,7 +75,10 @@ namespace AppCore.WebUI.Controllers
                 return NotFound();
             }
 
-            var samurai = await _context.Samurais.FindAsync(id);
+            var samurai = await _context.Samurais.Include(s => s.SecretIdentity)
+                                                 .Include(s => s.Quotes)
+                                                 .SingleOrDefaultAsync(m => m.Id == id);
+
             if (samurai == null)
             {
                 return NotFound();
@@ -88,7 +91,8 @@ namespace AppCore.WebUI.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Samurai samurai)
+        //public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Samurai samurai)
+        public async Task<IActionResult> Edit(int id, Samurai samurai)
         {
             if (id != samurai.Id)
             {

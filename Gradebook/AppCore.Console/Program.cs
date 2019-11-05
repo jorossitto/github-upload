@@ -11,6 +11,64 @@ namespace AppCore.ConsoleUI
     {
         static void Main(string[] args)
         {
+            //PopulateDefaultDatabase();
+            PopulateSamuraisAndBattles();
+        }
+
+        private static void PopulateSamuraisAndBattles()
+        {
+            using (var context = new BusinessDBContext())
+            {
+                context.Samurais.AddRange
+                    (
+                        new Samurai { Name = "Kikuchiyo" },
+                        new Samurai { Name = "Kambei Shimada" },
+                        new Samurai { Name = "Shichiroji" },
+                        new Samurai { Name = "Katsushiro Okamoto" },
+                        new Samurai { Name = "Heihachi Hayashida" },
+                        new Samurai { Name = "Kyuzo" },
+                        new Samurai { Name = "Gorobei Katayama" }
+                    );
+
+                context.Battles.AddRange
+                    (
+                        new Battle
+                        {
+                            Name = "Battle of Okehazama",
+                            StartDate = new DateTime(1560, 05, 01),
+                            EndDate = new DateTime(1560, 06, 15)
+                        },
+
+                        new Battle
+                        {
+                            Name = "Battle of Shiroyama",
+                            StartDate = new DateTime(1877, 09, 24),
+                            EndDate = new DateTime(1877, 09, 24)
+                        },
+
+                        new Battle
+                        {
+                            Name = "Siege of Osaka",
+                            StartDate = new DateTime(1614, 01, 01),
+                            EndDate = new DateTime(1615, 12, 31)
+                        },
+
+                        new Battle
+                        {
+                            Name = "Boshin War",
+                            StartDate = new DateTime(1868, 01, 01),
+                            EndDate = new DateTime(1869, 01, 01)
+                        }
+
+                    );
+
+                context.SaveChanges();
+            }
+
+        }
+
+        private static void PopulateDefaultDatabase()
+        {
             InsertSamurai();
             InsertMultipleSamurais();
             InsertMultipleDifferentObjects();

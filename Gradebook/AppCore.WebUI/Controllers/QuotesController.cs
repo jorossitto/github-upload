@@ -48,7 +48,7 @@ namespace AppCore.WebUI.Controllers
         // GET: Quotes/Create
         public IActionResult Create()
         {
-            ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id");
+            ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Name");
             return View();
         }
 
@@ -63,10 +63,11 @@ namespace AppCore.WebUI.Controllers
             {
                 _context.Add(quote);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details","Samurais", new { id = quote.SamuraiId });
             }
-            ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
-            return View(quote);
+            
+            //ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
+            return RedirectToAction("Details", "Samurais", new { id = quote.SamuraiId });
         }
 
         // GET: Quotes/Edit/5
@@ -82,8 +83,9 @@ namespace AppCore.WebUI.Controllers
             {
                 return NotFound();
             }
-            ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
-            return View(quote);
+            //ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
+            //return View(quote);
+            return RedirectToAction("Details", "Samurais", new { id = quote.SamuraiId });
         }
 
         // POST: Quotes/Edit/5
@@ -116,10 +118,12 @@ namespace AppCore.WebUI.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details", "Samurais", new { id = quote.SamuraiId });
             }
-            ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
-            return View(quote);
+            //ViewData["SamuraiId"] = new SelectList(_context.Samurais, "Id", "Id", quote.SamuraiId);
+            //return View(quote);
+            return RedirectToAction("Details", "Samurais", new { id = quote.SamuraiId });
         }
 
         // GET: Quotes/Delete/5
