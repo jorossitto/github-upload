@@ -748,36 +748,6 @@ namespace AppCore.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Battles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            EndDate = new DateTime(1560, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Battle of Okehazama",
-                            StartDate = new DateTime(1560, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            EndDate = new DateTime(1877, 9, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Battle of Shiroyama",
-                            StartDate = new DateTime(1877, 9, 24, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            EndDate = new DateTime(1615, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Siege of Osaka",
-                            StartDate = new DateTime(1614, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            EndDate = new DateTime(1869, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Boshin War",
-                            StartDate = new DateTime(1868, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("AppCore.Domain.Quote", b =>
@@ -813,43 +783,6 @@ namespace AppCore.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Samurais");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Kikuchiyo"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Kambei Shimada"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Shichiroji"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Katsushiro Okamoto"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Heihachi Hayashida"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Kyuzo"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Name = "Gorobei Katayama"
-                        });
                 });
 
             modelBuilder.Entity("AppCore.Domain.SamuraiBattle", b =>
@@ -1031,10 +964,12 @@ namespace AppCore.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -1071,10 +1006,12 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");

@@ -9,10 +9,126 @@ namespace AppCore.ConsoleUI
 {
     class Program
     {
+        public static BusinessDBContext businessDbContext = new BusinessDBContext();
+        
         static void Main(string[] args)
         {
-            //PopulateDefaultDatabase();
+            //InsertingDataInManyToManyRelationships();
+
+            //GetsamuraiWithBattles();
+            //RemoveJoinBetweenSamuraiAndBattleSimple();
+            //RemoveBattleFromSamurai();
+            RemoveBattleFromSamuraiWhenDisconnected();
+        }
+
+        private static void RemoveBattleFromSamuraiWhenDisconnected()
+        {
+            Samurai samurai;
+            using(var seperateOperation = new BusinessDBContext())
+            {
+                samurai = seperateOperation.Samurais.Include(s => s.SamuraiBattles)
+                    .ThenInclude(sb => sb.Battle)
+                    .SingleOrDefault(s => s.Id == 3);
+            }
+
+            var sbToRemove = samurai.SamuraiBattles.SingleOrDefault(sb => sb.BattleId == 1);
+            samurai.SamuraiBattles.Remove(sbToRemove);
+            //businessDbContext.Attach(samurai);
+            //businessDbContext.ChangeTracker.DetectChanges();
+            businessDbContext.Remove(sbToRemove);
+            businessDbContext.SaveChanges();
+        }
+
+        private static void RemoveBattleFromSamurai()
+        {
+            //Goal: Remove join between shichiroji(id=3) and battle of okehazama (id=1)
+            var samurai = businessDbContext.Samurais.Include(s => s.SamuraiBattles)
+                .ThenInclude(sb => sb.Battle)
+                .SingleOrDefault(s => s.Id == 3);
+            var sbToRemove = samurai.SamuraiBattles.SingleOrDefault(sb => sb.BattleId == 1);
+            samurai.SamuraiBattles.Remove(sbToRemove); //remove via list<t>
+            //context.remove(sbtoremove); //remove using dbcontext
+            businessDbContext.ChangeTracker.DetectChanges(); //here for debugging
+            businessDbContext.SaveChanges();
+        }
+
+        private static void RemoveJoinBetweenSamuraiAndBattleSimple()
+        {
+            var join = new SamuraiBattle { BattleId = 1, SamuraiId = 8 };
+            businessDbContext.Remove(join);
+            businessDbContext.SaveChanges();
+        }
+
+        private static void InsertingDataInManyToManyRelationships()
+        {
+            PopulateDefaultDatabase();
             PopulateSamuraisAndBattles();
+            JoinBattleAndSamurai();
+
+            using (var context = new BusinessDBContext())
+            {
+                //EnlistSamuraiIntoABattle(context);
+                //EnlistSamuraiIntoABattleUntracked(context);
+                AddNewSamuraiViaDisconnectedBattleObject(context);
+            }
+        }
+
+        private static void GetsamuraiWithBattles()
+        {
+            var samuraiWithBattles = businessDbContext.Samurais
+                .Include(s => s.SamuraiBattles)
+                .ThenInclude(sb => sb.Battle).FirstOrDefault(s => s.Id == 1);
+            var Battle = samuraiWithBattles.SamuraiBattles.First().Battle;
+            var allTheBattles = new List<Battle>();
+            foreach (var samuraiBattle in samuraiWithBattles.SamuraiBattles)
+            {
+                allTheBattles.Add(samuraiBattle.Battle);
+            }
+
+        }
+
+        private static void AddNewSamuraiViaDisconnectedBattleObject(BusinessDBContext context)
+        {
+            Battle battle;
+            using(var seperateOperation = new BusinessDBContext())
+            {
+                battle = seperateOperation.Battles.Find(1);
+            }
+
+            var newSamurai = new Samurai { Name = "SampsonSan" };
+            battle.SamuraiBattles.Add( new SamuraiBattle { Samurai = newSamurai});
+            context.Battles.Attach(battle);
+            context.SaveChanges();
+        }
+
+        private static void EnlistSamuraiIntoABattleUntracked(BusinessDBContext context)
+        {
+            Battle battle;
+            using (var seperateOperation = new BusinessDBContext())
+            {
+                battle = seperateOperation.Battles.Find(1);
+            }
+            battle.SamuraiBattles.Add(new SamuraiBattle { SamuraiId = 2 });
+            context.Battles.Attach(battle);
+            context.ChangeTracker.DetectChanges();
+            context.SaveChanges();
+        }
+
+        private static void EnlistSamuraiIntoABattle(BusinessDBContext context)
+        {
+            var battle = context.Battles.Find(1);
+            battle.SamuraiBattles.Add(new SamuraiBattle { SamuraiId = 3 });
+            context.SaveChanges();
+        }
+
+        private static void JoinBattleAndSamurai()
+        {
+            using (var context = new BusinessDBContext())
+            {
+                var sbJoin = new SamuraiBattle { SamuraiId = 1, BattleId = 3 };
+                context.Add(sbJoin);
+                context.SaveChanges();
+            }
         }
 
         private static void PopulateSamuraisAndBattles()

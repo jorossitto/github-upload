@@ -35,15 +35,10 @@ namespace AppCore.Data
 
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Pie> Pies { get; set; }
-
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
-
         public DbSet<Order> Orders { get; set; }
-
         public DbSet<OrderDetail> OrderDetails { get; set; }
-
         public DbSet<Camp> Camps { get; set; }
         public DbSet<Speaker> Speakers { get; set; }
         public DbSet<Talk> Talks { get; set; }
