@@ -57,3 +57,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\EntityFramework.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.csproj.CopyComplete
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

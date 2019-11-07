@@ -9,6 +9,7 @@ using AppCore.Domain;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.DependencyInjection;
+using System.Linq;
 
 namespace AppCore.Data
 {
@@ -73,11 +74,35 @@ namespace AppCore.Data
 
             CreateBattleData(modelBuilder);
 
+            AddShadowProperties(modelBuilder);
+        }
+
+        private void AddShadowProperties(ModelBuilder modelBuilder)
+        {
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+            {
+                if(entityType.Name != "AppCore.Data.Camp" 
+                    && entityType.Name != "AppCore.Data.Category"
+                    && entityType.Name != "AppCore.Data.Location"
+                    && entityType.Name != "AppCore.Data.Pie"
+                    && entityType.Name != "AppCore.Data.Speaker"
+                    && entityType.Name != "AppCore.Data.Talk")
+                {
+                    Console.WriteLine(entityType.Name);
+                    modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
+                    modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
+                }
+
+            }
         }
 
         private static void CreateSamuraiData(ModelBuilder modelBuilder)
         {
+            //modelBuilder.Entity<Samurai>().HasOne(s => s.SecretIdentity)
+            //    .WithOne(i => i.samurai).HasForeignKey<SecretIdentity>("SamuraiID");
 
+            //modelBuilder.Entity<Samurai>().Property<DateTime>("Created");
+            //modelBuilder.Entity<Samurai>().Property<DateTime>("LastModified");
         }
 
         private static void CreateSamuraiBattleData(ModelBuilder modelBuilder)
@@ -87,8 +112,8 @@ namespace AppCore.Data
 
         private static void CreateBattleData(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Battle>().Property(b => b.StartDate).HasColumnType("Date");
-            modelBuilder.Entity<Battle>().Property(b => b.EndDate).HasColumnType("Date");
+            modelBuilder.Entity<Battle>().Property(b => b.StartDate).HasColumnType(config.Date);
+            modelBuilder.Entity<Battle>().Property(b => b.EndDate).HasColumnType(config.Date);
         }
 
         private static void CreateCatagoryData(ModelBuilder modelBuilder)
@@ -373,6 +398,23 @@ namespace AppCore.Data
                     .EnableSensitiveDataLogging(true)
                     .UseSqlServer(_config.GetConnectionString(config.DefaultConnection));
             }
+        }
+
+        public override int SaveChanges()
+        {
+            ChangeTracker.DetectChanges();
+            var timestamp = DateTime.Now;
+            foreach(var entity in ChangeTracker.Entries()
+                .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified))
+            {
+                entity.Property(config.LastModified).CurrentValue = timestamp;
+
+                if(entity.State == EntityState.Added)
+                {
+                    entity.Property(config.Created).CurrentValue = timestamp;
+                }
+            }
+            return base.SaveChanges();
         }
     }
 }

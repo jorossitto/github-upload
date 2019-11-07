@@ -23,5 +23,8 @@ namespace AppCore.Data
         public const string ExplicitDatabaseConnection = "Server=(localdb)\\mssqllocaldb;Database=BethanysPieShop-1ED06986-5F07-4A1C-85B9-D9F3F477BFF5;Trusted_Connection=True;MultipleActiveResultSets=true";
         public const string samuraiViewSource = "samuraiViewSource";
         public const string UnsavedChanges = "There are unsaved changes. Do you want to save them?";
+        public const string LastModified = "LastModified";
+        public const string Created = "Created";
+        public const string Date = "Date";
     }
 }

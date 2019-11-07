@@ -240,4 +240,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.Exte
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Common\obj\Debug\Common.csprojAssemblyReference.cache

@@ -54,3 +54,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
