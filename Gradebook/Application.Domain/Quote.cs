@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppCore.Domain
+namespace AppFramework.Domain
 {
     public class Quote
     {

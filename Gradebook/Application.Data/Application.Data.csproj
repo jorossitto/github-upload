@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191112183237_betterNames.cs" />
+    <Compile Remove="Migrations\20191112183237_betterNames.Designer.cs" />
+    <Compile Remove="Migrations\20191112190051_betterNames.cs" />
+    <Compile Remove="Migrations\20191112190051_betterNames.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
@@ -31,7 +38,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ACM.BL\ACM.BL.csproj" />
-    <ProjectReference Include="..\Application.Domain\Application.Domain.csproj" />
+    <ProjectReference Include="..\AppCore.Domain\AppCore.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

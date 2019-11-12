@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AppCore.Domain
+namespace AppFramework.Domain
 {
     public class SamuraiBattle
     {

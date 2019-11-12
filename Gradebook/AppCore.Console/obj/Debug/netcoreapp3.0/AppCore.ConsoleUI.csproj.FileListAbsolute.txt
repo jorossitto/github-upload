@@ -15,6 +15,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
@@ -37,12 +38,12 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\ACM.BL.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\AppCore.Domain.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Application.Data.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Application.Domain.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\EntityFramework.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\AppCore.Domain.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Application.Data.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Application.Domain.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\ACM.BL.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Common.pdb
@@ -54,4 +55,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\obj\Debug\netcoreapp3.0\AppCore.ConsoleUI.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

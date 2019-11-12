@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PersonFullName.cs" />
     <Compile Include="Battle.cs" />
     <Compile Include="Quote.cs" />
     <Compile Include="SecretIdentity.cs" />

@@ -1938,10 +1938,21 @@
           "ACM.BL.dll": {}
         }
       },
+      "AppCore.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "AppCore.Domain.dll": {}
+        },
+        "compile": {
+          "AppCore.Domain.dll": {}
+        }
+      },
       "Application.Data/1.0.0": {
         "dependencies": {
           "ACM.BL": "1.0.0",
-          "Application.Domain": "1.0.0",
+          "AppCore.Domain": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -1962,14 +1973,6 @@
         },
         "compile": {
           "Application.Data.dll": {}
-        }
-      },
-      "Application.Domain/1.0.0": {
-        "runtime": {
-          "Application.Domain.dll": {}
-        },
-        "compile": {
-          "Application.Domain.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -4967,12 +4970,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Application.Data/1.0.0": {
+    "AppCore.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Application.Domain/1.0.0": {
+    "Application.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

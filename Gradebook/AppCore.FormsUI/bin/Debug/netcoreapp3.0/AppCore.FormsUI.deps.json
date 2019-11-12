@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v3.0": {
       "AppCore.FormsUI/1.0.0": {
         "dependencies": {
+          "AppCore.Domain": "1.0.0",
           "Application.Data": "1.0.0",
-          "Application.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.0.0"
         },
         "runtime": {
@@ -350,6 +350,12 @@
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
           "Microsoft.EntityFrameworkCore.Relational": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.46310"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/3.0.0": {
@@ -1539,10 +1545,18 @@
           "ACM.BL.dll": {}
         }
       },
+      "AppCore.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "AppCore.Domain.dll": {}
+        }
+      },
       "Application.Data/1.0.0": {
         "dependencies": {
           "ACM.BL": "1.0.0",
-          "Application.Domain": "1.0.0",
+          "AppCore.Domain": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -1560,11 +1574,6 @@
         },
         "runtime": {
           "Application.Data.dll": {}
-        }
-      },
-      "Application.Domain/1.0.0": {
-        "runtime": {
-          "Application.Domain.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -2867,12 +2876,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Application.Data/1.0.0": {
+    "AppCore.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Application.Domain/1.0.0": {
+    "Application.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

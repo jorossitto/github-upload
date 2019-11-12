@@ -2735,12 +2735,25 @@
           "bin/placeholder/ACM.BL.dll": {}
         }
       },
+      "AppCore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppCore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppCore.Domain.dll": {}
+        }
+      },
       "Application.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "ACM.BL": "1.0.0",
-          "Application.Domain": "1.0.0",
+          "AppCore.Domain": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -2765,15 +2778,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "Application.Domain/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Application.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Application.Domain.dll": {}
-        }
       },
       "Common/1.0.0": {
         "type": "project",
@@ -8634,15 +8638,15 @@
       "path": "../ACM.BL/ACM.BL.csproj",
       "msbuildProject": "../ACM.BL/ACM.BL.csproj"
     },
+    "AppCore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AppCore.Domain/AppCore.Domain.csproj",
+      "msbuildProject": "../AppCore.Domain/AppCore.Domain.csproj"
+    },
     "Application.Data/1.0.0": {
       "type": "project",
       "path": "../Application.Data/Application.Data.csproj",
       "msbuildProject": "../Application.Data/Application.Data.csproj"
-    },
-    "Application.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Application.Domain/Application.Domain.csproj",
-      "msbuildProject": "../Application.Domain/Application.Domain.csproj"
     },
     "Common/1.0.0": {
       "type": "project",
@@ -8652,8 +8656,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "AppCore.Domain >= 1.0.0",
       "Application.Data >= 1.0.0",
-      "Application.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0"
     ]
   },
@@ -8690,11 +8694,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Domain\\AppCore.Domain.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Domain\\AppCore.Domain.csproj"
+            },
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Data\\Application.Data.csproj"
-            },
-            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj": {
-              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj"
             }
           }
         }

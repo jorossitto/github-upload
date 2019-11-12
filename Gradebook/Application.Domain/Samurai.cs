@@ -1,18 +1,24 @@
 ﻿using System.Collections.Generic;
 
-namespace AppCore.Domain
+namespace AppFramework.Domain
 {
     public class Samurai
     {
+        #region constructor
         public Samurai()
         {
             SecretIdentity = new SecretIdentity();
             Quotes = new List<Quote>();
             SamuraiBattles = new List<SamuraiBattle>();
+            BetterName = new PersonFullName("", "");
         }
+        #endregion
 
+        #region Variables
         public int Id { get; set; }
         public string Name { get; set; }
+        public int PersonFullNameId { get; set; }
+        public PersonFullName BetterName { get; set; }
         public List<Quote> Quotes { get; set; }
         //public int BattleId { get; set; }
         public List<SamuraiBattle> SamuraiBattles { get; set; }
@@ -26,5 +32,6 @@ namespace AppCore.Domain
             }
             return battles;
         }
+        #endregion
     }
 }

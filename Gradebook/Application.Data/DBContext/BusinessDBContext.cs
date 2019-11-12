@@ -15,13 +15,17 @@ namespace AppCore.Data
 {
     public class BusinessDBContext : IdentityDbContext<IdentityUser>
     {
+        #region mocks
         MockCategoryRepository mockCategoryRepository = new MockCategoryRepository();
         MockPieRepository mockPieRepository = new MockPieRepository();
+        #endregion mocks
+
         private readonly IConfiguration _config;
 
         //Depricated
         //var loggerFactory = new LoggerFactory(new[] { new ConsoleLoggerProvider((category, level) => level >= LogLevel.Information, true) });
-        
+
+        #region constructors
         //Default Constructor
         public BusinessDBContext()
         {
@@ -29,11 +33,13 @@ namespace AppCore.Data
         }
 
         public BusinessDBContext(DbContextOptions<BusinessDBContext> options,
-            IConfiguration config) : base(options)
+            IConfiguration config = null) : base(options)
         {
             _config = config;
         }
+        #endregion constructors
 
+        #region DBSets
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Pie> Pies { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -46,6 +52,9 @@ namespace AppCore.Data
         public DbSet<Samurai> Samurais { get; set; }
         public DbSet<Quote> Quotes { get; set; }
         public DbSet<Battle>Battles { get; set; }
+        public DbSet<SamuraiStat> SamuraiBattleStats { get; set; }
+        #endregion
+
         private ILoggerFactory GetLoggerFactory()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
@@ -56,6 +65,39 @@ namespace AppCore.Data
             return serviceCollection.BuildServiceProvider()
                     .GetService<ILoggerFactory>();
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            Contract.Requires(optionsBuilder != null);
+
+            if (_config == null)
+            {
+                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
+                    .EnableSensitiveDataLogging(true)
+                    .UseSqlServer(config.ExplicitDatabaseConnection);
+            }
+            else
+            {
+                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
+                    .EnableSensitiveDataLogging(true)
+                    .UseSqlServer(_config.GetConnectionString(config.DefaultConnection));
+            }
+        }
+        
+        #region dbFunctions
+        [DbFunction(Schema = "dbo")]
+        public static string EarliestBattleFoughtBySamurai(int samuraiId)
+        {
+            throw new Exception();
+        }
+
+        [DbFunction(Schema = "dbo")]
+        public static int DaysInBattle(DateTime start, DateTime end)
+        {
+            return (int)end.Subtract(start).TotalDays + 1;
+        }
+        #endregion
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             Contract.Requires(modelBuilder != null);
@@ -68,14 +110,16 @@ namespace AppCore.Data
 
             CreateCampData(modelBuilder);
 
-            CreateSamuraiBattleData(modelBuilder);
-
-            CreateSamuraiData(modelBuilder);
-
             CreateBattleData(modelBuilder);
+
+            SamuraiMethods(modelBuilder);
 
             AddShadowProperties(modelBuilder);
         }
+
+
+        #region Building Model
+
 
         private void AddShadowProperties(ModelBuilder modelBuilder)
         {
@@ -86,7 +130,8 @@ namespace AppCore.Data
                     && entityType.Name != "AppCore.Data.Location"
                     && entityType.Name != "AppCore.Data.Pie"
                     && entityType.Name != "AppCore.Data.Speaker"
-                    && entityType.Name != "AppCore.Data.Talk")
+                    && entityType.Name != "AppCore.Data.Talk"
+                    && entityType.ClrType.BaseType != typeof(DbView))
                 {
                     Console.WriteLine(entityType.Name);
                     modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
@@ -96,6 +141,19 @@ namespace AppCore.Data
             }
         }
 
+        #region SamuraiMethods
+        private void SamuraiMethods(ModelBuilder modelBuilder)
+        {
+            CreateSamuraiBattleData(modelBuilder);
+
+            CreateSamuraiData(modelBuilder);
+
+            CreateSamuraiStatData(modelBuilder);
+        }
+        private void CreateSamuraiStatData(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SamuraiStat>().HasKey(s => s.SamuraiId);
+        }
         private static void CreateSamuraiData(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Samurai>().HasOne(s => s.SecretIdentity)
@@ -103,12 +161,18 @@ namespace AppCore.Data
 
             //modelBuilder.Entity<Samurai>().Property<DateTime>("Created");
             //modelBuilder.Entity<Samurai>().Property<DateTime>("LastModified");
+            //modelBuilder.Entity<Samurai>().OwnsOne(s => s.BetterName).ToTable("BetterNames");
+            //modelBuilder.Entity<Samurai>().OwnsOne(s => s.BetterName).Property(b => b.firstName)
+            //    .HasColumnName("FirstName");
+            //modelBuilder.Entity<Samurai>().OwnsOne(s => s.BetterName).Property(b => b.lastName)
+            //    .HasColumnName("LastName");
         }
 
         private static void CreateSamuraiBattleData(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<SamuraiBattle>().HasKey(s => new { s.SamuraiId, s.BattleId });
         }
+        #endregion
 
         private static void CreateBattleData(ModelBuilder modelBuilder)
         {
@@ -381,31 +445,16 @@ namespace AppCore.Data
                   Twitter = "resawildermuth"
               });
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            Contract.Requires(optionsBuilder != null);
-
-            if(_config == null)
-            {
-                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
-                    .EnableSensitiveDataLogging(true)
-                    .UseSqlServer(config.ExplicitDatabaseConnection);
-            }
-            else
-            {
-                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
-                    .EnableSensitiveDataLogging(true)
-                    .UseSqlServer(_config.GetConnectionString(config.DefaultConnection));
-            }
-        }
+        #endregion
 
         public override int SaveChanges()
         {
             ChangeTracker.DetectChanges();
             var timestamp = DateTime.Now;
             foreach(var entity in ChangeTracker.Entries()
-                .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified))
+                .Where(e => (e.State == EntityState.Added || e.State == EntityState.Modified)
+                && !e.Metadata.IsOwned()))
+                
             {
                 entity.Property(config.LastModified).CurrentValue = timestamp;
 
@@ -413,6 +462,15 @@ namespace AppCore.Data
                 {
                     entity.Property(config.Created).CurrentValue = timestamp;
                 }
+
+                //if Owned
+                //if (entity.Entity is Samurai)
+                //{
+                //    if (entity.Reference("BetterName").CurrentValue == null)
+                //    {
+                //        entity.Reference("BetterName").CurrentValue = PersonFullName.Empty();
+                //    }
+                //}
             }
             return base.SaveChanges();
         }

@@ -28,7 +28,110 @@ namespace AppCore.ConsoleUI
             //ReplaceSecretIdentityNotInMemory();
             //CreateSamurai();
             //RetrieveSamuraisCreatedInPastWeek();
-            CreateThenEditSamuraiWithQuote();
+            //CreateThenEditSamuraiWithQuote();
+            //GetAllSamurais();
+            //CreateSamuraiWithBetterName();
+            //RetrieveAndUpdateBetterName();
+            //FixUpNullBetterName();
+            //RetrieveScalarResult();
+            //FilterWithScalarResult();
+            //RetrieveDaysInBattle();
+            GetStats();
+            Filter();
+            Project();
+
+        }
+
+
+
+        #region Methods
+
+        #region Working With Database Views
+        private static void Project()
+        {
+            var stats = businessDbContext.SamuraiBattleStats.AsNoTracking()
+                .Select(s => new
+                {
+                    s.Name,
+                    s.NumberOfBattles
+                })
+                .ToList();
+        }
+
+        private static void Filter()
+        {
+            var stats = businessDbContext.SamuraiBattleStats.Where(s => s.SamuraiId == 2).AsNoTracking().ToList();
+        }
+
+        private static void GetStats()
+        {
+            var stats = businessDbContext.SamuraiBattleStats.AsNoTracking().ToList();
+        }
+        #endregion
+
+        private static void RetrieveDaysInBattle()
+        {
+            var battles = businessDbContext.Battles.Select
+                (b => new
+                {
+                    b.Name,
+                    Days = BusinessDBContext.DaysInBattle(b.StartDate, b.EndDate)
+                })
+                .ToList();
+        }
+
+        private static void FilterWithScalarResult()
+        {
+            var samurais = businessDbContext.Samurais
+                .Where(s => EF.Functions.Like(BusinessDBContext.EarliestBattleFoughtBySamurai(s.Id), "%Battle%"))
+                .Select(s => s.Name)
+                .ToList();
+        }
+
+        private static void RetrieveScalarResult()
+        {
+            var samurais = businessDbContext.Samurais
+                .Select(s => new
+                {
+                    s.Name,
+                    EarliestBattle = BusinessDBContext.EarliestBattleFoughtBySamurai(s.Id)
+                })
+                .ToList();
+
+        }
+
+        private static void FixUpNullBetterName()
+        {
+            var samurai = businessDbContext.Samurais.FirstOrDefault(s => s.Name == "Chrisjen");
+            if (samurai is null) { return; }
+            if(samurai.BetterName.IsEmpty())
+            {
+                samurai.BetterName = null;
+            }
+        }
+
+        private static void RetrieveAndUpdateBetterName()
+        {
+            var samurai = businessDbContext.Samurais.FirstOrDefault(s => s.BetterName.lastName == "Black");
+            //samurai.BetterName.firstName = "Jill";
+            businessDbContext.SaveChanges();
+        }
+
+        private static void CreateSamuraiWithBetterName()
+        {
+            var samurai = new Samurai
+            {
+                Name = "Jack le Black",
+                BetterName = PersonFullName.Create("Jack", "Black")
+            };
+
+            businessDbContext.Samurais.Add(samurai);
+            businessDbContext.SaveChanges();
+        }
+
+        private static void GetAllSamurais()
+        {
+            var allSamurais = businessDbContext.Samurais.ToList(); 
         }
 
         private static void CreateThenEditSamuraiWithQuote()
@@ -594,4 +697,5 @@ namespace AppCore.ConsoleUI
             }
         }
     }
+    #endregion
 }

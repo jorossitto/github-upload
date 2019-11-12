@@ -4,10 +4,12 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Data.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Data.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\ACM.BL.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\AppCore.Domain.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\EntityFramework.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\ACM.BL.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\ACM.BL.dll.config
+C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\AppCore.Domain.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\EntityFramework.xml
@@ -19,5 +21,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netc
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\obj\Debug\netcoreapp3.0\Application.Data.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Domain.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Data\bin\Debug\netcoreapp3.0\Application.Domain.pdb

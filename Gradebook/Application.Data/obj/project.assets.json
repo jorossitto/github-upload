@@ -2773,13 +2773,17 @@
           "bin/placeholder/ACM.BL.dll": {}
         }
       },
-      "Application.Domain/1.0.0": {
+      "AppCore.Domain/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0"
+        },
         "compile": {
-          "bin/placeholder/Application.Domain.dll": {}
+          "bin/placeholder/AppCore.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Application.Domain.dll": {}
+          "bin/placeholder/AppCore.Domain.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -9034,10 +9038,10 @@
       "path": "../ACM.BL/ACM.BL.csproj",
       "msbuildProject": "../ACM.BL/ACM.BL.csproj"
     },
-    "Application.Domain/1.0.0": {
+    "AppCore.Domain/1.0.0": {
       "type": "project",
-      "path": "../Application.Domain/Application.Domain.csproj",
-      "msbuildProject": "../Application.Domain/Application.Domain.csproj"
+      "path": "../AppCore.Domain/AppCore.Domain.csproj",
+      "msbuildProject": "../AppCore.Domain/AppCore.Domain.csproj"
     },
     "Common/1.0.0": {
       "type": "project",
@@ -9048,7 +9052,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "ACM.BL >= 1.0.0",
-      "Application.Domain >= 1.0.0",
+      "AppCore.Domain >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
@@ -9103,8 +9107,8 @@
             "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj": {
               "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\ACM.BL\\ACM.BL.csproj"
             },
-            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj": {
-              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\Application.Domain\\Application.Domain.csproj"
+            "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Domain\\AppCore.Domain.csproj": {
+              "projectPath": "C:\\Users\\risottj\\Documents\\UnitTesting\\Gradebook\\AppCore.Domain\\AppCore.Domain.csproj"
             }
           }
         }

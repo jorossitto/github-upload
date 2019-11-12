@@ -1,10 +1,8 @@
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\testhost.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\GradeBook.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\nunit.engine.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\nunit.engine.api.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\testhost.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\NUnitTests.deps.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\NUnitTests.runtimeconfig.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\NUnitTests.runtimeconfig.dev.json
@@ -26,6 +24,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
@@ -37,6 +36,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\testhost.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Moq.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
@@ -48,6 +48,10 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.assert.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.core.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -124,6 +128,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\ACM.BL.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\AppCore.Domain.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Data.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Common.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\GradeBook.dll
@@ -131,6 +136,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\ACM.BL.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Data.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\GradeBook.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\AppCore.Domain.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.csprojAssemblyReference.cache
@@ -139,10 +145,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\obj\Debug\netcoreapp3.0\NUnitTests.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.core.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.assert.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Domain.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Application.Domain.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll

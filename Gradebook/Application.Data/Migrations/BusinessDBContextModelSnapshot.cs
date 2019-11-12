@@ -786,6 +786,30 @@ namespace AppCore.Data.Migrations
                     b.ToTable("Battles");
                 });
 
+            modelBuilder.Entity("AppCore.Domain.PersonFullName", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("firstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("lastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PersonFullName");
+                });
+
             modelBuilder.Entity("AppCore.Domain.Quote", b =>
                 {
                     b.Property<int>("Id")
@@ -819,6 +843,9 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("BetterNameId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
 
@@ -829,6 +856,8 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BetterNameId");
 
                     b.ToTable("Samurais");
                 });
@@ -852,6 +881,27 @@ namespace AppCore.Data.Migrations
                     b.HasIndex("BattleId");
 
                     b.ToTable("SamuraiBattle");
+                });
+
+            modelBuilder.Entity("AppCore.Domain.SamuraiStat", b =>
+                {
+                    b.Property<int>("SamuraiId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("EarliestBattle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumberOfBattles")
+                        .HasColumnType("int");
+
+                    b.HasKey("SamuraiId");
+
+                    b.ToTable("SamuraiBattleStats");
                 });
 
             modelBuilder.Entity("AppCore.Domain.SecretIdentity", b =>
@@ -1049,12 +1099,10 @@ namespace AppCore.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1103,12 +1151,10 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1189,6 +1235,13 @@ namespace AppCore.Data.Migrations
                         .HasForeignKey("SamuraiId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Domain.Samurai", b =>
+                {
+                    b.HasOne("AppCore.Domain.PersonFullName", "BetterName")
+                        .WithMany()
+                        .HasForeignKey("BetterNameId");
                 });
 
             modelBuilder.Entity("AppCore.Domain.SamuraiBattle", b =>
