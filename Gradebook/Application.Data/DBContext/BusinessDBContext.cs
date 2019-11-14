@@ -13,6 +13,7 @@ using System.Linq;
 
 namespace AppCore.Data
 {
+    //Grab SQLite/Sql server compact toolbox
     public class BusinessDBContext : IdentityDbContext<IdentityUser>
     {
         #region mocks
@@ -53,6 +54,10 @@ namespace AppCore.Data
         public DbSet<Quote> Quotes { get; set; }
         public DbSet<Battle>Battles { get; set; }
         public DbSet<SamuraiStat> SamuraiBattleStats { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Unit> Units { get; set; }
+        public DbSet<BrewerType> BrewerTypes { get; set; }
+
         #endregion
 
         private ILoggerFactory GetLoggerFactory()
@@ -115,11 +120,35 @@ namespace AppCore.Data
             SamuraiMethods(modelBuilder);
 
             AddShadowProperties(modelBuilder);
+
+            SeedBrewerType(modelBuilder);
+
+            SeedUnit(modelBuilder);
         }
+
+
 
 
         #region Building Model
 
+        private void SeedBrewerType(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<BrewerType>().HasData
+                (
+                    new BrewerType { BrewerTypeId = 1, Description = "Glass Hourglass Drip" },
+                    new BrewerType { BrewerTypeId = 2, Description = "Hand Press" },
+                    new BrewerType { BrewerTypeId = 3, Description = "Cold Brew" }
+                );
+        }
+
+        private void SeedUnit(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Unit>().HasData
+                (
+                    new Unit { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 2, BrewerTypeId = 2 },
+                    new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), BrewerTypeId = 1 }
+                );
+        }
 
         private void AddShadowProperties(ModelBuilder modelBuilder)
         {
@@ -399,7 +428,10 @@ namespace AppCore.Data
                   CityTown = "Atlanta",
                   StateProvince = "GA",
                   PostalCode = "12345",
-                  Country = "USA"
+                  Country = "USA",
+                  OpenTime = "6AM",
+                  CloseTime = "4PM"
+
               });
 
             modelBuilder.Entity<Talk>()

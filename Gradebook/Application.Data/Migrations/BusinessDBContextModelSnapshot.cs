@@ -206,7 +206,13 @@ namespace AppCore.Data.Migrations
                     b.Property<string>("CityTown")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("CloseTime")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OpenTime")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PostalCode")
@@ -220,7 +226,7 @@ namespace AppCore.Data.Migrations
 
                     b.HasKey("LocationId");
 
-                    b.ToTable("Location");
+                    b.ToTable("Locations");
 
                     b.HasData(
                         new
@@ -228,7 +234,9 @@ namespace AppCore.Data.Migrations
                             LocationId = 1,
                             Address1 = "123 Main Street",
                             CityTown = "Atlanta",
+                            CloseTime = "4PM",
                             Country = "USA",
+                            OpenTime = "6AM",
                             PostalCode = "12345",
                             StateProvince = "GA",
                             VenueName = "Atlanta Convention Center"
@@ -759,6 +767,29 @@ namespace AppCore.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("AppCore.Data.Unit", b =>
+                {
+                    b.Property<int>("UnitId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UnitId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Unit");
+                });
+
             modelBuilder.Entity("AppCore.Domain.Battle", b =>
                 {
                     b.Property<int>("Id")
@@ -1226,6 +1257,13 @@ namespace AppCore.Data.Migrations
                     b.HasOne("AppCore.Data.Speaker", "Speaker")
                         .WithMany()
                         .HasForeignKey("SpeakerId");
+                });
+
+            modelBuilder.Entity("AppCore.Data.Unit", b =>
+                {
+                    b.HasOne("AppCore.Data.Location", null)
+                        .WithMany("BrewingUnits")
+                        .HasForeignKey("LocationId");
                 });
 
             modelBuilder.Entity("AppCore.Domain.Quote", b =>

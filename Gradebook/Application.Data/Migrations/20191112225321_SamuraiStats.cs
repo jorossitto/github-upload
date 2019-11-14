@@ -6,26 +6,19 @@ namespace AppCore.Data.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "SamuraiBattleStats",
-                columns: table => new
-                {
-                    SamuraiId = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
-                    NumberOfBattles = table.Column<int>(nullable: false),
-                    EarliestBattle = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SamuraiBattleStats", x => x.SamuraiId);
-                });
+            migrationBuilder.Sql
+                (@"CREATE OR ALTER VIEW dbo.SamuraiBattleStats
+                    AS
+                    Select sb.SamuraiId, s.Name, COUNT(sb.BattleId) AS NumberOfBattles, dbo.EarliestBattleFoughtBySamurai(MIN(s.Id)) AS EarliestBattle
+                    FROM dbo.SamuraiBattle sb INNER JOIN 
+	                    dbo.Samurais s ON s.Id = sb.SamuraiId
+                    GROUP BY s.Name, sb.SamuraiId"
+                );
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "SamuraiBattleStats");
+            migrationBuilder.Sql("DROP VIEW dbo.SamuraiBattleStats");
         }
     }
 }
