@@ -2,14 +2,15 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
+using System.Linq;
 using System.Diagnostics.Contracts;
 using Microsoft.Extensions.Configuration;
 using AppCore.Domain;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.DependencyInjection;
-using System.Linq;
 
 namespace AppCore.Data
 {
@@ -30,13 +31,14 @@ namespace AppCore.Data
         //Default Constructor
         public BusinessDBContext()
         {
-
+            AddEvents();
         }
 
         public BusinessDBContext(DbContextOptions<BusinessDBContext> options,
             IConfiguration config = null) : base(options)
         {
             _config = config;
+            AddEvents();
         }
         #endregion constructors
 
@@ -63,10 +65,12 @@ namespace AppCore.Data
         private ILoggerFactory GetLoggerFactory()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
-            serviceCollection.AddLogging(builder =>
-                   builder.AddConsole()
+            serviceCollection.AddLogging(builder => builder.AddConsole()
                           .AddFilter(DbLoggerCategory.Database.Command.Name,
-                                     LogLevel.Information));
+                                     LogLevel.Information)
+                          //.AddFilter(DbLoggerCategory.Database.Command.Name,
+                          //           LogLevel.Debug)
+                          );
             return serviceCollection.BuildServiceProvider()
                     .GetService<ILoggerFactory>();
         }
@@ -74,7 +78,7 @@ namespace AppCore.Data
         {
             Contract.Requires(optionsBuilder != null);
 
-            if (_config == null)
+            if (optionsBuilder.IsConfigured == false)
             {
                 optionsBuilder.UseLoggerFactory(GetLoggerFactory())
                     .EnableSensitiveDataLogging(true)
@@ -82,9 +86,19 @@ namespace AppCore.Data
             }
             else
             {
-                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
-                    .EnableSensitiveDataLogging(true)
-                    .UseSqlServer(_config.GetConnectionString(config.DefaultConnection));
+                //if(_config == null)
+                //{
+                //    //optionsBuilder.UseLoggerFactory(GetLoggerFactory())
+                //    //    .EnableSensitiveDataLogging(true)
+                //    //    .UseSqlServer(config.ExplicitDatabaseConnection);
+                //}
+                //else
+                //{
+                //    optionsBuilder.UseLoggerFactory(GetLoggerFactory())
+                //        .EnableSensitiveDataLogging(true)
+                //        .UseSqlServer(_config.GetConnectionString(config.DefaultConnection));
+                //}
+
             }
         }
         
@@ -102,6 +116,26 @@ namespace AppCore.Data
         }
         #endregion
 
+        #region events
+        private void AddEvents()
+        {
+            ChangeTracker.StateChanged += Statechanged;
+            ChangeTracker.Tracked += Tracked;
+        }
+
+        private void Statechanged(object sender, EntityStateChangedEventArgs e)
+        {
+            int keyValue = GetKeyValue(e.Entry.Entity);
+            Console.WriteLine($@"State of {e.Entry.Entity.GetType()} with Key = {keyValue} changed from " + 
+                $"{e.OldState} to {e.NewState}");
+        }
+        private void Tracked(object sender, EntityTrackedEventArgs e)
+        {
+            int keyValue = GetKeyValue(e.Entry.Entity);
+            Console.WriteLine($@"Newly tracked {e.Entry.Entity.GetType()}, " +
+                $"{((e.FromQuery) ? "From" : "Not From")} Query, Key = {keyValue} as {e.Entry.State}");
+        }
+        #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -115,6 +149,8 @@ namespace AppCore.Data
 
             CreateCampData(modelBuilder);
 
+            SeedLocationData(modelBuilder);
+
             CreateBattleData(modelBuilder);
 
             SamuraiMethods(modelBuilder);
@@ -126,9 +162,6 @@ namespace AppCore.Data
             SeedUnit(modelBuilder);
         }
 
-
-
-
         #region Building Model
 
         private void SeedBrewerType(ModelBuilder modelBuilder)
@@ -139,6 +172,42 @@ namespace AppCore.Data
                     new BrewerType { BrewerTypeId = 2, Description = "Hand Press" },
                     new BrewerType { BrewerTypeId = 3, Description = "Cold Brew" }
                 );
+            modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe);
+            modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe).HasData(
+                new
+                {
+                    BrewerTypeId =1,
+                    BrewMinutes = 3,
+                    GrindSize = 2,
+                    GrindOunces = 2,
+                    WaterOunces = 9,
+                    WaterTemperatureF = 130,
+                    Description = "So good!"
+                });
+
+            modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe).HasData(
+                new
+                {
+                    BrewerTypeId = 2,
+                    BrewMinutes = 1,
+                    GrindSize = 2,
+                    GrindOunces = 2,
+                    WaterOunces = 9,
+                    WaterTemperatureF = 130,
+                    Description = "Love a hand pressed coffee!"
+                });
+
+            modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe).HasData(
+                new
+                {
+                    BrewerTypeId = 3,
+                    BrewMinutes = 60,
+                    GrindSize = 2,
+                    GrindOunces = 2,
+                    WaterOunces = 9,
+                    WaterTemperatureF = 130,
+                    Description = "Cold brew is worth the wait!"
+                });
         }
 
         private void SeedUnit(ModelBuilder modelBuilder)
@@ -149,23 +218,65 @@ namespace AppCore.Data
                     new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), BrewerTypeId = 1 }
                 );
         }
+        private void SeedLocationData(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Location>()
+              .HasData(new
+              {
+                  LocationId = 1,
+                  VenueName = "Atlanta Convention Center",
+                  Address1 = "123 Main Street",
+                  CityTown = "Atlanta",
+                  StateProvince = "GA",
+                  PostalCode = "12345",
+                  Country = "USA",
+                  OpenTime = "6AM",
+                  CloseTime = "4PM"
 
+              });
+
+            modelBuilder.Entity<Location>()
+              .HasData(new
+              {
+                  LocationId = 2,
+                  VenueName = "Atlanta Convention Center",
+                  Address1 = "999 Main Street",
+                  CityTown = "Atlanta",
+                  StateProvince = "GA",
+                  PostalCode = "12345",
+                  Country = "USA",
+                  OpenTime = "6AM",
+                  CloseTime = "4PM"
+
+              });
+
+        }
         private void AddShadowProperties(ModelBuilder modelBuilder)
         {
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
-                if(entityType.Name != "AppCore.Data.Camp" 
-                    && entityType.Name != "AppCore.Data.Category"
-                    && entityType.Name != "AppCore.Data.Location"
-                    && entityType.Name != "AppCore.Data.Pie"
-                    && entityType.Name != "AppCore.Data.Speaker"
-                    && entityType.Name != "AppCore.Data.Talk"
-                    && entityType.ClrType.BaseType != typeof(DbView))
+                try
                 {
-                    Console.WriteLine(entityType.Name);
-                    modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
-                    modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
+                    if (entityType.Name != "AppCore.Data.Camp"
+                        && entityType.Name != "AppCore.Data.Category"
+                        && entityType.Name != "AppCore.Data.Location"
+                        && entityType.Name != "AppCore.Data.Pie"
+                        && entityType.Name != "AppCore.Data.Speaker"
+                        && entityType.Name != "AppCore.Data.Talk"
+                        && entityType.Name != "AppCore.Data.BrewerType"
+                        && entityType.Name != "AppCore.Data.Unit"
+                        && entityType.Name != "AppCore.Data.Recipe"
+                        && entityType.ClrType.BaseType != typeof(DbView))
+                    {
+                        modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
+                        modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
+                    }
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}, Entity: {entityType.Name}");
+                }
+
 
             }
         }
@@ -419,21 +530,6 @@ namespace AppCore.Data
                       Length = 1
                   });
 
-            modelBuilder.Entity<Location>()
-              .HasData(new
-              {
-                  LocationId = 1,
-                  VenueName = "Atlanta Convention Center",
-                  Address1 = "123 Main Street",
-                  CityTown = "Atlanta",
-                  StateProvince = "GA",
-                  PostalCode = "12345",
-                  Country = "USA",
-                  OpenTime = "6AM",
-                  CloseTime = "4PM"
-
-              });
-
             modelBuilder.Entity<Talk>()
               .HasData(new
               {
@@ -488,11 +584,17 @@ namespace AppCore.Data
                 && !e.Metadata.IsOwned()))
                 
             {
-                entity.Property(config.LastModified).CurrentValue = timestamp;
+                if(entity.GetType().GetProperty(config.LastModified) != null)
+                {
+                    entity.Property(config.LastModified).CurrentValue = timestamp;
+                }
 
                 if(entity.State == EntityState.Added)
                 {
-                    entity.Property(config.Created).CurrentValue = timestamp;
+                    if(entity.GetType().GetProperty(config.Created) != null)
+                    {
+                        entity.Property(config.Created).CurrentValue = timestamp;
+                    }
                 }
 
                 //if Owned
@@ -506,5 +608,18 @@ namespace AppCore.Data
             }
             return base.SaveChanges();
         }
+
+        private int GetKeyValue<T>(T entity)
+        {
+            var etype = Model.FindEntityType(entity.GetType());
+            var pkey = etype.FindPrimaryKey();
+            var props = pkey.Properties;
+            var keyName = Model.FindEntityType(entity.GetType()).FindPrimaryKey().Properties
+                .Select(x => x.Name).Single();
+
+            return (int)entity.GetType().GetProperty(keyName).GetValue(entity, null);
+        }
+
+
     }
 }

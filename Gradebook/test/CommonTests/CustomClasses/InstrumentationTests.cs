@@ -24,6 +24,7 @@ namespace CommonTests.CustomClasses
         }
 
         [Test]
+        //[Ignore("code changed")]
         public void GetPreciseElapsedTime()
         {
             // Arrange
@@ -35,7 +36,8 @@ namespace CommonTests.CustomClasses
             var elapsed = instrumentation.GetPreciseElapsedTime();
             // Assert
             Debug.WriteLine(elapsed);
-            Assert.IsTrue(elapsed >= 0.75 && elapsed < 0.751);
+            Assert.IsTrue(elapsed >= 0.75 && elapsed < 0.76);
+
         }
 
         [Test]
@@ -47,9 +49,10 @@ namespace CommonTests.CustomClasses
             // Act
             instrumentation.StartWithPrecision();
             Thread.Sleep(750);
-            var elapsed = instrumentation.GetPreciseElapsedTime();
+            var elapsed = instrumentation.GetReallyPreciseElapsedTime();
+            Debug.WriteLine("has taken " + elapsed);
             // Assert
-            Assert.AreEqual(750, instrumentation.GetReallyPreciseElapsedTime());
+            Assert.IsTrue(elapsed >= 750 && elapsed < 752);
         }
     }
 }

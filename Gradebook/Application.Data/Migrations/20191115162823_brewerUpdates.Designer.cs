@@ -4,14 +4,16 @@ using AppCore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppCore.Data.Migrations
 {
     [DbContext(typeof(BusinessDBContext))]
-    partial class BusinessDBContextModelSnapshot : ModelSnapshot
+    [Migration("20191115162823_brewerUpdates")]
+    partial class brewerUpdates
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -285,35 +287,6 @@ namespace AppCore.Data.Migrations
                             StateProvince = "GA",
                             VenueName = "Atlanta Convention Center"
                         });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Milestone", b =>
-                {
-                    b.Property<int>("MilestoneId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
-                    b.HasKey("MilestoneId");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Milestone");
                 });
 
             modelBuilder.Entity("AppCore.Data.Order", b =>
@@ -1218,12 +1191,10 @@ namespace AppCore.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1272,12 +1243,10 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1302,88 +1271,11 @@ namespace AppCore.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("AppCore.Data.BrewerType", b =>
-                {
-                    b.OwnsOne("AppCore.Data.Recipe", "Recipe", b1 =>
-                        {
-                            b1.Property<int>("BrewerTypeId")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("int")
-                                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                            b1.Property<int>("BrewMinutes")
-                                .HasColumnType("int");
-
-                            b1.Property<string>("Description")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<int>("GrindOunces")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("GrindSize")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("WaterOunces")
-                                .HasColumnType("int");
-
-                            b1.Property<int>("WaterTemperatureF")
-                                .HasColumnType("int");
-
-                            b1.HasKey("BrewerTypeId");
-
-                            b1.ToTable("BrewerTypes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("BrewerTypeId");
-
-                            b1.HasData(
-                                new
-                                {
-                                    BrewerTypeId = 1,
-                                    BrewMinutes = 3,
-                                    Description = "So good!",
-                                    GrindOunces = 2,
-                                    GrindSize = 2,
-                                    WaterOunces = 9,
-                                    WaterTemperatureF = 130
-                                },
-                                new
-                                {
-                                    BrewerTypeId = 2,
-                                    BrewMinutes = 1,
-                                    Description = "Love a hand pressed coffee!",
-                                    GrindOunces = 2,
-                                    GrindSize = 2,
-                                    WaterOunces = 9,
-                                    WaterTemperatureF = 130
-                                },
-                                new
-                                {
-                                    BrewerTypeId = 3,
-                                    BrewMinutes = 60,
-                                    Description = "Cold brew is worth the wait!",
-                                    GrindOunces = 2,
-                                    GrindSize = 2,
-                                    WaterOunces = 9,
-                                    WaterTemperatureF = 130
-                                });
-                        });
-                });
-
             modelBuilder.Entity("AppCore.Data.Camp", b =>
                 {
                     b.HasOne("AppCore.Data.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
-                });
-
-            modelBuilder.Entity("AppCore.Data.Milestone", b =>
-                {
-                    b.HasOne("AppCore.Data.Location", null)
-                        .WithMany("Milestones")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("AppCore.Data.OrderDetail", b =>
