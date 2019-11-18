@@ -209,7 +209,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.abstr
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.assert.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.core.xml
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\bin\xunit.execution.desktop.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\WebNetFramework\obj\Debug\WebNetFramework.pdb

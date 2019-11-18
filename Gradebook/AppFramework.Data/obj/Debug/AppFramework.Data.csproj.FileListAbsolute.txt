@@ -1,6 +1,5 @@
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\bin\Debug\AppFramework.Data.exe.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\bin\Debug\AppFramework.Data.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\bin\Debug\AppFramework.Data.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.pdb

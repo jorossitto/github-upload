@@ -25,6 +25,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\NUnitTests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll

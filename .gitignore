@@ -392,3 +392,4 @@ MigrationBackup/
 *.exe
 *.out
 *.app
+*.dtbcache

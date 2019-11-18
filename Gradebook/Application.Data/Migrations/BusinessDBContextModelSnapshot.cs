@@ -116,6 +116,10 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -127,16 +131,19 @@ namespace AppCore.Data.Migrations
                         new
                         {
                             BrewerTypeId = 1,
+                            Color = "0",
                             Description = "Glass Hourglass Drip"
                         },
                         new
                         {
                             BrewerTypeId = 2,
+                            Color = "0",
                             Description = "Hand Press"
                         },
                         new
                         {
                             BrewerTypeId = 3,
+                            Color = "0",
                             Description = "Cold Brew"
                         });
                 });
@@ -219,6 +226,66 @@ namespace AppCore.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("AppCore.Data.Employee", b =>
+                {
+                    b.Property<int>("EmployeeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("Barista")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmployeeId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Employee");
+
+                    b.HasData(
+                        new
+                        {
+                            EmployeeId = 1,
+                            Barista = true,
+                            LocationId = 1,
+                            Name = "Leia"
+                        },
+                        new
+                        {
+                            EmployeeId = 2,
+                            Barista = true,
+                            LocationId = 2,
+                            Name = "Rey"
+                        },
+                        new
+                        {
+                            EmployeeId = 3,
+                            Barista = true,
+                            LocationId = 2,
+                            Name = "Gamora"
+                        },
+                        new
+                        {
+                            EmployeeId = 4,
+                            Barista = true,
+                            LocationId = 3,
+                            Name = "Dr. Strange"
+                        },
+                        new
+                        {
+                            EmployeeId = 5,
+                            Barista = false,
+                            LocationId = 3,
+                            Name = "Peter Parker"
+                        });
+                });
+
             modelBuilder.Entity("AppCore.Data.Location", b =>
                 {
                     b.Property<int>("LocationId")
@@ -244,6 +311,10 @@ namespace AppCore.Data.Migrations
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("LocationType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("OpenTime")
                         .HasColumnType("nvarchar(max)");
 
@@ -266,9 +337,10 @@ namespace AppCore.Data.Migrations
                             LocationId = 1,
                             Address1 = "123 Main Street",
                             CityTown = "Atlanta",
-                            CloseTime = "4PM",
+                            CloseTime = "5pm",
                             Country = "USA",
-                            OpenTime = "6AM",
+                            LocationType = "Kiosk",
+                            OpenTime = "5am",
                             PostalCode = "12345",
                             StateProvince = "GA",
                             VenueName = "Atlanta Convention Center"
@@ -278,12 +350,21 @@ namespace AppCore.Data.Migrations
                             LocationId = 2,
                             Address1 = "999 Main Street",
                             CityTown = "Atlanta",
-                            CloseTime = "4PM",
+                            CloseTime = "6pm",
                             Country = "USA",
-                            OpenTime = "6AM",
+                            LocationType = "Storefront",
+                            OpenTime = "6am",
                             PostalCode = "12345",
                             StateProvince = "GA",
                             VenueName = "Atlanta Convention Center"
+                        },
+                        new
+                        {
+                            LocationId = 3,
+                            Address1 = "3 Main",
+                            CloseTime = "7pm",
+                            LocationType = "Popup",
+                            OpenTime = "7am"
                         });
                 });
 
@@ -848,7 +929,7 @@ namespace AppCore.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("Acquired")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("Date");
 
                     b.Property<int>("BrewerTypeId")
                         .HasColumnType("int");
@@ -868,13 +949,27 @@ namespace AppCore.Data.Migrations
                             UnitId = 1,
                             Acquired = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 2,
-                            LocationId = 2
+                            LocationId = 1
                         },
                         new
                         {
                             UnitId = 2,
                             Acquired = new DateTime(2018, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 3,
+                            LocationId = 1
+                        },
+                        new
+                        {
+                            UnitId = 3,
+                            Acquired = new DateTime(2018, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 1
+                        },
+                        new
+                        {
+                            UnitId = 4,
+                            Acquired = new DateTime(2018, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 1,
+                            LocationId = 2
                         });
                 });
 
@@ -1218,12 +1313,10 @@ namespace AppCore.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1272,12 +1365,10 @@ namespace AppCore.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -1323,6 +1414,9 @@ namespace AppCore.Data.Migrations
                             b1.Property<int>("GrindSize")
                                 .HasColumnType("int");
 
+                            b1.Property<TimeSpan>("TotalBrewTime")
+                                .HasColumnType("time");
+
                             b1.Property<int>("WaterOunces")
                                 .HasColumnType("int");
 
@@ -1344,6 +1438,7 @@ namespace AppCore.Data.Migrations
                                     Description = "So good!",
                                     GrindOunces = 2,
                                     GrindSize = 2,
+                                    TotalBrewTime = new TimeSpan(0, 0, 3, 0, 0),
                                     WaterOunces = 9,
                                     WaterTemperatureF = 130
                                 },
@@ -1354,6 +1449,7 @@ namespace AppCore.Data.Migrations
                                     Description = "Love a hand pressed coffee!",
                                     GrindOunces = 2,
                                     GrindSize = 2,
+                                    TotalBrewTime = new TimeSpan(0, 0, 1, 0, 0),
                                     WaterOunces = 9,
                                     WaterTemperatureF = 130
                                 },
@@ -1364,6 +1460,7 @@ namespace AppCore.Data.Migrations
                                     Description = "Cold brew is worth the wait!",
                                     GrindOunces = 2,
                                     GrindSize = 2,
+                                    TotalBrewTime = new TimeSpan(0, 1, 0, 0, 0),
                                     WaterOunces = 9,
                                     WaterTemperatureF = 130
                                 });
@@ -1375,6 +1472,15 @@ namespace AppCore.Data.Migrations
                     b.HasOne("AppCore.Data.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
+                });
+
+            modelBuilder.Entity("AppCore.Data.Employee", b =>
+                {
+                    b.HasOne("AppCore.Data.Location", null)
+                        .WithMany("Employees")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("AppCore.Data.Milestone", b =>

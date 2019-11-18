@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AppCore.Data
 {
@@ -8,13 +9,14 @@ namespace AppCore.Data
         {
             BrewingUnits = new List<Unit>();
             Milestones = new List<Milestone>();
+            Employees = new List<Employee>();
         }
 
         public Location(string address1, string openTime, string closeTime) : this()
         {
             Address1 = address1;
-            OpenTime = openTime;
-            CloseTime = closeTime;
+            //OpenTime = openTime;
+            //CloseTime = closeTime;
         }
 
         public int LocationId { get; private set; }
@@ -26,9 +28,12 @@ namespace AppCore.Data
         public string StateProvince { get; set; }
         public string PostalCode { get; set; }
         public string Country { get; set; }
-        public string OpenTime { get; private set; }
-        public string CloseTime { get; private set; }
-        public List<Unit> BrewingUnits { get; set; }
-        public List<Milestone> Milestones { get; set; }
+        public string OpenTime { get; set; }
+        public string CloseTime { get; set; }
+        public virtual List<Unit> BrewingUnits { get; set; }
+        public virtual List<Milestone> Milestones { get; set; }
+        public string Hours => $"{DateTime.Parse(OpenTime).TimeOfDay.ToString()}-{DateTime.Parse(CloseTime).TimeOfDay.ToString()}";
+        public virtual List<Employee> Employees { get; set; }
+        public LocationType LocationType { get; set; }
     }
 }

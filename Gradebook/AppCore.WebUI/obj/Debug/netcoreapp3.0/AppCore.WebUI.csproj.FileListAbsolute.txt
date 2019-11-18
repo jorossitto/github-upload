@@ -1,3 +1,13 @@
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\staticwebassets\AppCore.WebUI.StaticWebAssets.Manifest.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\staticwebassets\AppCore.WebUI.StaticWebAssets.xml
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorAssemblyInfo.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorAssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.AssemblyInfoInputs.cache
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.AssemblyInfo.cs
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -12,6 +22,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\AppCore.WebUI.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\AutoMapper.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Castle.Core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
@@ -28,6 +39,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
@@ -127,15 +139,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\bin\Debug\netcoreapp3.0\EntityFramework.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.csprojAssemblyReference.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\staticwebassets\AppCore.WebUI.StaticWebAssets.Manifest.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\staticwebassets\AppCore.WebUI.StaticWebAssets.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorAssemblyInfo.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorAssemblyInfo.cs
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.AssemblyInfoInputs.cache
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.AssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.TagHelpers.input.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.TagHelpers.output.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorCoreGenerate.cache
@@ -160,5 +163,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.RazorTargetAssemblyInfo.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.Views.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.csproj.CopyComplete
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.dll
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.WebUI\obj\Debug\netcoreapp3.0\AppCore.WebUI.csprojAssemblyReference.cache

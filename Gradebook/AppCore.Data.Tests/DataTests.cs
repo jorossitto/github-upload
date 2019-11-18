@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Transactions;
 using AppCore.Domain;
 using Microsoft.EntityFrameworkCore;
@@ -271,6 +272,85 @@ namespace AppCore.Data.Tests
             };
 
             context.Attach(battles);
+        }
+
+        [TestMethod]
+        public void CustomLoggerCanTrackEvents()
+        {
+            var events = new List<ChangeTrackerEvent>();
+            var options = new DbContextOptionsBuilder<BusinessDBContext>();
+            options.UseInMemoryDatabase("CustomLoggerCanTrackEvents");
+
+            using(var context = new BusinessDBContext(options.Options))
+            {
+                RegisterEvents(context, events);
+                context.Database.EnsureCreated();
+                var location1 = context.Locations.Include(l => l.BrewingUnits)
+                    .SingleOrDefault(l => l.LocationId == 1);
+                var aUnitAtLocation1 = location1.BrewingUnits.FirstOrDefault();
+                var location2 = context.Locations.Include(l => l.BrewingUnits).SingleOrDefault(l => l.LocationId == 2);
+                location2.BrewingUnits.Add(aUnitAtLocation1);
+                context.ChangeTracker.DetectChanges();
+
+                foreach( var e in events)
+                {
+                    Console.WriteLine($"{e.EventType} : {e.Properties}");
+                }
+
+                Assert.AreEqual(4, events.Count(e => e.EventType == "Tracked"));
+                Assert.AreEqual(1, events.Count(e => e.EventType == "StateChanged"));
+            }
+        }
+        private struct ChangeTrackerEvent
+        {
+            public ChangeTrackerEvent(string eventType, string entityType, string properties,
+                Nullable<bool> fromQuery, string newState, string oldState)
+            {
+                EventType = eventType;
+                EntityType = entityType;
+                Properties = properties;
+                FromQuery = fromQuery;
+                NewState = newState;
+                OldState = oldState;
+            }
+
+            public string EventType { get; }
+            public string EntityType { get; }
+            public Nullable<bool> FromQuery { get; }
+            public string Properties { get; }
+            public string OldState { get; }
+            public string NewState { get; }
+        }
+
+        private string GetPropertyList(object obj)
+        {
+            var stringBuilder = new StringBuilder();
+            foreach (var property in obj.GetType().GetProperties())
+            {
+                stringBuilder.AppendLine($"{property.Name}: {property.GetValue(obj, null)}");
+            }
+            return stringBuilder.ToString();
+        }
+
+        private void RegisterEvents(DbContext context, IList<ChangeTrackerEvent> events)
+        {
+            context.ChangeTracker.Tracked += (s, e) =>
+            {
+                var propList = GetPropertyList(e.Entry.Entity);
+                var trackedEvent = new ChangeTrackerEvent(
+                    "Tracked", e.Entry.Entity.GetType().Name, propList, e.FromQuery, e.Entry.State.ToString(),
+                    null);
+                events.Add(trackedEvent);
+            };
+
+            context.ChangeTracker.StateChanged += (s, e) =>
+            {
+                var propList = GetPropertyList(e.Entry.Entity);
+                var stateChangedEvent = new ChangeTrackerEvent(
+                    "StateChanged", e.Entry.Entity.GetType().Name, propList, null,
+                    e.NewState.ToString(), e.OldState.ToString());
+                events.Add(stateChangedEvent);
+            };
         }
     }
 }

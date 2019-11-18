@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Linq;
 using System.Diagnostics.Contracts;
@@ -11,6 +12,8 @@ using AppCore.Domain;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.DependencyInjection;
+using System.Globalization;
+using System.Drawing;
 
 namespace AppCore.Data
 {
@@ -22,7 +25,11 @@ namespace AppCore.Data
         MockPieRepository mockPieRepository = new MockPieRepository();
         #endregion mocks
 
+        #region Variables
         private readonly IConfiguration _config;
+        private readonly LoggingType loggingType = LoggingType.Sql;
+        #endregion
+
 
         //Depricated
         //var loggerFactory = new LoggerFactory(new[] { new ConsoleLoggerProvider((category, level) => level >= LogLevel.Information, true) });
@@ -59,10 +66,12 @@ namespace AppCore.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<Unit> Units { get; set; }
         public DbSet<BrewerType> BrewerTypes { get; set; }
+        //public DbSet<Recipe> Recipes { get; set; }
 
         #endregion
 
-        private ILoggerFactory GetLoggerFactory()
+        #region Logging
+        private ILoggerFactory GetSQLLoggerFactory()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
             serviceCollection.AddLogging(builder => builder.AddConsole()
@@ -74,15 +83,37 @@ namespace AppCore.Data
             return serviceCollection.BuildServiceProvider()
                     .GetService<ILoggerFactory>();
         }
+
+        private ILoggerFactory GetChangeTrackerLoggerFactory()
+        {
+            IServiceCollection serviceCollection = new ServiceCollection();
+            serviceCollection.AddLogging(builder => builder.AddConsole()
+            .AddFilter(DbLoggerCategory.ChangeTracking.Name, LogLevel.Debug));
+
+            return serviceCollection.BuildServiceProvider().GetService<ILoggerFactory>();
+        }
+        #endregion
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             Contract.Requires(optionsBuilder != null);
 
             if (optionsBuilder.IsConfigured == false)
             {
-                optionsBuilder.UseLoggerFactory(GetLoggerFactory())
-                    .EnableSensitiveDataLogging(true)
-                    .UseSqlServer(config.ExplicitDatabaseConnection);
+                if(loggingType == LoggingType.Sql)
+                {
+                    optionsBuilder.UseLoggerFactory(GetSQLLoggerFactory())
+                        .EnableSensitiveDataLogging(true)
+                        .UseSqlServer(config.ExplicitDatabaseConnection);
+                        //.UseLazyLoadingProxies();
+                }
+                else
+                {
+                    optionsBuilder.UseLoggerFactory(GetChangeTrackerLoggerFactory())
+                        .EnableSensitiveDataLogging(true)
+                        .UseSqlServer(config.ExplicitDatabaseConnection);
+                        //.UseLazyLoadingProxies();
+                }
             }
             else
             {
@@ -126,9 +157,10 @@ namespace AppCore.Data
         private void Statechanged(object sender, EntityStateChangedEventArgs e)
         {
             int keyValue = GetKeyValue(e.Entry.Entity);
-            Console.WriteLine($@"State of {e.Entry.Entity.GetType()} with Key = {keyValue} changed from " + 
+            Console.WriteLine($@"State of {e.Entry.Entity.GetType()} with Key = {keyValue} changed from " +
                 $"{e.OldState} to {e.NewState}");
         }
+
         private void Tracked(object sender, EntityTrackedEventArgs e)
         {
             int keyValue = GetKeyValue(e.Entry.Entity);
@@ -157,15 +189,39 @@ namespace AppCore.Data
 
             AddShadowProperties(modelBuilder);
 
-            SeedBrewerType(modelBuilder);
 
+            SeedRecipe(modelBuilder);
             SeedUnit(modelBuilder);
+            SeedBrewerType(modelBuilder);
+            SeedEmployee(modelBuilder);
+        }
+
+        private void SeedRecipe(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Recipe>().Property(r => r.TotalBrewTime)
+            //    .HasConversion(new TimeSpanToTicksConverter());
+            //modelBuilder.Entity<Recipe>().Property(r => r.TotalBrewTime).HasConversion<System.Int64>();
         }
 
         #region Building Model
+        private void SeedEmployee(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Employee>().HasData
+                (
+                new Employee { EmployeeId = 1, Name = "Leia", LocationId = 1, Barista = true },
+                new Employee { EmployeeId = 2, Name = "Rey", LocationId = 2, Barista = true },
+                new Employee { EmployeeId = 3, Name = "Gamora", LocationId = 2, Barista = true },
+                new Employee { EmployeeId = 4, Name = "Dr. Strange", LocationId = 3, Barista = true },
+                new Employee { EmployeeId = 5, Name = "Peter Parker", LocationId = 3, Barista = false }
+                );
+        }
 
         private void SeedBrewerType(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<BrewerType>().Property(b => b.Color)
+                .HasConversion(c => c.Name, s => Color.FromName(s));
+
+            #region Data
             modelBuilder.Entity<BrewerType>().HasData
                 (
                     new BrewerType { BrewerTypeId = 1, Description = "Glass Hourglass Drip" },
@@ -182,7 +238,8 @@ namespace AppCore.Data
                     GrindOunces = 2,
                     WaterOunces = 9,
                     WaterTemperatureF = 130,
-                    Description = "So good!"
+                    Description = "So good!",
+                    TotalBrewTime = TimeSpan.FromMinutes(3)
                 });
 
             modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe).HasData(
@@ -194,7 +251,8 @@ namespace AppCore.Data
                     GrindOunces = 2,
                     WaterOunces = 9,
                     WaterTemperatureF = 130,
-                    Description = "Love a hand pressed coffee!"
+                    Description = "Love a hand pressed coffee!",
+                    TotalBrewTime = TimeSpan.FromMinutes(1)
                 });
 
             modelBuilder.Entity<BrewerType>().OwnsOne(b => b.Recipe).HasData(
@@ -206,20 +264,28 @@ namespace AppCore.Data
                     GrindOunces = 2,
                     WaterOunces = 9,
                     WaterTemperatureF = 130,
-                    Description = "Cold brew is worth the wait!"
+                    Description = "Cold brew is worth the wait!",
+                    TotalBrewTime = TimeSpan.FromMinutes(60)
                 });
+            #endregion
         }
 
         private void SeedUnit(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Unit>().Property(u => u.Acquired).HasColumnType("Date");
             modelBuilder.Entity<Unit>().HasData
                 (
-                    new Unit { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 2, BrewerTypeId = 2 },
-                    new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), BrewerTypeId = 1 }
+                    new Unit { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 1, BrewerTypeId = 2 },
+                    new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), LocationId = 1, BrewerTypeId = 3 },
+                    new Unit { UnitId = 3, Acquired = new DateTime(2018, 6, 3), BrewerTypeId = 1 },
+                    new Unit { UnitId = 4, Acquired = new DateTime(2018, 6, 4), LocationId = 2, BrewerTypeId = 1 }
                 );
         }
         private void SeedLocationData(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Location>().Property(l => l.LocationType)
+                .HasConversion(new EnumToStringConverter<LocationType>());
+
             modelBuilder.Entity<Location>()
               .HasData(new
               {
@@ -230,8 +296,9 @@ namespace AppCore.Data
                   StateProvince = "GA",
                   PostalCode = "12345",
                   Country = "USA",
-                  OpenTime = "6AM",
-                  CloseTime = "4PM"
+                  OpenTime = "5am",
+                  CloseTime = "5pm",
+                  LocationType = LocationType.Kiosk
 
               });
 
@@ -245,37 +312,44 @@ namespace AppCore.Data
                   StateProvince = "GA",
                   PostalCode = "12345",
                   Country = "USA",
-                  OpenTime = "6AM",
-                  CloseTime = "4PM"
+                  OpenTime = "6am",
+                  CloseTime = "6pm",
+                  LocationType = LocationType.Storefront
 
               });
+
+            modelBuilder.Entity<Location>().HasData(new
+            {
+                LocationId = 3,
+                Address1 = "3 Main",
+                OpenTime = "7am",
+                CloseTime = "7pm",
+                LocationType = LocationType.Popup
+            });
 
         }
         private void AddShadowProperties(ModelBuilder modelBuilder)
         {
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
-                try
+
+                Console.WriteLine($"Entity: {entityType.Name}");
+                if (entityType.Name != "AppCore.Data.Camp"
+                    && entityType.Name != "AppCore.Data.Category"
+                    && entityType.Name != "AppCore.Data.Location"
+                    && entityType.Name != "AppCore.Data.Pie"
+                    && entityType.Name != "AppCore.Data.Speaker"
+                    && entityType.Name != "AppCore.Data.Talk"
+                    && entityType.Name != "AppCore.Data.BrewerType"
+                    && entityType.Name != "AppCore.Data.Unit"
+                    && entityType.Name != "AppCore.Data.Recipe"
+                    && entityType.Name != "AppCore.Data.Employee"
+                    && entityType.ClrType.BaseType != typeof(DbView))
                 {
-                    if (entityType.Name != "AppCore.Data.Camp"
-                        && entityType.Name != "AppCore.Data.Category"
-                        && entityType.Name != "AppCore.Data.Location"
-                        && entityType.Name != "AppCore.Data.Pie"
-                        && entityType.Name != "AppCore.Data.Speaker"
-                        && entityType.Name != "AppCore.Data.Talk"
-                        && entityType.Name != "AppCore.Data.BrewerType"
-                        && entityType.Name != "AppCore.Data.Unit"
-                        && entityType.Name != "AppCore.Data.Recipe"
-                        && entityType.ClrType.BaseType != typeof(DbView))
-                    {
-                        modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
-                        modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
-                    }
+                    modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
+                    modelBuilder.Entity(entityType.Name).Property<DateTime>("LastModified");
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"{ex.Message}, Entity: {entityType.Name}");
-                }
+
 
 
             }
@@ -611,13 +685,21 @@ namespace AppCore.Data
 
         private int GetKeyValue<T>(T entity)
         {
-            var etype = Model.FindEntityType(entity.GetType());
-            var pkey = etype.FindPrimaryKey();
-            var props = pkey.Properties;
-            var keyName = Model.FindEntityType(entity.GetType()).FindPrimaryKey().Properties
-                .Select(x => x.Name).Single();
+            try
+            {
+                var etype = Model.FindEntityType(entity.GetType());
+                var pkey = etype.FindPrimaryKey();
+                var props = pkey.Properties;
+                var keyName = Model.FindEntityType(entity.GetType()).FindPrimaryKey().Properties
+                    .Select(x => x.Name).Single();
 
-            return (int)entity.GetType().GetProperty(keyName).GetValue(entity, null);
+                return (int)entity.GetType().GetProperty(keyName).GetValue(entity, null);
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+
         }
 
 

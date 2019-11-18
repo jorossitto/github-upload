@@ -6,6 +6,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\AppCore.ConsoleUI.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\AutoMapper.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Castle.Core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
@@ -16,6 +17,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netco
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCore.Console\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll

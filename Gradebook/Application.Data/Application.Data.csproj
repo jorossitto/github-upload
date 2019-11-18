@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20191112183237_betterNames.Designer.cs" />
     <Compile Remove="Migrations\20191112190051_betterNames.cs" />
     <Compile Remove="Migrations\20191112190051_betterNames.Designer.cs" />
+    <Compile Remove="Migrations\20191115230459_CheckingMigrations.cs" />
+    <Compile Remove="Migrations\20191115230459_CheckingMigrations.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,9 +31,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
   </ItemGroup>

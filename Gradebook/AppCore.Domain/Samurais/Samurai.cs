@@ -18,12 +18,12 @@ namespace AppCore.Domain
         public int Id { get; set; }
         public string Name { get; set; }
         //public int PersonFullNameId { get; set; } adding this makes it require a PersonFullName for each object
-        public PersonFullName BetterName { get; set; }
-        public List<Quote> Quotes { get; set; }
+        public virtual PersonFullName BetterName { get; set; }
+        public virtual List<Quote> Quotes { get; set; }
         //public int BattleId { get; set; }
-        public List<SamuraiBattle> SamuraiBattles { get; set; }
-        public SecretIdentity SecretIdentity { get; set; }
-        public List<Battle> Battles()
+        public virtual List<SamuraiBattle> SamuraiBattles { get; set; }
+        public virtual SecretIdentity SecretIdentity { get; set; }
+        public virtual List<Battle> Battles()
         {
             var battles = new List<Battle>();
             foreach (var join in SamuraiBattles)

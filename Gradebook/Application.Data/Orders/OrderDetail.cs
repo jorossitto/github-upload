@@ -11,9 +11,9 @@
 
         public decimal Price { get; set; }
 
-        public Pie Pie { get; set; }
+        public virtual Pie Pie { get; set; }
 
-        public Order Order { get; set; }
+        public virtual Order Order { get; set; }
 
     }
 }

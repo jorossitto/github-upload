@@ -11,6 +11,7 @@ namespace AppCore.Data
         public int GrindOunces { get; set; }
         public int WaterOunces { get; set; }
         public int BrewMinutes { get; set; }
+        public TimeSpan TotalBrewTime { get; set; }
         public string Description { get; set; }
 
     }

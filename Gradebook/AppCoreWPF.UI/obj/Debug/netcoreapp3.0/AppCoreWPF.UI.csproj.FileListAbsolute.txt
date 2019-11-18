@@ -6,6 +6,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\AppCoreWPF.UI.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\AutoMapper.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Castle.Core.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
@@ -16,6 +17,7 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
@@ -46,7 +48,6 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Common.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\Common.dll.config
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\bin\Debug\netcoreapp3.0\EntityFramework.xml
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.csprojAssemblyReference.cache
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\MainWindow.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\App.g.cs
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI_MarkupCompile.cache
@@ -58,3 +59,4 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcore
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.csproj.CopyComplete
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.pdb
+C:\Users\risottj\Documents\UnitTesting\Gradebook\AppCoreWPF.UI\obj\Debug\netcoreapp3.0\AppCoreWPF.UI.csprojAssemblyReference.cache

@@ -14,7 +14,7 @@ namespace ACM.BL
         public int AddressId { get; set; }
 
         [Required]
-        public Address Address { get; set; }
+        public virtual Address Address { get; set; }
 
         public CuisineType Cuisine { get; set; }
 

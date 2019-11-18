@@ -15,7 +15,7 @@ namespace AppCore.Data
         [BindNever]
         public int OrderId { get; set; }
 
-        public List<OrderDetail> OrderDetails { get; set; }
+        public virtual List<OrderDetail> OrderDetails { get; set; }
 
         [Required(ErrorMessage ="Please enter your first name")]
         [Display(Name = "First name")]
