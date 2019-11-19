@@ -67,8 +67,11 @@ namespace AppCore.Data
         public DbSet<Unit> Units { get; set; }
         public DbSet<BrewerType> BrewerTypes { get; set; }
         //public DbSet<Recipe> Recipes { get; set; }
+        //public DbSet<UnitQueryType> UnitsInService { get; set; }
 
         #endregion
+
+
 
         #region Logging
         private ILoggerFactory GetSQLLoggerFactory()
@@ -196,14 +199,16 @@ namespace AppCore.Data
             SeedEmployee(modelBuilder);
         }
 
+
+
+        #region Building Model
+
         private void SeedRecipe(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Recipe>().Property(r => r.TotalBrewTime)
             //    .HasConversion(new TimeSpanToTicksConverter());
             //modelBuilder.Entity<Recipe>().Property(r => r.TotalBrewTime).HasConversion<System.Int64>();
         }
-
-        #region Building Model
         private void SeedEmployee(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().HasData
@@ -219,7 +224,7 @@ namespace AppCore.Data
         private void SeedBrewerType(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BrewerType>().Property(b => b.Color)
-                .HasConversion(c => c.Name, s => Color.FromName(s));
+                .HasConversion(new ColorToStringValueConverter());
 
             #region Data
             modelBuilder.Entity<BrewerType>().HasData
@@ -277,7 +282,7 @@ namespace AppCore.Data
                 (
                     new Unit { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 1, BrewerTypeId = 2 },
                     new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), LocationId = 1, BrewerTypeId = 3 },
-                    new Unit { UnitId = 3, Acquired = new DateTime(2018, 6, 3), BrewerTypeId = 1 },
+                    new Unit { UnitId = 3, Acquired = new DateTime(2018, 6, 3), LocationId = 1, BrewerTypeId = 1 },
                     new Unit { UnitId = 4, Acquired = new DateTime(2018, 6, 4), LocationId = 2, BrewerTypeId = 1 }
                 );
         }
@@ -702,6 +707,11 @@ namespace AppCore.Data
 
         }
 
+        #region ValueConverters
+        private ValueConverter<Color, string> ColorConverter = 
+            new ValueConverter<Color, string>(c => c.Name, s => Color.FromName(s));
+
+        #endregion
 
     }
 }

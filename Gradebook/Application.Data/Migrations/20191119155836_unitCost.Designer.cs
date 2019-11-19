@@ -4,14 +4,16 @@ using AppCore.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppCore.Data.Migrations
 {
     [DbContext(typeof(BusinessDBContext))]
-    partial class BusinessDBContextModelSnapshot : ModelSnapshot
+    [Migration("20191119155836_unitCost")]
+    partial class unitCost
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -934,14 +936,11 @@ namespace AppCore.Data.Migrations
                     b.Property<int>("BrewerTypeId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Cost")
+                        .HasColumnType("int");
 
                     b.Property<int?>("LocationId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime?>("OutOfService")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("UnitId");
 
@@ -955,7 +954,7 @@ namespace AppCore.Data.Migrations
                             UnitId = 1,
                             Acquired = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 2,
-                            Cost = 0m,
+                            Cost = 0,
                             LocationId = 1
                         },
                         new
@@ -963,7 +962,7 @@ namespace AppCore.Data.Migrations
                             UnitId = 2,
                             Acquired = new DateTime(2018, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 3,
-                            Cost = 0m,
+                            Cost = 0,
                             LocationId = 1
                         },
                         new
@@ -971,15 +970,14 @@ namespace AppCore.Data.Migrations
                             UnitId = 3,
                             Acquired = new DateTime(2018, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 1,
-                            Cost = 0m,
-                            LocationId = 1
+                            Cost = 0
                         },
                         new
                         {
                             UnitId = 4,
                             Acquired = new DateTime(2018, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             BrewerTypeId = 1,
-                            Cost = 0m,
+                            Cost = 0,
                             LocationId = 2
                         });
                 });

@@ -20,7 +20,61 @@ namespace AppCore.ConsoleUI
             //LazyLoadLocationEmployees();
             //LazyLoadWithoutContext();
             //LazyLoadWithNewContext();
-            StoreAndRetrieveABrewerType();
+            //StoreAndRetrieveABrewerType();
+            SinglePropertyGroup();
+            //MultiplePropertyGroupBy();
+        }
+
+        private static void MultiplePropertyGroupBy()
+        {
+            //using (var context = new BusinessDBContext())
+            //{
+            //    var unitGrouping = context.Units
+            //        .GroupBy(o => new { o.BrewerTypeId, o.Location.Address1 })
+            //        .Select(g => new
+            //        {
+            //            g.Key.BrewerTypeId,
+            //            g.Key.Address1,
+            //            Cost = g.Sum(u => u.Cost),
+            //            Count = g.Count()
+            //        }).ToList();
+
+            //    foreach (var item in unitGrouping)
+            //    {
+            //        Console.WriteLine($"LocationId: {item.Address1}");
+            //        Console.WriteLine($"TypeID: {item.BrewerTypeId}");
+            //        Console.WriteLine($"#Units: {item.Count}");
+            //        Console.WriteLine($"Total Cost: {item.Cost}");
+            //        Console.WriteLine($"Average Cost: {item.Cost / item.Count}");
+            //    }
+            //}
+
+        }
+
+        private static void SinglePropertyGroup()
+        {
+            using (var context = new BusinessDBContext())
+            {
+                var unitGrouping = context.Units
+                    .GroupBy(o => o.BrewerTypeId)
+                    .OrderBy(g => g.Sum(u => u.Cost))
+                    .Where(g => g.Count()>1)
+                    .Select(g => new
+                    {
+                        BrewerTypeId = g.Key,
+                        Cost = g.Sum(u => u.Cost),
+                        Count = g.Count()
+
+                    }).ToList();
+
+                foreach (var item in unitGrouping)
+                {
+                    Console.WriteLine($"TypeID: {item.BrewerTypeId}");
+                    Console.WriteLine($"#Units: {item.Count}");
+                    Console.WriteLine($"Total Cost: {item.Cost}");
+                    Console.WriteLine($"Average Cost: {item.Cost/ item.Count}");
+                }
+            }
         }
 
         private static void StoreAndRetrieveABrewerType()
