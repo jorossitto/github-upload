@@ -66,6 +66,12 @@ namespace AppCore.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<Unit> Units { get; set; }
         public DbSet<BrewerType> BrewerTypes { get; set; }
+
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Course> Courses { get; set; }
+
+        public DbSet<Country> Countries { get; set; }
         //public DbSet<Recipe> Recipes { get; set; }
         //public DbSet<UnitQueryType> UnitsInService { get; set; }
 
