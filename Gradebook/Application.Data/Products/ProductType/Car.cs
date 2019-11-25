@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Common;
+using System;
 using System.IO;
 using System.Linq;
-using Common;
+using System.Collections.Generic;
 
 namespace AppCore.Data
 {

@@ -3,4 +3,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.UI\bin\Debug\AppFr
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.UI\bin\Debug\AppFramework.UI.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.UI\obj\Debug\AppFramework.UI.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.UI\obj\Debug\AppFramework.UI.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.UI\obj\Debug\AppFramework.UI.csprojAssemblyReference.cache

@@ -2,4 +2,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Domain\bin\Debug\Ap
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Domain\bin\Debug\Application.Domain.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Domain\obj\Debug\Application.Domain.dll
 C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Domain\obj\Debug\Application.Domain.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\Application.Domain\obj\Debug\Application.Domain.csprojAssemblyReference.cache

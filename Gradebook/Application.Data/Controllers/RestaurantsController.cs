@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ACM.BL;
 using AppCore.Data;
+using AppCore.Entities;
 
 namespace AppCore.Data.Controllers
 {

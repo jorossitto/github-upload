@@ -1,5 +1,4 @@
-﻿using ACM.BL;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -14,6 +13,7 @@ using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.DependencyInjection;
 using System.Globalization;
 using System.Drawing;
+using AppCore.Entities;
 
 namespace AppCore.Data
 {
@@ -203,11 +203,101 @@ namespace AppCore.Data
             SeedUnit(modelBuilder);
             SeedBrewerType(modelBuilder);
             SeedEmployee(modelBuilder);
+            SeedConference(modelBuilder);
+            SeedSession(modelBuilder);
+            SeedSessionTag(modelBuilder);
+            SeedReach(modelBuilder);
+            SeedSpeaker(modelBuilder);
+            SeedTalk(modelBuilder);
         }
 
 
 
+
+
+
+
         #region Building Model
+        private void SeedTalk(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Talk>()
+              .HasData(new
+              {
+                  TalkId = 1,
+                  CampId = 1,
+                  SpeakerId = 1,
+                  Title = "Entity Framework From Scratch",
+                  Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
+                  Level = 100,
+                  Created = new DateTime(2018, 6, 1),
+                  LastModified = new DateTime(2018, 6, 1)
+              },
+              new
+              {
+                  TalkId = 2,
+                  CampId = 1,
+                  SpeakerId = 2,
+                  Title = "Writing Sample Data Made Easy",
+                  Abstract = "Thinking of good sample data examples is tiring.",
+                  Level = 200,
+                  Created = new DateTime(2018, 6, 1),
+                  LastModified = new DateTime(2018, 6, 1)
+              });
+        }
+        private void SeedSpeaker(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Speaker>()
+              .HasData(new
+              {
+                  SpeakerId = 1,
+                  FirstName = "Shawn",
+                  LastName = "Wildermuth",
+                  BlogUrl = "http://wildermuth.com",
+                  Company = "Wilder Minds LLC",
+                  CompanyUrl = "http://wilderminds.com",
+                  GitHub = "shawnwildermuth",
+                  Twitter = "shawnwildermuth",
+                  ConferenceId = 1
+              },
+                  new
+                  {
+                      SpeakerId = 2,
+                      FirstName = "Resa",
+                      LastName = "Wildermuth",
+                      BlogUrl = "http://shawnandresa.com",
+                      Company = "Wilder Minds LLC",
+                      CompanyUrl = "http://wilderminds.com",
+                      GitHub = "resawildermuth",
+                      Twitter = "resawildermuth",
+                      ConferenceId = 1
+                  });
+        }
+        private void SeedReach(ModelBuilder modelBuilder)
+        {
+            var reach = modelBuilder.Entity<Reach>();
+            reach.Property(x => x.ReachId).ValueGeneratedNever();
+            reach.HasData
+                (
+                    new Reach { ReachId = (int)ReachId.Keynote, Description = "Keynote" },
+                    new Reach { ReachId = (int)ReachId.Breakout, Description = "Breakout" },
+                    new Reach { ReachId = (int)ReachId.OpenSpace, Description = "Open Space" }
+                );
+        }
+
+        private void SeedSessionTag(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SessionTag>().HasKey(x => new { x.SessionId, x.Tag });
+        }
+
+        private void SeedSession(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Session>().HasAlternateKey(x => x.SessionGuid);
+        }
+
+        private void SeedConference(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Conference>().HasAlternateKey(x => x.Identifier);
+        }
 
         private void SeedRecipe(ModelBuilder modelBuilder)
         {
@@ -219,11 +309,11 @@ namespace AppCore.Data
         {
             modelBuilder.Entity<Employee>().HasData
                 (
-                new Employee { EmployeeId = 1, Name = "Leia", LocationId = 1, Barista = true },
-                new Employee { EmployeeId = 2, Name = "Rey", LocationId = 2, Barista = true },
-                new Employee { EmployeeId = 3, Name = "Gamora", LocationId = 2, Barista = true },
-                new Employee { EmployeeId = 4, Name = "Dr. Strange", LocationId = 3, Barista = true },
-                new Employee { EmployeeId = 5, Name = "Peter Parker", LocationId = 3, Barista = false }
+                    new Employee { EmployeeId = 1, Name = "Leia", LocationId = 1, Barista = true },
+                    new Employee { EmployeeId = 2, Name = "Rey", LocationId = 2, Barista = true },
+                    new Employee { EmployeeId = 3, Name = "Gamora", LocationId = 2, Barista = true },
+                    new Employee { EmployeeId = 4, Name = "Dr. Strange", LocationId = 3, Barista = true },
+                    new Employee { EmployeeId = 5, Name = "Peter Parker", LocationId = 3, Barista = false }
                 );
         }
 
@@ -286,10 +376,21 @@ namespace AppCore.Data
             modelBuilder.Entity<Unit>().Property(u => u.Acquired).HasColumnType("Date");
             modelBuilder.Entity<Unit>().HasData
                 (
-                    new Unit { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 1, BrewerTypeId = 2 },
-                    new Unit { UnitId = 2, Acquired = new DateTime(2018, 6, 2), LocationId = 1, BrewerTypeId = 3 },
-                    new Unit { UnitId = 3, Acquired = new DateTime(2018, 6, 3), LocationId = 1, BrewerTypeId = 1 },
-                    new Unit { UnitId = 4, Acquired = new DateTime(2018, 6, 4), LocationId = 2, BrewerTypeId = 1 }
+                    new  { UnitId = 1, Acquired = new DateTime(2018, 6, 1), LocationId = 1, BrewerTypeId = 2,
+                        Created = new DateTime(2018, 6, 1), LastModified = new DateTime(2018, 6, 1), Cost = 99m
+                    },
+                    new  { UnitId = 2, Acquired = new DateTime(2018, 6, 2), LocationId = 1, BrewerTypeId = 3,
+                        Created = new DateTime(2018, 6, 1), LastModified = new DateTime(2018, 6, 1),
+                        Cost = 99m
+                    },
+                    new  { UnitId = 3, Acquired = new DateTime(2018, 6, 3), LocationId = 1, BrewerTypeId = 1,
+                        Created = new DateTime(2018, 6, 1), LastModified = new DateTime(2018, 6, 1),
+                        Cost = 99m
+                    },
+                    new  { UnitId = 4, Acquired = new DateTime(2018, 6, 4), LocationId = 2, BrewerTypeId = 1,
+                        Created = new DateTime(2018, 6, 1), LastModified = new DateTime(2018, 6, 1),
+                        Cost = 99m
+                    }
                 );
         }
         private void SeedLocationData(ModelBuilder modelBuilder)
@@ -345,16 +446,14 @@ namespace AppCore.Data
             {
 
                 Console.WriteLine($"Entity: {entityType.Name}");
-                if (entityType.Name != "AppCore.Data.Camp"
+                if (entityType.Name != "AppCore.Entities.Camp"
                     && entityType.Name != "AppCore.Data.Category"
-                    && entityType.Name != "AppCore.Data.Location"
+                    && entityType.Name != "AppCore.Entities.Location"
                     && entityType.Name != "AppCore.Data.Pie"
-                    && entityType.Name != "AppCore.Data.Speaker"
-                    && entityType.Name != "AppCore.Data.Talk"
+                    && entityType.Name != "AppCore.Entities.Speaker"
                     && entityType.Name != "AppCore.Data.BrewerType"
-                    && entityType.Name != "AppCore.Data.Unit"
                     && entityType.Name != "AppCore.Data.Recipe"
-                    && entityType.Name != "AppCore.Data.Employee"
+                    && entityType.Name != "AppCore.Entities.Employee"
                     && entityType.ClrType.BaseType != typeof(DbView))
                 {
                     modelBuilder.Entity(entityType.Name).Property<DateTime>("Created");
@@ -614,49 +713,6 @@ namespace AppCore.Data
                       LocationId = 1,
                       Length = 1
                   });
-
-            modelBuilder.Entity<Talk>()
-              .HasData(new
-              {
-                  TalkId = 1,
-                  CampId = 1,
-                  SpeakerId = 1,
-                  Title = "Entity Framework From Scratch",
-                  Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
-                  Level = 100
-              },
-              new
-              {
-                  TalkId = 2,
-                  CampId = 1,
-                  SpeakerId = 2,
-                  Title = "Writing Sample Data Made Easy",
-                  Abstract = "Thinking of good sample data examples is tiring.",
-                  Level = 200
-              });
-
-            modelBuilder.Entity<Speaker>()
-              .HasData(new
-              {
-                  SpeakerId = 1,
-                  FirstName = "Shawn",
-                  LastName = "Wildermuth",
-                  BlogUrl = "http://wildermuth.com",
-                  Company = "Wilder Minds LLC",
-                  CompanyUrl = "http://wilderminds.com",
-                  GitHub = "shawnwildermuth",
-                  Twitter = "shawnwildermuth"
-              }, new
-              {
-                  SpeakerId = 2,
-                  FirstName = "Resa",
-                  LastName = "Wildermuth",
-                  BlogUrl = "http://shawnandresa.com",
-                  Company = "Wilder Minds LLC",
-                  CompanyUrl = "http://wilderminds.com",
-                  GitHub = "resawildermuth",
-                  Twitter = "resawildermuth"
-              });
         }
         #endregion
 

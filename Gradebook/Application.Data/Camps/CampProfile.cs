@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using AppCore.Entities;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 

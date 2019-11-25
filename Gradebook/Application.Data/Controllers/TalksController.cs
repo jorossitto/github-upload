@@ -1,10 +1,11 @@
-﻿using AutoMapper;
+﻿using AppCore.Entities;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using System;
-using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

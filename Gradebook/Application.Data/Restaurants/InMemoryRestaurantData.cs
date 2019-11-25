@@ -1,4 +1,4 @@
-﻿using ACM.BL;
+﻿using AppCore.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace AppCore.Data
 
         public InMemoryRestaurantData()
         {
-            restaurants = CreateDefaultResturants();
+            //restaurants = CreateDefaultResturants();
         }
 
         public Restaurant GetById(int id)
@@ -55,12 +55,12 @@ namespace AppCore.Data
         {
             var resturants = new List<Restaurant>()
             {
-                new Restaurant{ID = 1, Name = "Scott's Pizza", Address = AddressRepository.Retrieve(1),
-                Cuisine = CuisineType.Italian},
-                new Restaurant{ID = 2, Name = "IshMil's Indian", Address = AddressRepository.Retrieve(1),
-                Cuisine = CuisineType.Indian},
-                new Restaurant{ID = 3, Name = "Juan's Burritos", Address = AddressRepository.Retrieve(1),
-                Cuisine = CuisineType.Mexican}
+                //new Restaurant{ID = 1, Name = "Scott's Pizza", Address = AddressRepository.Retrieve(1),
+                //Cuisine = CuisineType.Italian},
+                //new Restaurant{ID = 2, Name = "IshMil's Indian", Address = AddressRepository.Retrieve(1),
+                //Cuisine = CuisineType.Indian},
+                //new Restaurant{ID = 3, Name = "Juan's Burritos", Address = AddressRepository.Retrieve(1),
+                //Cuisine = CuisineType.Mexican}
 
             };
 

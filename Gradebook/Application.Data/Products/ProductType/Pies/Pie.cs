@@ -1,9 +1,4 @@
-﻿using System.IO;
-using System.Linq;
-using Common;
-using ACM.BL;
-
-namespace AppCore.Data
+﻿namespace AppCore.Data
 {
     public class Pie : Product
     {

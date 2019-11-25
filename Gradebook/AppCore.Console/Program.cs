@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using AppCore.Data;
+using AppCore.Entities;
 using AppCore.Domain;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace AppCore.ConsoleUI
 {

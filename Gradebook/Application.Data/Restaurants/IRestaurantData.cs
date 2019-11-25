@@ -1,7 +1,5 @@
-﻿using ACM.BL;
+﻿using AppCore.Entities;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppCore.Data
 {

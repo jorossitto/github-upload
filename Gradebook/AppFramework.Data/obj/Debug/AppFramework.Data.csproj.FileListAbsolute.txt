@@ -3,4 +3,3 @@ C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\bin\Debug\App
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\bin\Debug\AppFramework.Data.pdb
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.exe
 C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.pdb
-C:\Users\risottj\Documents\UnitTesting\Gradebook\AppFramework.Data\obj\Debug\AppFramework.Data.csprojAssemblyReference.cache

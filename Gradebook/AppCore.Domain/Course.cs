@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppCore.Domain
 {
-    [Table("Course)")]
+    [Table("Course")]
     public class Course
     {
         [Key]

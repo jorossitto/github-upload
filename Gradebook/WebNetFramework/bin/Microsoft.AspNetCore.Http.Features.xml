@@ -558,7 +558,7 @@
         </member>
         <member name="P:Microsoft.AspNetCore.Http.CookieOptions.SameSite">
             <summary>
-            Gets or sets the value for the SameSite attribute of the cookie. The default value is <see cref="F:Microsoft.AspNetCore.Http.SameSiteMode.None"/>
+            Gets or sets the value for the SameSite attribute of the cookie. The default value is -1 (Unspecified)
             </summary>
             <returns>The <see cref="T:Microsoft.AspNetCore.Http.SameSiteMode"/> representing the enforcement mode of the cookie.</returns>
         </member>

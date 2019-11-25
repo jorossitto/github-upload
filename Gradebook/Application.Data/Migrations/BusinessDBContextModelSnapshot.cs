@@ -19,96 +19,6 @@ namespace AppCore.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ACM.BL.Address", b =>
-                {
-                    b.Property<int>("AddressId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("AddressType")
-                        .HasColumnType("int");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(255)")
-                        .HasMaxLength(255);
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("EntityState")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("HasChanges")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsNew")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("State")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StreetLine1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StreetLine2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("AddressId");
-
-                    b.ToTable("Address");
-                });
-
-            modelBuilder.Entity("ACM.BL.Restaurant", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("AddressId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Cuisine")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EntityState")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("HasChanges")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsNew")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(80)")
-                        .HasMaxLength(80);
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("AddressId");
-
-                    b.ToTable("Restaurants");
-                });
-
             modelBuilder.Entity("AppCore.Data.BrewerType", b =>
                 {
                     b.Property<int>("BrewerTypeId")
@@ -148,46 +58,6 @@ namespace AppCore.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("AppCore.Data.Camp", b =>
-                {
-                    b.Property<int>("CampId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("EventDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Length")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Moniker")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CampId");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Camps");
-
-                    b.HasData(
-                        new
-                        {
-                            CampId = 1,
-                            EventDate = new DateTime(2018, 10, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Length = 1,
-                            LocationId = 1,
-                            Moniker = "ATL2018",
-                            Name = "Atlanta Code Camp"
-                        });
-                });
-
             modelBuilder.Entity("AppCore.Data.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -224,177 +94,6 @@ namespace AppCore.Data.Migrations
                             CategoryName = "Seasonal Pies",
                             Description = "Get in the mood for a seasonal pie"
                         });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Employee", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<bool>("Barista")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Employee");
-
-                    b.HasData(
-                        new
-                        {
-                            EmployeeId = 1,
-                            Barista = true,
-                            LocationId = 1,
-                            Name = "Leia"
-                        },
-                        new
-                        {
-                            EmployeeId = 2,
-                            Barista = true,
-                            LocationId = 2,
-                            Name = "Rey"
-                        },
-                        new
-                        {
-                            EmployeeId = 3,
-                            Barista = true,
-                            LocationId = 2,
-                            Name = "Gamora"
-                        },
-                        new
-                        {
-                            EmployeeId = 4,
-                            Barista = true,
-                            LocationId = 3,
-                            Name = "Dr. Strange"
-                        },
-                        new
-                        {
-                            EmployeeId = 5,
-                            Barista = false,
-                            LocationId = 3,
-                            Name = "Peter Parker"
-                        });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Location", b =>
-                {
-                    b.Property<int>("LocationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Address1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Address2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Address3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CityTown")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CloseTime")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LocationType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("OpenTime")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StateProvince")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VenueName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("LocationId");
-
-                    b.ToTable("Locations");
-
-                    b.HasData(
-                        new
-                        {
-                            LocationId = 1,
-                            Address1 = "123 Main Street",
-                            CityTown = "Atlanta",
-                            CloseTime = "5pm",
-                            Country = "USA",
-                            LocationType = "Kiosk",
-                            OpenTime = "5am",
-                            PostalCode = "12345",
-                            StateProvince = "GA",
-                            VenueName = "Atlanta Convention Center"
-                        },
-                        new
-                        {
-                            LocationId = 2,
-                            Address1 = "999 Main Street",
-                            CityTown = "Atlanta",
-                            CloseTime = "6pm",
-                            Country = "USA",
-                            LocationType = "Storefront",
-                            OpenTime = "6am",
-                            PostalCode = "12345",
-                            StateProvince = "GA",
-                            VenueName = "Atlanta Convention Center"
-                        },
-                        new
-                        {
-                            LocationId = 3,
-                            Address1 = "3 Main",
-                            CloseTime = "7pm",
-                            LocationType = "Popup",
-                            OpenTime = "7am"
-                        });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Milestone", b =>
-                {
-                    b.Property<int>("MilestoneId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
-                    b.HasKey("MilestoneId");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Milestone");
                 });
 
             modelBuilder.Entity("AppCore.Data.Order", b =>
@@ -810,180 +509,6 @@ namespace AppCore.Data.Migrations
                     b.ToTable("ShoppingCartItems");
                 });
 
-            modelBuilder.Entity("AppCore.Data.Speaker", b =>
-                {
-                    b.Property<int>("SpeakerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("BlogUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CompanyUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GitHub")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MiddleName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Twitter")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SpeakerId");
-
-                    b.ToTable("Speakers");
-
-                    b.HasData(
-                        new
-                        {
-                            SpeakerId = 1,
-                            BlogUrl = "http://wildermuth.com",
-                            Company = "Wilder Minds LLC",
-                            CompanyUrl = "http://wilderminds.com",
-                            FirstName = "Shawn",
-                            GitHub = "shawnwildermuth",
-                            LastName = "Wildermuth",
-                            Twitter = "shawnwildermuth"
-                        },
-                        new
-                        {
-                            SpeakerId = 2,
-                            BlogUrl = "http://shawnandresa.com",
-                            Company = "Wilder Minds LLC",
-                            CompanyUrl = "http://wilderminds.com",
-                            FirstName = "Resa",
-                            GitHub = "resawildermuth",
-                            LastName = "Wildermuth",
-                            Twitter = "resawildermuth"
-                        });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Talk", b =>
-                {
-                    b.Property<int>("TalkId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Abstract")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("CampId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Level")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("SpeakerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("TalkId");
-
-                    b.HasIndex("CampId");
-
-                    b.HasIndex("SpeakerId");
-
-                    b.ToTable("Talks");
-
-                    b.HasData(
-                        new
-                        {
-                            TalkId = 1,
-                            Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
-                            CampId = 1,
-                            Level = 100,
-                            SpeakerId = 1,
-                            Title = "Entity Framework From Scratch"
-                        },
-                        new
-                        {
-                            TalkId = 2,
-                            Abstract = "Thinking of good sample data examples is tiring.",
-                            CampId = 1,
-                            Level = 200,
-                            SpeakerId = 2,
-                            Title = "Writing Sample Data Made Easy"
-                        });
-                });
-
-            modelBuilder.Entity("AppCore.Data.Unit", b =>
-                {
-                    b.Property<int>("UnitId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Acquired")
-                        .HasColumnType("Date");
-
-                    b.Property<int>("BrewerTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int?>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("OutOfService")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("UnitId");
-
-                    b.HasIndex("LocationId");
-
-                    b.ToTable("Units");
-
-                    b.HasData(
-                        new
-                        {
-                            UnitId = 1,
-                            Acquired = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            BrewerTypeId = 2,
-                            Cost = 0m,
-                            LocationId = 1
-                        },
-                        new
-                        {
-                            UnitId = 2,
-                            Acquired = new DateTime(2018, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            BrewerTypeId = 3,
-                            Cost = 0m,
-                            LocationId = 1
-                        },
-                        new
-                        {
-                            UnitId = 3,
-                            Acquired = new DateTime(2018, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            BrewerTypeId = 1,
-                            Cost = 0m,
-                            LocationId = 1
-                        },
-                        new
-                        {
-                            UnitId = 4,
-                            Acquired = new DateTime(2018, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            BrewerTypeId = 1,
-                            Cost = 0m,
-                            LocationId = 2
-                        });
-                });
-
             modelBuilder.Entity("AppCore.Domain.Author", b =>
                 {
                     b.Property<Guid>("Id")
@@ -1087,7 +612,7 @@ namespace AppCore.Data.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Course)");
+                    b.ToTable("Course");
                 });
 
             modelBuilder.Entity("AppCore.Domain.PersonFullName", b =>
@@ -1234,6 +759,629 @@ namespace AppCore.Data.Migrations
                         .HasFilter("[SamuraiId] IS NOT NULL");
 
                     b.ToTable("SecretIdentity");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Address", b =>
+                {
+                    b.Property<int>("AddressId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AddressType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EntityState")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("HasChanges")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetLine1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetLine2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AddressId");
+
+                    b.ToTable("Address");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Camp", b =>
+                {
+                    b.Property<int>("CampId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("EventDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Length")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Moniker")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CampId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Camps");
+
+                    b.HasData(
+                        new
+                        {
+                            CampId = 1,
+                            EventDate = new DateTime(2018, 10, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Length = 1,
+                            LocationId = 1,
+                            Moniker = "ATL2018",
+                            Name = "Atlanta Code Camp"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Conference", b =>
+                {
+                    b.Property<int>("ConferenceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Identifier")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Identity")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ConferenceId");
+
+                    b.HasAlternateKey("Identifier");
+
+                    b.ToTable("Conference");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Employee", b =>
+                {
+                    b.Property<int>("EmployeeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("Barista")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmployeeId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Employee");
+
+                    b.HasData(
+                        new
+                        {
+                            EmployeeId = 1,
+                            Barista = true,
+                            LocationId = 1,
+                            Name = "Leia"
+                        },
+                        new
+                        {
+                            EmployeeId = 2,
+                            Barista = true,
+                            LocationId = 2,
+                            Name = "Rey"
+                        },
+                        new
+                        {
+                            EmployeeId = 3,
+                            Barista = true,
+                            LocationId = 2,
+                            Name = "Gamora"
+                        },
+                        new
+                        {
+                            EmployeeId = 4,
+                            Barista = true,
+                            LocationId = 3,
+                            Name = "Dr. Strange"
+                        },
+                        new
+                        {
+                            EmployeeId = 5,
+                            Barista = false,
+                            LocationId = 3,
+                            Name = "Peter Parker"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Location", b =>
+                {
+                    b.Property<int>("LocationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CityTown")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CloseTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LocationType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OpenTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StateProvince")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VenueName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LocationId");
+
+                    b.ToTable("Locations");
+
+                    b.HasData(
+                        new
+                        {
+                            LocationId = 1,
+                            Address1 = "123 Main Street",
+                            CityTown = "Atlanta",
+                            CloseTime = "5pm",
+                            Country = "USA",
+                            LocationType = "Kiosk",
+                            OpenTime = "5am",
+                            PostalCode = "12345",
+                            StateProvince = "GA",
+                            VenueName = "Atlanta Convention Center"
+                        },
+                        new
+                        {
+                            LocationId = 2,
+                            Address1 = "999 Main Street",
+                            CityTown = "Atlanta",
+                            CloseTime = "6pm",
+                            Country = "USA",
+                            LocationType = "Storefront",
+                            OpenTime = "6am",
+                            PostalCode = "12345",
+                            StateProvince = "GA",
+                            VenueName = "Atlanta Convention Center"
+                        },
+                        new
+                        {
+                            LocationId = 3,
+                            Address1 = "3 Main",
+                            CloseTime = "7pm",
+                            LocationType = "Popup",
+                            OpenTime = "7am"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Milestone", b =>
+                {
+                    b.Property<int>("MilestoneId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MilestoneId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Milestone");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Reach", b =>
+                {
+                    b.Property<int>("ReachId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.HasKey("ReachId");
+
+                    b.ToTable("Reach");
+
+                    b.HasData(
+                        new
+                        {
+                            ReachId = 1,
+                            Description = "Keynote"
+                        },
+                        new
+                        {
+                            ReachId = 2,
+                            Description = "Breakout"
+                        },
+                        new
+                        {
+                            ReachId = 3,
+                            Description = "Open Space"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Restaurant", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Cuisine")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EntityState")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("HasChanges")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("AddressId");
+
+                    b.ToTable("Restaurants");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Session", b =>
+                {
+                    b.Property<int>("SessionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ConferenceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReachId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("SessionGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Speaker")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("StartTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.HasKey("SessionId");
+
+                    b.HasAlternateKey("SessionGuid");
+
+                    b.HasIndex("ConferenceId");
+
+                    b.HasIndex("ReachId");
+
+                    b.ToTable("Session");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.SessionTag", b =>
+                {
+                    b.Property<int>("SessionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Tag")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.HasKey("SessionId", "Tag");
+
+                    b.ToTable("SessionTag");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Speaker", b =>
+                {
+                    b.Property<int>("SpeakerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BlogUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompanyUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ConferenceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GitHub")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Twitter")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SpeakerId");
+
+                    b.HasIndex("ConferenceId");
+
+                    b.ToTable("Speakers");
+
+                    b.HasData(
+                        new
+                        {
+                            SpeakerId = 1,
+                            BlogUrl = "http://wildermuth.com",
+                            Company = "Wilder Minds LLC",
+                            CompanyUrl = "http://wilderminds.com",
+                            ConferenceId = 1,
+                            FirstName = "Shawn",
+                            GitHub = "shawnwildermuth",
+                            LastName = "Wildermuth",
+                            Twitter = "shawnwildermuth"
+                        },
+                        new
+                        {
+                            SpeakerId = 2,
+                            BlogUrl = "http://shawnandresa.com",
+                            Company = "Wilder Minds LLC",
+                            CompanyUrl = "http://wilderminds.com",
+                            ConferenceId = 1,
+                            FirstName = "Resa",
+                            GitHub = "resawildermuth",
+                            LastName = "Wildermuth",
+                            Twitter = "resawildermuth"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Talk", b =>
+                {
+                    b.Property<int>("TalkId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Abstract")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CampId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SpeakerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TalkId");
+
+                    b.HasIndex("CampId");
+
+                    b.HasIndex("SpeakerId");
+
+                    b.ToTable("Talks");
+
+                    b.HasData(
+                        new
+                        {
+                            TalkId = 1,
+                            Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
+                            CampId = 1,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Level = 100,
+                            SpeakerId = 1,
+                            Title = "Entity Framework From Scratch"
+                        },
+                        new
+                        {
+                            TalkId = 2,
+                            Abstract = "Thinking of good sample data examples is tiring.",
+                            CampId = 1,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Level = 200,
+                            SpeakerId = 2,
+                            Title = "Writing Sample Data Made Easy"
+                        });
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Unit", b =>
+                {
+                    b.Property<int>("UnitId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Acquired")
+                        .HasColumnType("Date");
+
+                    b.Property<int>("BrewerTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Cost")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("OutOfService")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("UnitId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("Units");
+
+                    b.HasData(
+                        new
+                        {
+                            UnitId = 1,
+                            Acquired = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 2,
+                            Cost = 99m,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = 1
+                        },
+                        new
+                        {
+                            UnitId = 2,
+                            Acquired = new DateTime(2018, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 3,
+                            Cost = 99m,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = 1
+                        },
+                        new
+                        {
+                            UnitId = 3,
+                            Acquired = new DateTime(2018, 6, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 1,
+                            Cost = 99m,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = 1
+                        },
+                        new
+                        {
+                            UnitId = 4,
+                            Acquired = new DateTime(2018, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BrewerTypeId = 1,
+                            Cost = 99m,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            LocationId = 2
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -1474,15 +1622,6 @@ namespace AppCore.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("ACM.BL.Restaurant", b =>
-                {
-                    b.HasOne("ACM.BL.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("AppCore.Data.BrewerType", b =>
                 {
                     b.OwnsOne("AppCore.Data.Recipe", "Recipe", b1 =>
@@ -1557,31 +1696,6 @@ namespace AppCore.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("AppCore.Data.Camp", b =>
-                {
-                    b.HasOne("AppCore.Data.Location", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationId");
-                });
-
-            modelBuilder.Entity("AppCore.Data.Employee", b =>
-                {
-                    b.HasOne("AppCore.Data.Location", null)
-                        .WithMany("Employees")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("AppCore.Data.Milestone", b =>
-                {
-                    b.HasOne("AppCore.Data.Location", null)
-                        .WithMany("Milestones")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("AppCore.Data.OrderDetail", b =>
                 {
                     b.HasOne("AppCore.Data.Order", "Order")
@@ -1611,24 +1725,6 @@ namespace AppCore.Data.Migrations
                     b.HasOne("AppCore.Data.Pie", "Pie")
                         .WithMany()
                         .HasForeignKey("PieId");
-                });
-
-            modelBuilder.Entity("AppCore.Data.Talk", b =>
-                {
-                    b.HasOne("AppCore.Data.Camp", "Camp")
-                        .WithMany("Talks")
-                        .HasForeignKey("CampId");
-
-                    b.HasOne("AppCore.Data.Speaker", "Speaker")
-                        .WithMany()
-                        .HasForeignKey("SpeakerId");
-                });
-
-            modelBuilder.Entity("AppCore.Data.Unit", b =>
-                {
-                    b.HasOne("AppCore.Data.Location", null)
-                        .WithMany("BrewingUnits")
-                        .HasForeignKey("LocationId");
                 });
 
             modelBuilder.Entity("AppCore.Domain.Author", b =>
@@ -1685,6 +1781,91 @@ namespace AppCore.Data.Migrations
                     b.HasOne("AppCore.Domain.Samurai", null)
                         .WithOne("SecretIdentity")
                         .HasForeignKey("AppCore.Domain.SecretIdentity", "SamuraiId");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Camp", b =>
+                {
+                    b.HasOne("AppCore.Entities.Location", "Location")
+                        .WithMany()
+                        .HasForeignKey("LocationId");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Employee", b =>
+                {
+                    b.HasOne("AppCore.Entities.Location", null)
+                        .WithMany("Employees")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Milestone", b =>
+                {
+                    b.HasOne("AppCore.Entities.Location", null)
+                        .WithMany("Milestones")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Restaurant", b =>
+                {
+                    b.HasOne("AppCore.Entities.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Session", b =>
+                {
+                    b.HasOne("AppCore.Entities.Conference", "Conference")
+                        .WithMany()
+                        .HasForeignKey("ConferenceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppCore.Entities.Reach", "Reach")
+                        .WithMany()
+                        .HasForeignKey("ReachId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.SessionTag", b =>
+                {
+                    b.HasOne("AppCore.Entities.Session", "Session")
+                        .WithMany("SessionTags")
+                        .HasForeignKey("SessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Speaker", b =>
+                {
+                    b.HasOne("AppCore.Entities.Conference", "Conference")
+                        .WithMany("Speakers")
+                        .HasForeignKey("ConferenceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Talk", b =>
+                {
+                    b.HasOne("AppCore.Entities.Camp", "Camp")
+                        .WithMany("Talks")
+                        .HasForeignKey("CampId");
+
+                    b.HasOne("AppCore.Entities.Speaker", "Speaker")
+                        .WithMany()
+                        .HasForeignKey("SpeakerId");
+                });
+
+            modelBuilder.Entity("AppCore.Entities.Unit", b =>
+                {
+                    b.HasOne("AppCore.Entities.Location", null)
+                        .WithMany("BrewingUnits")
+                        .HasForeignKey("LocationId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

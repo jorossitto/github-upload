@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ACM.BL;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using AppCore.Entities;
 
 namespace AppCore.Data
 {
@@ -13,6 +13,7 @@ namespace AppCore.Data
         {
             this.db = db;
         }
+
         public Restaurant Add(Restaurant newRestaurant)
         {
             db.Add(newRestaurant);

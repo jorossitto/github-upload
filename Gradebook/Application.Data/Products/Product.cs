@@ -1,7 +1,5 @@
-﻿using System;
+﻿using AppCore.Entities;
 using Common;
-using ACM.BL;
-
 
 namespace AppCore.Data
 {
