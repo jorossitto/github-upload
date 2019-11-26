@@ -14,6 +14,9 @@ namespace AppCore.Entities
         [MaxLength(100)]
         public string Title { get; set; }
         [Required]
+        public string Abstract { get; set; }
+
+        [Required]
         [MaxLength(50)]
         public string Speaker { get; set; }
         [Required]

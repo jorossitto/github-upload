@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20191112190051_betterNames.Designer.cs" />
     <Compile Remove="Migrations\20191115230459_CheckingMigrations.cs" />
     <Compile Remove="Migrations\20191115230459_CheckingMigrations.Designer.cs" />
+    <Compile Remove="Migrations\20191125231616_conferenceToSpeaker.cs" />
+    <Compile Remove="Migrations\20191125231616_conferenceToSpeaker.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

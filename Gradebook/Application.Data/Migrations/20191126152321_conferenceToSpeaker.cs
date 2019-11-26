@@ -78,19 +78,10 @@ namespace AppCore.Data.Migrations
                 table: "Course",
                 column: "Id");
 
-            migrationBuilder.UpdateData(
-                table: "Speakers",
-                keyColumn: "SpeakerId",
-                keyValue: 1,
-                column: "ConferenceId",
-                value: 1);
-
-            migrationBuilder.UpdateData(
-                table: "Speakers",
-                keyColumn: "SpeakerId",
-                keyValue: 2,
-                column: "ConferenceId",
-                value: 1);
+            migrationBuilder.InsertData(
+                table: "Conference",
+                columns: new[] { "ConferenceId", "Created", "Identifier", "Identity", "LastModified", "Name" },
+                values: new object[] { 1, new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Bobby", new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null });
 
             migrationBuilder.UpdateData(
                 table: "Talks",
@@ -134,6 +125,20 @@ namespace AppCore.Data.Migrations
                 columns: new[] { "Cost", "Created", "LastModified" },
                 values: new object[] { 99m, new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
+            migrationBuilder.UpdateData(
+                table: "Speakers",
+                keyColumn: "SpeakerId",
+                keyValue: 1,
+                column: "ConferenceId",
+                value: 1);
+
+            migrationBuilder.UpdateData(
+                table: "Speakers",
+                keyColumn: "SpeakerId",
+                keyValue: 2,
+                column: "ConferenceId",
+                value: 1);
+
             migrationBuilder.CreateIndex(
                 name: "IX_Speakers_ConferenceId",
                 table: "Speakers",
@@ -173,6 +178,11 @@ namespace AppCore.Data.Migrations
             migrationBuilder.DropPrimaryKey(
                 name: "PK_Course",
                 table: "Course");
+
+            migrationBuilder.DeleteData(
+                table: "Conference",
+                keyColumn: "ConferenceId",
+                keyValue: 1);
 
             migrationBuilder.DropColumn(
                 name: "Created",

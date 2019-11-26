@@ -72,6 +72,7 @@ namespace AppCore.Data
         public DbSet<Course> Courses { get; set; }
 
         public DbSet<Country> Countries { get; set; }
+        public DbSet<Presenter> Presenters { get; set; }
         //public DbSet<Recipe> Recipes { get; set; }
         //public DbSet<UnitQueryType> UnitsInService { get; set; }
 
@@ -197,8 +198,6 @@ namespace AppCore.Data
             SamuraiMethods(modelBuilder);
 
             AddShadowProperties(modelBuilder);
-
-
             SeedRecipe(modelBuilder);
             SeedUnit(modelBuilder);
             SeedBrewerType(modelBuilder);
@@ -209,15 +208,24 @@ namespace AppCore.Data
             SeedReach(modelBuilder);
             SeedSpeaker(modelBuilder);
             SeedTalk(modelBuilder);
+            SeedPresenter(modelBuilder);
+            SeedSubmission(modelBuilder);
         }
 
-
-
-
-
-
-
         #region Building Model
+        private void SeedSubmission(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Submission>().HasIndex(x => x.ConferenceId);
+        }
+        private void SeedPresenter(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Presenter>().HasData(new
+            {
+                PresenterId = 1,
+                Created = new DateTime(2018, 6, 1),
+                LastModified = new DateTime(2018, 6, 1)
+            });
+        }
         private void SeedTalk(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Talk>()
@@ -229,6 +237,7 @@ namespace AppCore.Data
                   Title = "Entity Framework From Scratch",
                   Abstract = "Entity Framework from scratch in an hour. Probably cover it all",
                   Level = 100,
+                  PresenterId = 1,
                   Created = new DateTime(2018, 6, 1),
                   LastModified = new DateTime(2018, 6, 1)
               },
@@ -240,6 +249,7 @@ namespace AppCore.Data
                   Title = "Writing Sample Data Made Easy",
                   Abstract = "Thinking of good sample data examples is tiring.",
                   Level = 200,
+                  PresenterId = 1,
                   Created = new DateTime(2018, 6, 1),
                   LastModified = new DateTime(2018, 6, 1)
               });
@@ -297,6 +307,14 @@ namespace AppCore.Data
         private void SeedConference(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Conference>().HasAlternateKey(x => x.Identifier);
+            modelBuilder.Entity<Conference>().HasData(new
+            {
+                ConferenceId = 1,
+                Identifier = 1,
+                Identity = "Bobby",
+                Created = new DateTime(2018, 6, 1),
+                LastModified = new DateTime(2018, 6, 1)
+            });
         }
 
         private void SeedRecipe(ModelBuilder modelBuilder)

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppCore.Data.Migrations
 {
     [DbContext(typeof(BusinessDBContext))]
-    [Migration("20191125231616_conferenceToSpeaker")]
+    [Migration("20191126152321_conferenceToSpeaker")]
     partial class conferenceToSpeaker
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -882,6 +882,16 @@ namespace AppCore.Data.Migrations
                     b.HasAlternateKey("Identifier");
 
                     b.ToTable("Conference");
+
+                    b.HasData(
+                        new
+                        {
+                            ConferenceId = 1,
+                            Created = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Identifier = 1,
+                            Identity = "Bobby",
+                            LastModified = new DateTime(2018, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("AppCore.Entities.Employee", b =>

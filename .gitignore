@@ -393,3 +393,5 @@ MigrationBackup/
 *.out
 *.app
 *.dtbcache
+*.cache
+Gradebook/.vs/Gradebook/v16/.suo
